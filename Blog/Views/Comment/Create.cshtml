@@ -54,7 +54,7 @@
             @Html.Hidden("postID", "@ViewBag.PostID")
             <div>
                 <fieldset>
-                    @if (!AJ.UtiliTools.UserTility.IsLoggedIn)
+                    @if (!BC.Authorization.AuthorizationBiz.IsAuthenticated)
                     {
                         <text>
                             <div class="editor-field editor-body-special">
@@ -89,8 +89,8 @@
                     else
                     {
                         <text>
-                            @Html.Hidden("Name", AJ.UtiliTools.UserTility.CurrentUserName)
-                            @Html.Hidden("Email", AJ.UtiliTools.UserTility.CurrentUserEmail)
+                            @Html.Hidden("Name", BC.Authorization.AuthorizationBiz.CurrentUsername)
+                            @Html.Hidden("Email", BC.Authorization.AuthorizationBiz.CurrentUsername)
                         </text>
                     }
 
