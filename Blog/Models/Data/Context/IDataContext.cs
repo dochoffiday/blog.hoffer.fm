@@ -1,4 +1,5 @@
-﻿namespace BC.Data.Context
+﻿using AJ.UtiliTools;
+namespace BC.Data.Context
 {
     public interface IDataContextFactory
     {
@@ -18,7 +19,9 @@
             get
             {
                 if (dt == null)
-                    dt = new BC.Data.Context.BCDataContext();
+                {
+                    dt = new BC.Data.Context.BCDataContext(UtiliSetting.ConnectionString("DB"));
+                }
 
                 return dt;
             }
