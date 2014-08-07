@@ -77,6 +77,7 @@ fieldset { padding-top: 10px;  }
 .display-label, .display-field, .editor-label, .editor-field, .slug-field { margin: .5em 0; }
 
 .field-validation-error { display: block; margin-top: 20px; color: #FF1A1A; }
+.validation-summary-errors { color: #ff1a1a; }
 .validation-summary-errors ul { color: #FF1A1A !important; }
 
 .editor-body-special { display: none; }
