@@ -1,0 +1,13 @@
+﻿@model BC.Models.BC_Post
+
+@{
+    Layout = null;
+}
+
+<h2>@Html.ActionLink(Model.Title.ToUpper(), "details", "post", new { slug = Model.Slug, category = Model.Category().Name.ToLower() }, "")</h2>
+<div class="post">
+    @Html.Raw(Model.Blurb())
+    <p>
+    <a href="@Url.Action("details", "post", new { slug = Model.Slug, category = Model.Category().Name.ToLower() })">[continue reading]</a>
+    </p>
+</div>

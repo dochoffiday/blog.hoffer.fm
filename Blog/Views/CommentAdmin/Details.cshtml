@@ -1,0 +1,44 @@
+﻿@model BC.Models.BC_Comment
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+<h2>Comment</h2>
+<p>
+    Comment details:
+</p>
+
+<fieldset>
+    <div class="display-label">Name</div>
+    <div class="display-field">@Model.Name&nbsp;</div>
+
+    <div class="display-label">Email</div>
+    <div class="display-field">@Model.Email&nbsp;</div>
+    
+    <div class="display-label">Url</div>
+    <div class="display-field">@Model.Url&nbsp;</div>
+    
+    <div class="display-label">Text</div>
+    <div class="display-field">@Model.Text&nbsp;</div>
+
+    <div class="display-label">Administrator</div>
+    <div class="display-field">@Model.IsUser.ToString()</div>
+
+    <div class="display-label">Is Read</div>
+    <div class="display-field">@Model.IsRead.ToString()</div>
+
+    <div class="display-label">Created</div>
+    <div class="display-field">@String.Format("{0:g}", Model.Created)</div>
+
+    <div class="display-label">Modified</div>
+    <div class="display-field">@String.Format("{0:g}", Model.Modified)</div>
+</fieldset>
+
+<p class="breadcrumb">
+    @Html.ActionLink("Edit", "edit", new { id = Model.PostID }) |
+    @Html.ActionLink("<- Back to List", "index")
+</p>
+
+

@@ -1,0 +1,4 @@
+C:\AJ\Personal\(New)\Blog\Blog.Core\bin\Release\Blog.Core.dll
+C:\AJ\Personal\(New)\Blog\Blog.Core\bin\Release\Blog.Core.pdb
+C:\AJ\Personal\(New)\Blog\Blog.Core\obj\Release\Blog.Core.dll
+C:\AJ\Personal\(New)\Blog\Blog.Core\obj\Release\Blog.Core.pdb

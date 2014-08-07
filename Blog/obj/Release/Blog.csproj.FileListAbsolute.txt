@@ -1,0 +1,8 @@
+C:\AJ\Personal\(New)\Blog\Blog\bin\BC.dll.config
+C:\AJ\Personal\(New)\Blog\Blog\bin\BC.dll
+C:\AJ\Personal\(New)\Blog\Blog\bin\BC.pdb
+C:\AJ\Personal\(New)\Blog\Blog\bin\Blog.Core.dll
+C:\AJ\Personal\(New)\Blog\Blog\bin\Blog.Core.pdb
+C:\AJ\Personal\(New)\Blog\Blog\obj\Release\Blog.csprojResolveAssemblyReference.cache
+C:\AJ\Personal\(New)\Blog\Blog\obj\Release\BC.dll
+C:\AJ\Personal\(New)\Blog\Blog\obj\Release\BC.pdb

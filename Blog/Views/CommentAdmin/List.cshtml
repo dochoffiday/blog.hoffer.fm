@@ -1,0 +1,46 @@
+﻿@model IEnumerable<BC.Models.BC_Comment>
+
+@{
+    Layout = null;
+}
+
+<table id="list">
+    <tr>
+        <th class="center">
+            Name
+        </th>
+        <th class="large center">
+            Created
+        </th>
+        <th class="small"></th>
+        <th class="small"></th>
+        <th class="small"></th>
+    </tr>
+
+    @foreach (var item in Model) {
+        <tr>
+            @if (item.IsRead)
+            {
+                <td>@item.Name</td>
+            }
+            else
+            {
+                <td class="red">@item.Name</td>
+            }
+            <td class="center">
+                @String.Format("{0:g}", item.Created)
+            </td>
+            <td class="center">
+                @Html.ActionLink("Edit", "edit", new { id = item.CommentID })
+            </td>
+            <td class="center">
+                @Html.ActionLink("Details", "details", new { id = item.CommentID })
+            </td>
+            <td class="center">
+                @Html.ActionLink("Delete", "delete", new { id = item.CommentID })
+            </td>
+        </tr>
+    }
+
+</table>
+

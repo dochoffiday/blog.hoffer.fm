@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+<h2>Categories</h2>
+<p>
+    @Html.ActionLink("Create New", "create")
+</p>
+
+<div id="language-wrapper">@{ Html.RenderAction("List"); }</div>

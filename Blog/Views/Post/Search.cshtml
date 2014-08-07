@@ -1,0 +1,9 @@
+﻿@model AJ.UtiliTools.SearchResult<BC.Models.BC_Post>
+
+@{
+    Layout = null;
+}
+
+@{ Html.RenderAction("List", "Post", new { result = Model }); }
+
+@{ Html.RenderAction("Paging", new { result = Model }); }

@@ -1,0 +1,48 @@
+﻿@model AJ.UtiliTools.SearchResult<BC.Models.BC_Post>
+
+@{
+    Layout = null;
+}
+
+<div class="mtop row">
+    <div class="twocol">
+        &nbsp;
+    </div>
+    <div class="sixcol">
+        <table class="full">
+            <tr>
+                <td>
+                    @if (Model.Count > (Model.PageSize * Model.CurrentPage))
+                    {
+                        <text>
+                            @Html.ActionLink("<- older", "index", "tag", new { id = ViewBag.ID, page = Model.CurrentPage + 1 }, "")
+                        </text>
+                    }
+                    else
+                    {
+                        <text>
+                            &nbsp;
+                        </text>
+                    }
+                </td>
+                <td class="right">
+                    @if (Model.CurrentPage != 1)
+                    {
+                        <text>
+                            @Html.ActionLink("newer ->", "index", "tag", new { id = ViewBag.ID, page = Model.CurrentPage - 1 }, "")
+                        </text>
+                    }
+                    else
+                    {
+                        <text>
+                            &nbsp;
+                        </text>
+                    }
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="fourcol last">
+        &nbsp;
+    </div>
+</div>

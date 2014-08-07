@@ -1,0 +1,21 @@
+﻿@model BC.Models.BC_Page
+
+@{
+    ViewBag.Title = Model.Title;
+}
+
+<script type="text/javascript" src="http://balupton.github.com/jquery-syntaxhighlighter/scripts/jquery.syntaxhighlighter.min.js"></script>
+
+<div class="mtop row">
+    <div class="onecol">
+        &nbsp;
+    </div>
+    <div class="tencol">
+        <h2>@Model.Title.ToUpper()</h2>
+        @Html.Raw(Model.Body)
+    </div>
+    <div class="onecol last">
+        &nbsp;
+    </div>
+</div>
+

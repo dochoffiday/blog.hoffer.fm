@@ -1,0 +1,35 @@
+﻿@model IEnumerable<BC.Models.BC_Category>
+
+@{
+    Layout = null;
+}
+
+<table id="list">
+    <tr>
+        <th class="center">
+            Name
+        </th>
+        <th class="small"></th>
+        <th class="small"></th>
+        <th class="small"></th>
+    </tr>
+
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @item.Name
+            </td>
+            <td class="center">
+                @Html.ActionLink("Edit", "edit", new { id = item.CategoryID })
+            </td>
+            <td class="center">
+                @Html.ActionLink("Details", "details", new { id = item.CategoryID })
+            </td>
+            <td class="center">
+                @Html.ActionLink("Delete", "delete", new { id = item.CategoryID })
+            </td>
+        </tr>
+    }
+
+</table>
+
