@@ -20,6 +20,7 @@ namespace BC
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+            routes.IgnoreRoute("_demo/{*pathInfo}");
 
             routes.MapRoute(
                 "Feed", // Route name
