@@ -21,6 +21,7 @@ namespace BC
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
             routes.IgnoreRoute("_demo/{*pathInfo}");
+            routes.IgnoreRoute("_resume/{*pathInfo}");
 
             routes.MapRoute(
                 "Feed", // Route name
