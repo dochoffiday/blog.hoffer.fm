@@ -1,6 +1,7 @@
 ﻿using BC.Authorization;
 using BC.Models.Post;
 using System;
+using System.Linq;
 using System.Web.Mvc;
 using System.Web.Routing;
 
@@ -81,7 +82,7 @@ namespace BC.Models.Comment.Controllers
                 }
             }
 
-            return Content("FAIL");
+            return Content("FAIL: " + string.Join(" | ", ModelState.Values.SelectMany(v => v.Errors).Select(p => p.ErrorMessage)));
         }
 
         #endregion

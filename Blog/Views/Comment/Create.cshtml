@@ -32,13 +32,15 @@
                         var form = $(this);
 
                         $.post(form.attr('action'), form.serialize(), function (data) {
-                            if (data != "FAIL") {
+                            if (data.indexOf("FAIL") != 0) {
                                 var item = $(data);
 
                                 $(':input', '#comment-form').not(':button, :submit, :reset, :hidden').val('');
 
                                 $("#comment-first").hide();
                                 item.hide().appendTo("#comments").slideDown();
+                            } else {
+                                alert(data);
                             }
                         });
                     }
@@ -89,8 +91,8 @@
                     else
                     {
                         <text>
-                            @Html.Hidden("Name", BC.Authorization.AuthorizationBiz.CurrentUsername)
-                            @Html.Hidden("Email", BC.Authorization.AuthorizationBiz.CurrentUsername)
+                            @Html.Hidden("Name", "dochoffiday")
+                            @Html.Hidden("Email", "mrhoffer@gmail.com")
                         </text>
                     }
 
