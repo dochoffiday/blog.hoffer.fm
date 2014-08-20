@@ -45,7 +45,7 @@ blockquote { border: 1px solid #cccccc; padding-left: 10px !important; margin-le
 
 /* MISC
 ----------------------------------------------------------*/
-.highlighter { border: 1px dashed White; text-align: center; padding: 35px 0 35px 0; }
+.highlighter { border: 1px dashed White; text-align: center; padding: 35px 0 35px 0; margin-top: 25px !important; }
 .highlighter a { background-color: #EA7E1E; padding: 15px; color: White; font-size: 16px; }
 
 /* INFO 
