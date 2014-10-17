@@ -5,3 +5,5 @@ C:\AJ\Personal\AppHarbor\Blog\Blog\bin\Blog.Core.pdb
 C:\AJ\Personal\AppHarbor\Blog\Blog\obj\Debug\Blog.csprojResolveAssemblyReference.cache
 C:\AJ\Personal\AppHarbor\Blog\Blog\obj\Debug\BC.dll
 C:\AJ\Personal\AppHarbor\Blog\Blog\obj\Debug\BC.pdb
+C:\AJ\Personal\AppHarbor\Blog\Blog\bin\System.Web.Mvc.dll
+C:\AJ\Personal\AppHarbor\Blog\Blog\bin\System.Web.Mvc.xml
