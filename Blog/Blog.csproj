@@ -77,9 +77,7 @@
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
-    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-    </Reference>
+    <Reference Include="System.Web.Mvc, Version=3.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Web.WebPages, Version=1.0.0.0,Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL " />
     <Reference Include="System.Web.Helpers" />
     <Reference Include="System" />
@@ -419,7 +417,9 @@
     <Content Include="Scripts\Pages\post.details.js" />
     <Content Include="Scripts\Pages\postAdmin.edit.js" />
     <Content Include="Services\AdminService.asmx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
