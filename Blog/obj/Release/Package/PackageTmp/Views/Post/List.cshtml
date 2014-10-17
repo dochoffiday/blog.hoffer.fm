@@ -1,0 +1,23 @@
+﻿@model AJ.UtiliTools.SearchResult<BC.Models.BC_Post>
+
+@{
+    Layout = null;
+}
+
+<script type="text/javascript" src="http://balupton.github.com/jquery-syntaxhighlighter/scripts/jquery.syntaxhighlighter.min.js"></script>
+<script type="text/javascript">$.SyntaxHighlighter.init();</script>
+
+@foreach (var item in Model.Results)
+{
+    <div class="mtop row pbottom">
+    <div class="twocol">&nbsp;</div>
+        <div class="sixcol">
+            @{ Html.RenderAction("Preview", "Post", new { post = item }); }
+        </div>
+        <div class="fourcol info last">
+            <p>
+                @{ Html.RenderAction("Info", "Post", new { post = item }); }
+            </p> 
+        </div>
+    </div>
+}

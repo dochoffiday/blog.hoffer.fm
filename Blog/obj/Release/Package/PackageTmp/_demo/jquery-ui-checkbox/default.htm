@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>jQuery Checkbox / Radiobutton Replacement</title>
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.8/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.2r1/build/reset/reset-min.css" />
+    <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.8/themes/flick/jquery-ui.css" />
+    
+    <script type="text/javascript" src="jquery.checkbox.js"></script>
+
+	<script type="text/javascript" src="themeswitcher/jquery.themeswitcher.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#themeswitcher").themeswitcher({
+                imgpath: "themeswitcher/images/",
+                loadTheme: "ui-lightness"
+            });
+        });
+    </script>
+    
+    <style type="text/css">
+        
+        body { font-family: Verdana; margin-top: 50px; font-size: 14px; color: White; }
+        h2 { font-size: 18px; font-weight: bold; }
+        
+        .demo { margin: auto; width: 350px; border: solid 1px Black; background-color: #4D4D4D; padding: 10px; margin-top: 20px; }
+        .content { margin-top: 20px; }
+        
+    </style>
+</head>
+<body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".text").checkbox();
+        $(".notext").checkbox({ text: false });
+    });
+</script>
+
+    <div id="themeswitcher-wrapper" style="position: absolute; top: 20px; right: 10px;">
+        <div id="themeswitcher"></div>
+    </div>
+
+    <div class="demo">
+        <h2>Checkbox</h2>
+        <div class="content">
+            <label for="one">one</label>
+            <input id="one" type="checkbox" class="text" />
+        </div>
+        <br />
+        <h2>Checkbox [no text]</h2>
+        <div class="content">
+            <label for="one-notext">one</label>
+            <input id="one-notext" type="checkbox" class="notext" />
+        </div>
+    </div>
+
+    <div class="demo">
+        <h2>Radio</h2>
+        <div class="content">
+            <label for="two">two</label>
+            <input id="two" type="radio" name="radio" class="text" />
+            <label for="three">three</label>
+            <input id="three" name="radio" type="radio" class="text" />
+            <label for="four">four</label>
+            <input id="four" name="radio" type="radio" class="text" />
+        </div>
+        <br />
+        <h2>Radio [no text]</h2>
+        <div class="content">
+            <label for="two-notext">two</label>
+            <input id="two-notext" type="radio" name="notext" class="notext" />
+            <label for="three-notext">three</label>
+            <input id="three-notext" name="notext" type="radio" class="notext" />
+            <label for="four-notext">four</label>
+            <input id="four-notext" name="notext" type="radio" class="notext" />
+        </div>
+    </div>
+
+</body>
+</html>

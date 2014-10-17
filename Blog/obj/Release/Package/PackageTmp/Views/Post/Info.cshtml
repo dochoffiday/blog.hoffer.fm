@@ -1,0 +1,37 @@
+﻿@model BC.Models.BC_Post
+@using AJ.UtiliTools
+           
+
+@{
+    Layout = null;
+    var category = Model.Category();
+    var tags = Model.Tags().ToList();
+}
+
+<span class="info-title"><b>@Model.Title</b> <br /> </span>@Model.LocalPublishDate.ToString("M.dd.yyyy ~ hh:mm tt") <br />  posted in @Html.ActionLink(category.Name.ToLower(), "index", "category", new { id = category.Name.ToLower() }, "") <br /> 
+
+@if(tags.Count > 0)
+{
+    <text>
+        tagged in 
+
+        @for(int r = 0; r < tags.Count; r++)
+        {    
+            <text>
+                @Html.ActionLink(tags[r].Name, "index", "tag", new { id = tags[r].Name.ToLower() }, "")
+                @if (r < (tags.Count - 1))
+                {
+                    <text>:</text>
+                }
+            </text>
+        }
+        <br />
+    </text>
+}
+
+@if(Model.IsCommentsVisible)
+{
+    <text>
+        comments <a href="/@Model.Category().Name.ToLower()/@Model.Slug#comments">[@Model.Comment_Count()]</a>
+    </text>
+}

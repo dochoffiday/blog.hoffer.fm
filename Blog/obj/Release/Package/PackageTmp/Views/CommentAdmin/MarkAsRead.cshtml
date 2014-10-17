@@ -1,0 +1,28 @@
+﻿@model BC.Models.BC_Post
+
+@{
+    ViewBag.Title = "Mark As Read";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+<h2>Mark As Read</h2>
+<p>
+    Are you sure you want to mark all these comments as Read?
+</p>
+
+<fieldset>
+    <div class="display-label">Post Title</div>
+    <div class="display-field">@Model.Title&nbsp;</div>
+</fieldset>
+
+<div class="warning">
+    Are you sure you want to mark all these comments as Read?
+    <br /><span class="breadcrumb">@Html.ActionLink("<- Back to List", "index")</span>
+</div>
+@using (Html.BeginForm())
+{
+    <p>
+        <input type="submit" value="Mark As Read" class="buttons negative submit" /> |
+        <span class="breadcrumb">@Html.ActionLink("<- Back to List", "index")</span>
+    </p>
+}

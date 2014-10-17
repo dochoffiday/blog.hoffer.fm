@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>jquery ui tables</title>
+    
+    <link type="text/css" rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/themes/flick/jquery-ui.css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+    
+    <link href="jquery.ui-tables.css" rel="stylesheet" type="text/css" />
+    <script src="jquery.ui-tables.js" type="text/javascript"></script>
+    
+	<script type="text/javascript" src="themeswitcher/jquery.themeswitcher.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#themeswitcher").themeswitcher({
+                imgpath: "themeswitcher/images/",
+                loadTheme: "ui-lightness"
+            });
+        });
+    </script>
+    
+    <style type="text/css">
+        #tbl1 { width: 100%; margin-top: 50px; }
+        #btn { margin-top: 25px; }
+    </style>
+</head>
+<body>
+
+    <script type="text/javascript">
+        function update() {
+            var number = $('#tbl1 tr').size();
+            $('#tbl1 tr:last').after('<tr><td>' + number + '</td><td>' + number + '</td></tr>');
+        }
+    </script>
+    
+    <div id="themeswitcher-wrapper" style="position: absolute; top: 20px; right: 10px;">
+        <div id="themeswitcher"></div>
+    </div>
+
+    <table id="tbl1">
+        <thead>
+            <tr>
+                <th>one</th>
+                <th>two</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <input id="btn" type="button" value="update" onclick="update();" />
+
+</body>
+</html>

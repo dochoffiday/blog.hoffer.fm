@@ -1,0 +1,37 @@
+.row, .body, .container {
+width: 100%;
+margin-left: 0px;
+margin-right: 0px;
+padding-left: 0px;
+padding-right: 0px;
+}
+
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
+width: 100%;
+margin-left: 0px;
+margin-right: 0px;
+padding-left: 20px;
+padding-right: 20px;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+box-sizing:border-box;
+}
+
+.row {
+width: 100%;
+}
+
+/* Type presets */
+
+body {
+font-size: 16px;
+line-height: 24px;
+}
+
+#header-input { font-size: 34px !important; }
+
+.header > a { display: block; height: 34px; width: 34px; margin: 0px auto; position: static; }
+.header > a:hover { background: url('../images/h-sprite.png') 0 -34px; background-size: cover; }
+
+#foot .first div { padding-left: 0 !important; }
+#foot .last div { padding-right: 0 !important; }
