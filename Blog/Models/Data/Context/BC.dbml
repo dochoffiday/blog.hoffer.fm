@@ -54,6 +54,7 @@
       <Column Name="Created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" UpdateCheck="Never" />
       <Column Name="Modified" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" UpdateCheck="Never" />
       <Column Name="IsRead" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="IP" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" UpdateCheck="Never" />
       <Association Name="BC_Post_BC_Comment" Member="Parent_Post" AccessModifier="Internal" ThisKey="PostID" OtherKey="PostID" Type="BC_Post" IsForeignKey="true" />
     </Type>
   </Table>

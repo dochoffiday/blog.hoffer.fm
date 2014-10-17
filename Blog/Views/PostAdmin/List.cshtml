@@ -7,13 +7,13 @@
 <table id="list">
     <tr>
         <th class="medium"></th>
-        <th class="small center">
+        <th class="small">
             Category
         </th>
-        <th class="center">
+        <th>
             Title
         </th>
-        <th class="medlarge center">
+        <th class="medlarge">
             Publish Date
         </th>
         <th class="small"></th>
@@ -24,18 +24,18 @@
 
     @foreach (var item in Model) {
         <tr>
-            <td class="center">
+            <td>
                 <span class="red">@Html.ActionLink("[" + item.Comment_Unread_Count() + "]", "index", "commentadmin", new { postID = item.PostID, Area = "comment" }, "")</span>
                 -
                 @Html.ActionLink("[" + item.Comment_Count() + "]", "index", "commentadmin", new { postID = item.PostID }, "")
             </td>
-            <td class="center">
+            <td>
                 @item.CategoryID
             </td>
             <td>
                 @item.Title
             </td>
-            <td class="center">
+            <td>
                 @String.Format("{0:g}", item.PublishDate)
             </td>
             <td class="center">

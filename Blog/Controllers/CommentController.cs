@@ -1,4 +1,5 @@
-﻿using BC.Authorization;
+﻿using AJ.UtiliTools;
+using BC.Authorization;
 using BC.Models.Post;
 using System;
 using System.Linq;
@@ -65,6 +66,7 @@ namespace BC.Models.Comment.Controllers
                 {
                     if (ModelState.IsValid)
                     {
+                        comment.IP = UserTility.CurrentUserIP;
                         comment.Created = DateTime.UtcNow;
                         comment.Modified = DateTime.UtcNow;
 

@@ -33,20 +33,20 @@
         <classShapeMoniker Id="40173129-75a0-4b44-ae70-1d3a96a6f29e" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 2.13064697265625); (3.75 : 2.13064697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.75 : 2.13064697265625); (3.75 : 2.13064697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/BCDataContext/BC_Category/BC_Category_BC_Post" />
       <nodes>
         <classShapeMoniker Id="df90bb77-b770-4364-a968-7ec70251974a" />
         <classShapeMoniker Id="722ed234-9743-4393-98bd-ac11f0d75678" />
       </nodes>
     </associationConnector>
-    <classShape Id="0055e308-297a-4a6e-ac5a-41241c201d46" absoluteBounds="3.625, 5.375, 2, 2.7324039713541666">
+    <classShape Id="0055e308-297a-4a6e-ac5a-41241c201d46" absoluteBounds="3.625, 5.375, 2, 2.9247054036458326">
       <DataClassMoniker Name="/BCDataContext/BC_Comment" />
       <nestedChildShapes>
-        <elementListCompartment Id="5621df53-8bae-49a1-8022-9885885278bf" absoluteBounds="3.6399999999999997, 5.835, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="5621df53-8bae-49a1-8022-9885885278bf" absoluteBounds="3.6399999999999997, 5.835, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(4.6875 : 4.42470540364583); (4.6875 : 5.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(4.6875 : 4.42470540364583); (4.6875 : 5.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/BCDataContext/BC_Post/BC_Post_BC_Comment" />
       <nodes>
         <classShapeMoniker Id="722ed234-9743-4393-98bd-ac11f0d75678" />

@@ -2,3 +2,4 @@ C:\AJ\Personal\AppHarbor\Blog\Blog.Core\bin\Debug\Blog.Core.dll
 C:\AJ\Personal\AppHarbor\Blog\Blog.Core\bin\Debug\Blog.Core.pdb
 C:\AJ\Personal\AppHarbor\Blog\Blog.Core\obj\Debug\Blog.Core.dll
 C:\AJ\Personal\AppHarbor\Blog\Blog.Core\obj\Debug\Blog.Core.pdb
+C:\AJ\Personal\AppHarbor\Blog\Blog.Core\obj\Debug\Blog.Core.csprojResolveAssemblyReference.cache

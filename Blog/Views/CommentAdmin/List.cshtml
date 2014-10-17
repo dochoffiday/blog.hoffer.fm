@@ -6,12 +6,14 @@
 
 <table id="list">
     <tr>
-        <th class="center">
+        <th>
             Name
         </th>
-        <th class="large center">
+        <th>Blurb</th>
+        <th class="medlarge">
             Created
         </th>
+        <th class="medlarge">IP</th>
         <th class="small"></th>
         <th class="small"></th>
         <th class="small"></th>
@@ -27,9 +29,22 @@
             {
                 <td class="red">@item.Name</td>
             }
-            <td class="center">
+            <td>
+                @{
+                    var blurb = item.Text;
+                    var blurbLength = 100;
+
+                    if (!string.IsNullOrWhiteSpace(blurb) && blurb.Length > blurbLength)
+                    {
+                        blurb = blurb.Substring(0, blurbLength) + "...";
+                    }
+                }
+                @blurb
+            </td>
+            <td>
                 @String.Format("{0:g}", item.Created)
             </td>
+            <td>@item.IP</td>
             <td class="center">
                 @Html.ActionLink("Edit", "edit", new { id = item.CommentID })
             </td>

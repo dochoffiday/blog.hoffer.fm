@@ -75,7 +75,7 @@ table#list th { font-weight: bold; border-bottom: 1px solid Black; }
 
 .small { width: 50px; }
 .medium { width: 100px; }
-.medlarge { width: 150px; }
+.medlarge { width: 200px; }
 .center { text-align: center; }
 .large { width: 200px; }
 .pointer { cursor: pointer; }
