@@ -585,6 +585,9 @@
     <Content Include="_demo\jquery-ui-tables\themeswitcher\jquery.themeswitcher.js" />
     <Content Include="_demo\jquery-ui-tables\themeswitcher\jquery.themeswitcher.min.js" />
     <Content Include="_demo\jquery-ui-tables\themeswitcher\sample.htm" />
+    <Content Include="_demo\jquery.ui.timeselect\index.html" />
+    <Content Include="_demo\jquery.ui.timeselect\src\date-en-US.js" />
+    <Content Include="_demo\jquery.ui.timeselect\src\jquery.ui.timeselect.js" />
     <Content Include="_resume\resume.html" />
   </ItemGroup>
   <ItemGroup>
