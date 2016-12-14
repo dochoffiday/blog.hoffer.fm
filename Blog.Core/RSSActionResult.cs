@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using System.ServiceModel.Syndication;
 using System.Xml;
 
-namespace Blog.Core
+namespace BC.Core
 {
     public class RSSActionResult : ActionResult
     {

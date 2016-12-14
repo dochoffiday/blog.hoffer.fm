@@ -47,32 +47,32 @@
   <ItemGroup>
     <Reference Include="AjaxMin, Version=4.5.3886.23096, Culture=neutral, PublicKeyToken=24297a69a7eae424, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\AjaxMin.dll</HintPath>
+      <HintPath>..\Blog.ExternalLibraries\AjaxMin.dll</HintPath>
     </Reference>
     <Reference Include="AppHarbor.Web.Security, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\AppHarbor.Web.Security.dll</HintPath>
+      <HintPath>..\Blog.ExternalLibraries\AppHarbor.Web.Security.dll</HintPath>
     </Reference>
     <Reference Include="dotless.Core, Version=1.1.0.2, Culture=neutral, PublicKeyToken=96b446c9e63eae34, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\dotless.Core.dll</HintPath>
+      <HintPath>..\Blog.ExternalLibraries\dotless.Core.dll</HintPath>
     </Reference>
     <Reference Include="EcmaScript.NET.modified, Version=0.1.1.0, Culture=neutral, PublicKeyToken=7d53ba4f537753a5, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\EcmaScript.NET.modified.dll</HintPath>
+      <HintPath>..\Blog.ExternalLibraries\EcmaScript.NET.modified.dll</HintPath>
     </Reference>
     <Reference Include="LinqKit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bc217f8844052a91, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\LinqKit.dll</HintPath>
+      <HintPath>..\Blog.ExternalLibraries\LinqKit.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="RouteDebug, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\RouteDebug.dll</HintPath>
+      <HintPath>..\Blog.ExternalLibraries\RouteDebug.dll</HintPath>
     </Reference>
     <Reference Include="SquishIt.Framework, Version=0.6.2.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\SquishIt.Framework.dll</HintPath>
+      <HintPath>..\Blog.ExternalLibraries\SquishIt.Framework.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Runtime.Serialization" />
@@ -100,7 +100,7 @@
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="Yahoo.Yui.Compressor, Version=1.4.2.0, Culture=neutral, PublicKeyToken=f8b4b81ec75097e2, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Yahoo.Yui.Compressor.dll</HintPath>
+      <HintPath>..\Blog.ExternalLibraries\Yahoo.Yui.Compressor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

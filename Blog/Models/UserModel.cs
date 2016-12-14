@@ -1,6 +1,6 @@
-﻿using BC.Data;
+﻿using BC.Core;
+using BC.Data;
 using BC.Data.Context;
-using Blog.Core;
 using System;
 using System.Text;
 

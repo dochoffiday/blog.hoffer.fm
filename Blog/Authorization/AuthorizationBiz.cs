@@ -1,5 +1,5 @@
 ﻿using AppHarbor.Web.Security;
-using Blog.Core;
+using BC.Core;
 using System;
 using System.Web;
 
