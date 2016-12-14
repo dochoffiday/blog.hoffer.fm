@@ -1,5 +1,0 @@
-C:\AJ\Personal\AppHarbor\Blog\Blog.Core\bin\Release\Blog.Core.dll
-C:\AJ\Personal\AppHarbor\Blog\Blog.Core\bin\Release\Blog.Core.pdb
-C:\AJ\Personal\AppHarbor\Blog\Blog.Core\obj\Release\Blog.Core.dll
-C:\AJ\Personal\AppHarbor\Blog\Blog.Core\obj\Release\Blog.Core.pdb
-C:\AJ\Personal\AppHarbor\Blog\Blog.Core\obj\Release\Blog.Core.csprojResolveAssemblyReference.cache
