@@ -1,0 +1,39 @@
+﻿@model IEnumerable<BC.Models.BC_Page>
+
+@{
+    Layout = null;
+}
+
+<table id="list">
+    <tr>
+        <th>
+            Title
+        </th>
+        <th class="small"></th>
+        <th class="small"></th>
+        <th class="small"></th>
+        <th class="small"></th>
+    </tr>
+
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @item.Title
+            </td>
+            <td class="center">
+                @Html.ActionLink("Edit", "edit", new { id = item.PageID })
+            </td>
+            <td class="center">
+                @Html.ActionLink("Details", "details", new { id = item.PageID })
+            </td>
+            <td class="center">
+                @Html.ActionLink("Preview", "details", "page", new { slug = item.Slug }, "") 
+            </td>
+            <td class="center">
+                @Html.ActionLink("Delete", "delete", new { id = item.PageID })
+            </td>
+        </tr>
+    }
+
+</table>
+

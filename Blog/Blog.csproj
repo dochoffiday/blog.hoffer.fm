@@ -1,0 +1,695 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7F0D0AFF-70BF-453F-8A41-D0CB9EA068EC}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BC</RootNamespace>
+    <AssemblyName>BC</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <MvcProjectUpgradeChecked>true</MvcProjectUpgradeChecked>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxMin, Version=4.5.3886.23096, Culture=neutral, PublicKeyToken=24297a69a7eae424, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="AppHarbor.Web.Security, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AppHarbor.Web.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="dotless.Core, Version=1.1.0.2, Culture=neutral, PublicKeyToken=96b446c9e63eae34, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\dotless.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="EcmaScript.NET.modified, Version=0.1.1.0, Culture=neutral, PublicKeyToken=7d53ba4f537753a5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\EcmaScript.NET.modified.dll</HintPath>
+    </Reference>
+    <Reference Include="LinqKit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bc217f8844052a91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\LinqKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="RouteDebug, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\RouteDebug.dll</HintPath>
+    </Reference>
+    <Reference Include="SquishIt.Framework, Version=0.6.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\SquishIt.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0,Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL " />
+    <Reference Include="System.Web.Helpers" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Yahoo.Yui.Compressor, Version=1.4.2.0, Culture=neutral, PublicKeyToken=f8b4b81ec75097e2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Yahoo.Yui.Compressor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Authorization\Attributes\LoggedInAttribute.cs" />
+    <Compile Include="Authorization\AuthorizationBiz.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\CategoryAdminController.cs" />
+    <Compile Include="Controllers\CommentAdminController.cs" />
+    <Compile Include="Controllers\CommentController.cs" />
+    <Compile Include="Controllers\PageController.cs" />
+    <Compile Include="Controllers\PageAdminController.cs" />
+    <Compile Include="Controllers\PostAdminController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PostController.cs" />
+    <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\TagController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CommentModel.cs" />
+    <Compile Include="Models\PageModel.cs" />
+    <Compile Include="Models\TagModel.cs" />
+    <Compile Include="Models\Data\Context\BC.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BC.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Data\Context\IDataContext.cs" />
+    <Compile Include="Models\Data\IRepository.cs" />
+    <Compile Include="Models\Data\Repository.cs" />
+    <Compile Include="Models\CategoryModel.cs" />
+    <Compile Include="Models\PostModel.cs" />
+    <Compile Include="Models\UserModel.cs" />
+    <Compile Include="Models\ViewModels\LoginModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AdminService.asmx.cs">
+      <DependentUpon>AdminService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\grid\1140.css" />
+    <Content Include="Content\grid\ie.css" />
+    <Content Include="Content\grid\layout.css" />
+    <Content Include="Content\grid\mobile.css" />
+    <Content Include="Content\grid\smallerscreen.css" />
+    <Content Include="Content\grid\typeimg.css" />
+    <Content Include="Content\images\feed-icon-28x28.png" />
+    <Content Include="Content\images\h-sprite.png" />
+    <Content Include="Content\images\header-off.png" />
+    <Content Include="Content\images\header-on.png" />
+    <Content Include="Content\public.css" />
+    <Content Include="favicon.png" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\admin.js" />
+    <Content Include="Scripts\Controls\alphanumeric\jquery.alphanumeric.js" />
+    <Content Include="Scripts\Controls\alphanumeric\jquery.alphanumeric.min.js" />
+    <Content Include="Scripts\Controls\checkbox\jquery.checkbox.js" />
+    <Content Include="Scripts\Controls\equalHeights\jquery.equalHeights.js" />
+    <Content Include="Scripts\Controls\superfish\hoverIntent.js" />
+    <Content Include="Scripts\Controls\superfish\images\arrows-ffffff.png" />
+    <Content Include="Scripts\Controls\superfish\images\shadow.png" />
+    <Content Include="Scripts\Controls\superfish\jquery.bgiframe.min.js" />
+    <Content Include="Scripts\Controls\superfish\superfish.css" />
+    <Content Include="Scripts\Controls\superfish\superfish.js" />
+    <Content Include="Scripts\Controls\superfish\supersubs.js" />
+    <Content Include="Scripts\admin.min.js" />
+    <Content Include="Scripts\Controls\tiny_mce\langs\en.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\advhr\css\advhr.css" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\advhr\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\advhr\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\advhr\js\rule.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\advhr\langs\en_dlg.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\advhr\rule.htm" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\advimage\css\advimage.css" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\advimage\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\advimage\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\advimage\image.htm" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\advimage\img\sample.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\advimage\js\image.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\advimage\langs\en_dlg.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\advlink\css\advlink.css" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\advlink\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\advlink\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\advlink\js\advlink.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\advlink\langs\en_dlg.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\advlink\link.htm" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\advlist\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\advlist\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\autoresize\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\autoresize\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\autosave\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\autosave\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\autosave\langs\en.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\bbcode\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\bbcode\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\contextmenu\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\contextmenu\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\directionality\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\directionality\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\emotions\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\emotions\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\emotions\emotions.htm" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\emotions\img\smiley-cool.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\emotions\img\smiley-cry.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\emotions\img\smiley-embarassed.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\emotions\img\smiley-foot-in-mouth.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\emotions\img\smiley-frown.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\emotions\img\smiley-innocent.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\emotions\img\smiley-kiss.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\emotions\img\smiley-laughing.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\emotions\img\smiley-money-mouth.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\emotions\img\smiley-sealed.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\emotions\img\smiley-smile.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\emotions\img\smiley-surprised.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\emotions\img\smiley-tongue-out.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\emotions\img\smiley-undecided.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\emotions\img\smiley-wink.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\emotions\img\smiley-yell.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\emotions\js\emotions.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\emotions\langs\en_dlg.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\example\dialog.htm" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\example\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\example\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\example\img\example.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\example\js\dialog.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\example\langs\en.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\example\langs\en_dlg.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\fullpage\css\fullpage.css" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\fullpage\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\fullpage\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\fullpage\fullpage.htm" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\fullpage\js\fullpage.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\fullpage\langs\en_dlg.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\fullscreen\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\fullscreen\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\fullscreen\fullscreen.htm" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\iespell\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\iespell\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\inlinepopups\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\inlinepopups\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\alert.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\button.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\buttons.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\confirm.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\corners.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\horizontal.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\vertical.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\inlinepopups\skins\clearlooks2\window.css" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\inlinepopups\template.htm" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\insertdatetime\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\insertdatetime\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\layer\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\layer\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\legacyoutput\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\legacyoutput\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\media\css\content.css" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\media\css\media.css" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\media\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\media\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\media\img\flash.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\media\img\flv_player.swf" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\media\img\quicktime.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\media\img\realmedia.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\media\img\shockwave.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\media\img\trans.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\media\img\windowsmedia.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\media\js\embed.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\media\js\media.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\media\langs\en_dlg.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\media\media.htm" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\nonbreaking\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\nonbreaking\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\noneditable\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\noneditable\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\pagebreak\css\content.css" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\pagebreak\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\pagebreak\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\pagebreak\img\pagebreak.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\pagebreak\img\trans.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\paste\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\paste\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\paste\js\pastetext.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\paste\js\pasteword.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\paste\langs\en_dlg.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\paste\pastetext.htm" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\paste\pasteword.htm" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\preview\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\preview\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\preview\example.html" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\preview\jscripts\embed.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\preview\preview.html" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\print\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\print\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\save\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\save\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\searchreplace\css\searchreplace.css" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\searchreplace\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\searchreplace\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\searchreplace\js\searchreplace.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\searchreplace\langs\en_dlg.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\searchreplace\searchreplace.htm" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\spellchecker\css\content.css" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\spellchecker\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\spellchecker\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\spellchecker\img\wline.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\style\css\props.css" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\style\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\style\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\style\js\props.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\style\langs\en_dlg.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\style\props.htm" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\tabfocus\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\tabfocus\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\table\cell.htm" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\table\css\cell.css" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\table\css\row.css" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\table\css\table.css" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\table\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\table\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\table\js\cell.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\table\js\merge_cells.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\table\js\row.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\table\js\table.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\table\langs\en_dlg.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\table\merge_cells.htm" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\table\row.htm" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\table\table.htm" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\template\blank.htm" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\template\css\template.css" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\template\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\template\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\template\js\template.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\template\langs\en_dlg.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\template\template.htm" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\visualchars\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\visualchars\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\wordcount\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\wordcount\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\xhtmlxtras\abbr.htm" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\xhtmlxtras\acronym.htm" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\xhtmlxtras\attributes.htm" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\xhtmlxtras\cite.htm" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\xhtmlxtras\css\attributes.css" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\xhtmlxtras\css\popup.css" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\xhtmlxtras\del.htm" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\xhtmlxtras\editor_plugin.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\xhtmlxtras\editor_plugin_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\xhtmlxtras\ins.htm" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\xhtmlxtras\js\abbr.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\xhtmlxtras\js\acronym.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\xhtmlxtras\js\attributes.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\xhtmlxtras\js\cite.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\xhtmlxtras\js\del.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\xhtmlxtras\js\element_common.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\xhtmlxtras\js\ins.js" />
+    <Content Include="Scripts\Controls\tiny_mce\plugins\xhtmlxtras\langs\en_dlg.js" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\about.htm" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\anchor.htm" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\charmap.htm" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\color_picker.htm" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\editor_template.js" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\editor_template_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\image.htm" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\img\colorpicker.jpg" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\img\icons.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\js\about.js" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\js\anchor.js" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\js\charmap.js" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\js\color_picker.js" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\js\image.js" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\js\link.js" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\js\source_editor.js" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\langs\en.js" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\langs\en_dlg.js" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\link.htm" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\skins\default\content.css" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\skins\default\dialog.css" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\skins\default\img\buttons.png" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\skins\default\img\items.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\skins\default\img\menu_arrow.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\skins\default\img\menu_check.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\skins\default\img\progress.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\skins\default\img\tabs.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\skins\default\ui.css" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\skins\o2k7\content.css" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\skins\o2k7\dialog.css" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\skins\o2k7\img\button_bg.png" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\skins\o2k7\img\button_bg_black.png" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\skins\o2k7\img\button_bg_silver.png" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\skins\o2k7\ui.css" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\skins\o2k7\ui_black.css" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\skins\o2k7\ui_silver.css" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\advanced\source_editor.htm" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\simple\editor_template.js" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\simple\editor_template_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\simple\img\icons.gif" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\simple\langs\en.js" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\simple\skins\default\content.css" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\simple\skins\default\ui.css" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\simple\skins\o2k7\content.css" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\simple\skins\o2k7\img\button_bg.png" />
+    <Content Include="Scripts\Controls\tiny_mce\themes\simple\skins\o2k7\ui.css" />
+    <Content Include="Scripts\Controls\tiny_mce\tiny_mce.js" />
+    <Content Include="Scripts\Controls\tiny_mce\tiny_mce_popup.js" />
+    <Content Include="Scripts\Controls\tiny_mce\tiny_mce_src.js" />
+    <Content Include="Scripts\Controls\tiny_mce\utils\editable_selects.js" />
+    <Content Include="Scripts\Controls\tiny_mce\utils\form_utils.js" />
+    <Content Include="Scripts\Controls\tiny_mce\utils\mctabs.js" />
+    <Content Include="Scripts\Controls\tiny_mce\utils\validate.js" />
+    <Content Include="Scripts\Pages\pageAdmin.edit.js" />
+    <Content Include="Scripts\Pages\home.js" />
+    <Content Include="Scripts\Pages\post.details.js" />
+    <Content Include="Scripts\Pages\postAdmin.edit.js" />
+    <Content Include="Services\AdminService.asmx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\admin.css" />
+    <Content Include="Scripts\jquery-1.4.4.js" />
+    <Content Include="Scripts\jquery-1.4.4.min.js" />
+    <Content Include="Scripts\jquery-1.4.4-vsdoc.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Shared\_Public.cshtml" />
+    <Content Include="Views\Web.config" />
+    <Content Include="_demo\jquery-loader\default.htm" />
+    <Content Include="_demo\jquery-loader\jquery.loader.css" />
+    <Content Include="_demo\jquery-loader\jquery.loader.js" />
+    <Content Include="_demo\jquery-loader\themeswitcher\images\buttonbg.png" />
+    <Content Include="_demo\jquery-loader\themeswitcher\images\icon_color_arrow.gif" />
+    <Content Include="_demo\jquery-loader\themeswitcher\images\menuhoverbg.png" />
+    <Content Include="_demo\jquery-loader\themeswitcher\images\theme_90_black_matte.png" />
+    <Content Include="_demo\jquery-loader\themeswitcher\images\theme_90_black_tie.png" />
+    <Content Include="_demo\jquery-loader\themeswitcher\images\theme_90_blitzer.png" />
+    <Content Include="_demo\jquery-loader\themeswitcher\images\theme_90_cupertino.png" />
+    <Content Include="_demo\jquery-loader\themeswitcher\images\theme_90_dark_hive.png" />
+    <Content Include="_demo\jquery-loader\themeswitcher\images\theme_90_dot_luv.png" />
+    <Content Include="_demo\jquery-loader\themeswitcher\images\theme_90_eggplant.png" />
+    <Content Include="_demo\jquery-loader\themeswitcher\images\theme_90_excite_bike.png" />
+    <Content Include="_demo\jquery-loader\themeswitcher\images\theme_90_flick.png" />
+    <Content Include="_demo\jquery-loader\themeswitcher\images\theme_90_hot_sneaks.png" />
+    <Content Include="_demo\jquery-loader\themeswitcher\images\theme_90_humanity.png" />
+    <Content Include="_demo\jquery-loader\themeswitcher\images\theme_90_le_frog.png" />
+    <Content Include="_demo\jquery-loader\themeswitcher\images\theme_90_mint_choco.png" />
+    <Content Include="_demo\jquery-loader\themeswitcher\images\theme_90_overcast.png" />
+    <Content Include="_demo\jquery-loader\themeswitcher\images\theme_90_pepper_grinder.png" />
+    <Content Include="_demo\jquery-loader\themeswitcher\images\theme_90_smoothness.png" />
+    <Content Include="_demo\jquery-loader\themeswitcher\images\theme_90_south_street.png" />
+    <Content Include="_demo\jquery-loader\themeswitcher\images\theme_90_start_menu.png" />
+    <Content Include="_demo\jquery-loader\themeswitcher\images\theme_90_sunny.png" />
+    <Content Include="_demo\jquery-loader\themeswitcher\images\theme_90_swanky_purse.png" />
+    <Content Include="_demo\jquery-loader\themeswitcher\images\theme_90_trontastic.png" />
+    <Content Include="_demo\jquery-loader\themeswitcher\images\theme_90_ui_dark.png" />
+    <Content Include="_demo\jquery-loader\themeswitcher\images\theme_90_ui_light.png" />
+    <Content Include="_demo\jquery-loader\themeswitcher\images\theme_90_windoze.png" />
+    <Content Include="_demo\jquery-loader\themeswitcher\jquery.themeswitcher.js" />
+    <Content Include="_demo\jquery-loader\themeswitcher\jquery.themeswitcher.min.js" />
+    <Content Include="_demo\jquery-loader\themeswitcher\sample.htm" />
+    <Content Include="_demo\jquery-proximity\default.htm" />
+    <Content Include="_demo\jquery-proximity\jquery.proximity.js" />
+    <Content Include="_demo\jquery-ui-checkbox\default.htm" />
+    <Content Include="_demo\jquery-ui-checkbox\jquery.checkbox.js" />
+    <Content Include="_demo\jquery-ui-checkbox\themeswitcher\images\buttonbg.png" />
+    <Content Include="_demo\jquery-ui-checkbox\themeswitcher\images\icon_color_arrow.gif" />
+    <Content Include="_demo\jquery-ui-checkbox\themeswitcher\images\menuhoverbg.png" />
+    <Content Include="_demo\jquery-ui-checkbox\themeswitcher\images\theme_90_black_matte.png" />
+    <Content Include="_demo\jquery-ui-checkbox\themeswitcher\images\theme_90_black_tie.png" />
+    <Content Include="_demo\jquery-ui-checkbox\themeswitcher\images\theme_90_blitzer.png" />
+    <Content Include="_demo\jquery-ui-checkbox\themeswitcher\images\theme_90_cupertino.png" />
+    <Content Include="_demo\jquery-ui-checkbox\themeswitcher\images\theme_90_dark_hive.png" />
+    <Content Include="_demo\jquery-ui-checkbox\themeswitcher\images\theme_90_dot_luv.png" />
+    <Content Include="_demo\jquery-ui-checkbox\themeswitcher\images\theme_90_eggplant.png" />
+    <Content Include="_demo\jquery-ui-checkbox\themeswitcher\images\theme_90_excite_bike.png" />
+    <Content Include="_demo\jquery-ui-checkbox\themeswitcher\images\theme_90_flick.png" />
+    <Content Include="_demo\jquery-ui-checkbox\themeswitcher\images\theme_90_hot_sneaks.png" />
+    <Content Include="_demo\jquery-ui-checkbox\themeswitcher\images\theme_90_humanity.png" />
+    <Content Include="_demo\jquery-ui-checkbox\themeswitcher\images\theme_90_le_frog.png" />
+    <Content Include="_demo\jquery-ui-checkbox\themeswitcher\images\theme_90_mint_choco.png" />
+    <Content Include="_demo\jquery-ui-checkbox\themeswitcher\images\theme_90_overcast.png" />
+    <Content Include="_demo\jquery-ui-checkbox\themeswitcher\images\theme_90_pepper_grinder.png" />
+    <Content Include="_demo\jquery-ui-checkbox\themeswitcher\images\theme_90_smoothness.png" />
+    <Content Include="_demo\jquery-ui-checkbox\themeswitcher\images\theme_90_south_street.png" />
+    <Content Include="_demo\jquery-ui-checkbox\themeswitcher\images\theme_90_start_menu.png" />
+    <Content Include="_demo\jquery-ui-checkbox\themeswitcher\images\theme_90_sunny.png" />
+    <Content Include="_demo\jquery-ui-checkbox\themeswitcher\images\theme_90_swanky_purse.png" />
+    <Content Include="_demo\jquery-ui-checkbox\themeswitcher\images\theme_90_trontastic.png" />
+    <Content Include="_demo\jquery-ui-checkbox\themeswitcher\images\theme_90_ui_dark.png" />
+    <Content Include="_demo\jquery-ui-checkbox\themeswitcher\images\theme_90_ui_light.png" />
+    <Content Include="_demo\jquery-ui-checkbox\themeswitcher\images\theme_90_windoze.png" />
+    <Content Include="_demo\jquery-ui-checkbox\themeswitcher\jquery.themeswitcher.js" />
+    <Content Include="_demo\jquery-ui-checkbox\themeswitcher\jquery.themeswitcher.min.js" />
+    <Content Include="_demo\jquery-ui-checkbox\themeswitcher\sample.htm" />
+    <Content Include="_demo\jquery-ui-jalert\default.htm" />
+    <Content Include="_demo\jquery-ui-jalert\jquery.ui-jalert.css" />
+    <Content Include="_demo\jquery-ui-jalert\jquery.ui-jalert.js" />
+    <Content Include="_demo\jquery-ui-jalert\themeswitcher\images\buttonbg.png" />
+    <Content Include="_demo\jquery-ui-jalert\themeswitcher\images\icon_color_arrow.gif" />
+    <Content Include="_demo\jquery-ui-jalert\themeswitcher\images\menuhoverbg.png" />
+    <Content Include="_demo\jquery-ui-jalert\themeswitcher\images\theme_90_black_matte.png" />
+    <Content Include="_demo\jquery-ui-jalert\themeswitcher\images\theme_90_black_tie.png" />
+    <Content Include="_demo\jquery-ui-jalert\themeswitcher\images\theme_90_blitzer.png" />
+    <Content Include="_demo\jquery-ui-jalert\themeswitcher\images\theme_90_cupertino.png" />
+    <Content Include="_demo\jquery-ui-jalert\themeswitcher\images\theme_90_dark_hive.png" />
+    <Content Include="_demo\jquery-ui-jalert\themeswitcher\images\theme_90_dot_luv.png" />
+    <Content Include="_demo\jquery-ui-jalert\themeswitcher\images\theme_90_eggplant.png" />
+    <Content Include="_demo\jquery-ui-jalert\themeswitcher\images\theme_90_excite_bike.png" />
+    <Content Include="_demo\jquery-ui-jalert\themeswitcher\images\theme_90_flick.png" />
+    <Content Include="_demo\jquery-ui-jalert\themeswitcher\images\theme_90_hot_sneaks.png" />
+    <Content Include="_demo\jquery-ui-jalert\themeswitcher\images\theme_90_humanity.png" />
+    <Content Include="_demo\jquery-ui-jalert\themeswitcher\images\theme_90_le_frog.png" />
+    <Content Include="_demo\jquery-ui-jalert\themeswitcher\images\theme_90_mint_choco.png" />
+    <Content Include="_demo\jquery-ui-jalert\themeswitcher\images\theme_90_overcast.png" />
+    <Content Include="_demo\jquery-ui-jalert\themeswitcher\images\theme_90_pepper_grinder.png" />
+    <Content Include="_demo\jquery-ui-jalert\themeswitcher\images\theme_90_smoothness.png" />
+    <Content Include="_demo\jquery-ui-jalert\themeswitcher\images\theme_90_south_street.png" />
+    <Content Include="_demo\jquery-ui-jalert\themeswitcher\images\theme_90_start_menu.png" />
+    <Content Include="_demo\jquery-ui-jalert\themeswitcher\images\theme_90_sunny.png" />
+    <Content Include="_demo\jquery-ui-jalert\themeswitcher\images\theme_90_swanky_purse.png" />
+    <Content Include="_demo\jquery-ui-jalert\themeswitcher\images\theme_90_trontastic.png" />
+    <Content Include="_demo\jquery-ui-jalert\themeswitcher\images\theme_90_ui_dark.png" />
+    <Content Include="_demo\jquery-ui-jalert\themeswitcher\images\theme_90_ui_light.png" />
+    <Content Include="_demo\jquery-ui-jalert\themeswitcher\images\theme_90_windoze.png" />
+    <Content Include="_demo\jquery-ui-jalert\themeswitcher\jquery.themeswitcher.js" />
+    <Content Include="_demo\jquery-ui-jalert\themeswitcher\jquery.themeswitcher.min.js" />
+    <Content Include="_demo\jquery-ui-jalert\themeswitcher\sample.htm" />
+    <Content Include="_demo\jquery-ui-tables\default.htm" />
+    <Content Include="_demo\jquery-ui-tables\jquery.ui-tables.css" />
+    <Content Include="_demo\jquery-ui-tables\jquery.ui-tables.js" />
+    <Content Include="_demo\jquery-ui-tables\themeswitcher\images\buttonbg.png" />
+    <Content Include="_demo\jquery-ui-tables\themeswitcher\images\icon_color_arrow.gif" />
+    <Content Include="_demo\jquery-ui-tables\themeswitcher\images\menuhoverbg.png" />
+    <Content Include="_demo\jquery-ui-tables\themeswitcher\images\theme_90_black_matte.png" />
+    <Content Include="_demo\jquery-ui-tables\themeswitcher\images\theme_90_black_tie.png" />
+    <Content Include="_demo\jquery-ui-tables\themeswitcher\images\theme_90_blitzer.png" />
+    <Content Include="_demo\jquery-ui-tables\themeswitcher\images\theme_90_cupertino.png" />
+    <Content Include="_demo\jquery-ui-tables\themeswitcher\images\theme_90_dark_hive.png" />
+    <Content Include="_demo\jquery-ui-tables\themeswitcher\images\theme_90_dot_luv.png" />
+    <Content Include="_demo\jquery-ui-tables\themeswitcher\images\theme_90_eggplant.png" />
+    <Content Include="_demo\jquery-ui-tables\themeswitcher\images\theme_90_excite_bike.png" />
+    <Content Include="_demo\jquery-ui-tables\themeswitcher\images\theme_90_flick.png" />
+    <Content Include="_demo\jquery-ui-tables\themeswitcher\images\theme_90_hot_sneaks.png" />
+    <Content Include="_demo\jquery-ui-tables\themeswitcher\images\theme_90_humanity.png" />
+    <Content Include="_demo\jquery-ui-tables\themeswitcher\images\theme_90_le_frog.png" />
+    <Content Include="_demo\jquery-ui-tables\themeswitcher\images\theme_90_mint_choco.png" />
+    <Content Include="_demo\jquery-ui-tables\themeswitcher\images\theme_90_overcast.png" />
+    <Content Include="_demo\jquery-ui-tables\themeswitcher\images\theme_90_pepper_grinder.png" />
+    <Content Include="_demo\jquery-ui-tables\themeswitcher\images\theme_90_smoothness.png" />
+    <Content Include="_demo\jquery-ui-tables\themeswitcher\images\theme_90_south_street.png" />
+    <Content Include="_demo\jquery-ui-tables\themeswitcher\images\theme_90_start_menu.png" />
+    <Content Include="_demo\jquery-ui-tables\themeswitcher\images\theme_90_sunny.png" />
+    <Content Include="_demo\jquery-ui-tables\themeswitcher\images\theme_90_swanky_purse.png" />
+    <Content Include="_demo\jquery-ui-tables\themeswitcher\images\theme_90_trontastic.png" />
+    <Content Include="_demo\jquery-ui-tables\themeswitcher\images\theme_90_ui_dark.png" />
+    <Content Include="_demo\jquery-ui-tables\themeswitcher\images\theme_90_ui_light.png" />
+    <Content Include="_demo\jquery-ui-tables\themeswitcher\images\theme_90_windoze.png" />
+    <Content Include="_demo\jquery-ui-tables\themeswitcher\jquery.themeswitcher.js" />
+    <Content Include="_demo\jquery-ui-tables\themeswitcher\jquery.themeswitcher.min.js" />
+    <Content Include="_demo\jquery-ui-tables\themeswitcher\sample.htm" />
+    <Content Include="_demo\jquery.ui.timeselect\index.html" />
+    <Content Include="_demo\jquery.ui.timeselect\src\date-en-US.js" />
+    <Content Include="_demo\jquery.ui.timeselect\src\jquery.ui.timeselect.js" />
+    <Content Include="_resume\resume.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Blog.Core\Blog.Core.csproj">
+      <Project>{7745C634-60A5-4522-9B6B-10289EE1AEF3}</Project>
+      <Name>Blog.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_Admin.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models\Data\Context\BC.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>BC.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Models\Data\Context\BC.dbml.layout">
+      <DependentUpon>BC.dbml</DependentUpon>
+    </None>
+    <Content Include="Views\CategoryAdmin\Index.cshtml" />
+    <Content Include="Views\CategoryAdmin\List.cshtml" />
+    <Content Include="Views\CategoryAdmin\Create.cshtml" />
+    <Content Include="Views\CategoryAdmin\Details.cshtml" />
+    <Content Include="Views\CategoryAdmin\Edit.cshtml" />
+    <Content Include="Views\CategoryAdmin\Delete.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\PostAdmin\Index.cshtml" />
+    <Content Include="Views\PostAdmin\List.cshtml" />
+    <Content Include="Views\PostAdmin\Details.cshtml" />
+    <Content Include="Views\PostAdmin\Create.cshtml" />
+    <Content Include="Views\PostAdmin\Edit.cshtml" />
+    <Content Include="Views\PostAdmin\Delete.cshtml" />
+    <Content Include="Views\Post\Details.cshtml" />
+    <Content Include="Views\Post\List.cshtml" />
+    <Content Include="Views\Post\Info.cshtml" />
+    <Content Include="Views\Post\Preview.cshtml" />
+    <Content Include="Views\Post\Paging.cshtml" />
+    <Content Include="Views\Category\Index.cshtml" />
+    <Content Include="Views\Post\Search.cshtml" />
+    <Content Include="Views\Tag\Index.cshtml" />
+    <Content Include="Views\Category\Paging.cshtml" />
+    <Content Include="Views\Tag\Paging.cshtml" />
+    <Content Include="Views\PageAdmin\Create.cshtml" />
+    <Content Include="Views\PageAdmin\Delete.cshtml" />
+    <Content Include="Views\PageAdmin\Details.cshtml" />
+    <Content Include="Views\PageAdmin\Edit.cshtml" />
+    <Content Include="Views\PageAdmin\Index.cshtml" />
+    <Content Include="Views\PageAdmin\List.cshtml" />
+    <Content Include="Views\Page\Details.cshtml" />
+    <Content Include="Views\CommentAdmin\Delete.cshtml" />
+    <Content Include="Views\CommentAdmin\Details.cshtml" />
+    <Content Include="Views\CommentAdmin\Edit.cshtml" />
+    <Content Include="Views\CommentAdmin\Index.cshtml" />
+    <Content Include="Views\CommentAdmin\List.cshtml" />
+    <Content Include="Views\Comment\List.cshtml" />
+    <Content Include="Views\Comment\Create.cshtml" />
+    <Content Include="Views\Comment\Details.cshtml" />
+    <Content Include="Views\CommentAdmin\MarkAsRead.cshtml" />
+    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
+    <Content Include="_demo\jquery-loader\themeswitcher\README.md" />
+    <Content Include="_demo\jquery-ui-checkbox\themeswitcher\README.md" />
+    <Content Include="_demo\jquery-ui-jalert\themeswitcher\README.md" />
+    <Content Include="_demo\jquery-ui-tables\themeswitcher\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61943</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

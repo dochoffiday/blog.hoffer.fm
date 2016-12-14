@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="@Url.Content("~/favicon.png")" />
+
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.1/build/reset/reset-min.css" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css' />
+
+    @Html.Raw(SquishIt.Framework.Bundle.Css().Add("~/Content/public.css").Add("~/Content/grid/1140.css").Add("~/Content/grid/layout.css").ForceRelease().Render("~/Content/combined_#.css"))
+
+	<link rel="stylesheet" href="@Url.Content("~/Content/grid/smallerscreen.css")" media="only screen and (max-width: 1023px)" />
+	<link rel="stylesheet" href="@Url.Content("~/Content/grid/mobile.css")" media="handheld, only screen and (max-width: 1023px)" />
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    
+    @Html.Raw(SquishIt.Framework.Bundle.JavaScript().Add("~/Scripts/controls/equalHeights/jquery.equalHeights.js").Add("~/Scripts/Pages/home.js").ForceRelease().Render("~/Scripts/combined_#.js"))
+    
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-20848124-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+		    <div class="header elevencol first last" style="text-align: right;">
+                <input id="header-input" value="dochoffiday" onfocus="this.value = this.value;" />
+		    </div>
+		    <div class="header onecol" style="position: relative; text-align: center;">
+                <a href="@Url.Action("index", "home")">&nbsp;</a>
+		    </div>
+        </div>
+    </div>
+    
+    <div class="container" id="content">
+        @RenderBody()
+    </div>
+
+    <div id="push"></div>
+
+    <div id="footer-wrapper" class="container">
+        <div id="foot" class="row">
+            <div class="fourcol first">
+                <div>
+                    <h3>about</h3>
+                    <p>The many musings of AJ Hoffer.</p>
+                    <p>I'm a software developer dude! This is where I take what's happening in my brainpan and display it to the masses. Most of what I write will revolve around software development, but I can't promise I won't go off-topic once in a while!</p>
+                    <p>Dig in.</p>
+                </div>
+            </div>
+            <div class="fourcol">
+                <div>
+                    <h3>categories</h3>
+                    <ul>
+                        <li>@Html.ActionLink("Personal", "index", "category", new { id = "personal" }, "")</li>
+                        <li>@Html.ActionLink("Professional", "index", "category", new { id = "professional" }, "")</li>
+                    </ul>
+                </div>
+                <div class="mtop">
+                    <h3>navigation</h3>
+                    <ul>
+                        <li>@Html.ActionLink("About", "details", "page", new { slug = "about" }, "")</li>
+                        <li>@Html.ActionLink("Resume", "details", "page", new { slug = "resume" }, "")</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fourcol last">
+                <div>
+                    <h3>pals</h3>
+                    <ul>
+                        <li><a target="_blank" href="http://www.theinfantree.com/">The Infantree</a></li>
+                        <li><a target="_blank" href="http://ryanbeck.me/">Ryan Beck</a></li>
+                        <li><a target="_blank" href="http://michellewiney.com/">Michelle Winey</a></li>
+                    </ul>
+                </div>
+                <div class="mtop">
+                    <h3>me</h3>
+                    <ul>
+                        <li><a target="_blank" href="http://stackoverflow.com/users/234132/doc-hoffiday">Stack Overflow</a></li>
+                        <li><a target="_blank" href="http://twitter.com/dochoffiday">Twitter</a></li>
+                        <li><a target="_blank" href="https://github.com/dochoffiday">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="signature" class="row">
+            <div class="twelvecol last right">
+                <div>
+                    This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons License</a>&nbsp;&nbsp;|&nbsp;&nbsp;© AJ Hoffer @DateTime.Now.Year.ToString()<a href="http://feeds.feedburner.com/DocHoffiday"><img src="@Url.Content("~/Content/images/feed-icon-28x28.png")" alt="RSS" /></a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

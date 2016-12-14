@@ -1,0 +1,50 @@
+﻿@model BC.Models.BC_Comment
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+<h2>Delete</h2>
+<p>
+    Are you sure you want to delete this Comment?
+</p>
+
+<fieldset>
+    <div class="display-label">Name</div>
+    <div class="display-field">@Model.Name&nbsp;</div>
+
+    <div class="display-label">Email</div>
+    <div class="display-field">@Model.Email&nbsp;</div>
+    
+    <div class="display-label">Url</div>
+    <div class="display-field">@Model.Url&nbsp;</div>
+    
+    <div class="display-label">Text</div>
+    <div class="display-field">@Model.Text&nbsp;</div>
+
+    <div class="display-label">Administrator</div>
+    <div class="display-field">@Model.IsUser.ToString()</div>
+    
+    <div class="display-label">IP</div>
+    <div class="display-field">@Model.IP&nbsp;</div>
+
+    <div class="display-label">Created</div>
+    <div class="display-field">@String.Format("{0:g}", Model.Created)</div>
+
+    <div class="display-label">Modified</div>
+    <div class="display-field">@String.Format("{0:g}", Model.Modified)</div>
+</fieldset>
+
+<div class="warning">
+    Are you sure you want to delete this Post?
+    <br /><span class="breadcrumb">@Html.ActionLink("<- Back to List", "index")</span>
+</div>
+@using (Html.BeginForm())
+{
+    <p>
+        <input type="submit" value="Delete" class="buttons negative submit" /> |
+        <span class="breadcrumb">@Html.ActionLink("<- Back to List", "index")</span>
+    </p>
+}
+
