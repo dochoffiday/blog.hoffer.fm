@@ -10,6 +10,7 @@ namespace BC.Models
     {
         bool Login(string username, string password, ref string error);
         void Create(string username, string email, string password);
+        void UpdateUser(string username, string newEmail, string newPassword);
     }
 
     public class UserService : IUserService
@@ -20,7 +21,8 @@ namespace BC.Models
         {
             BC_User user;
 
-            try {
+            try
+            {
                 user = _genericRepository.First(p => p.Username == username);
             }
             catch
@@ -49,6 +51,18 @@ namespace BC.Models
             user.PasswordSalt = Encoding.UTF8.GetBytes(salt);
 
             _genericRepository.Insert(user);
+            _genericRepository.SaveAll();
+        }
+
+        public void UpdateUser(string username, string newEmail, string newPassword)
+        {
+            var user = _genericRepository.First(p => p.Username == username);
+            var salt = Guid.NewGuid().ToString();
+
+            user.Email = newEmail;
+            user.Password = Security.GenerateSaltedHash(newPassword, salt);
+            user.PasswordSalt = Encoding.UTF8.GetBytes(salt);
+
             _genericRepository.SaveAll();
         }
     }
