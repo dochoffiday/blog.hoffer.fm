@@ -48,12 +48,6 @@ namespace BC.Data.Context
     partial void DeleteBC_User(BC.Models.BC_User instance);
     #endregion
 		
-		public BCDataContext() : 
-				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["DataSourceConnectionString"].ConnectionString, mappingSource)
-		{
-			OnCreated();
-		}
-		
 		public BCDataContext(string connection) : 
 				base(connection, mappingSource)
 		{

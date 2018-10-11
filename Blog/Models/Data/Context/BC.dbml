@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DataSource" EntityNamespace="BC.Models" ContextNamespace="BC.Data.Context" Class="BCDataContext" Serialization="Unidirectional" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="WebSettings" ConnectionString="Data Source=c86a7c13-9b0b-424a-b571-a380004fc949.sqlserver.sequelizer.com;Persist Security Info=True;User ID=cevpiwuieimidszi" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DataSourceConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.BC_Category" Member="BC_Categories">
     <Type Name="BC_Category">
       <Column Name="CategoryID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="Never" />

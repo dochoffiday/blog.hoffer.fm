@@ -20,7 +20,7 @@ namespace BC.Data.Context
             {
                 if (dt == null)
                 {
-                    dt = new BC.Data.Context.BCDataContext(UtiliSetting.ConnectionString("DB"));
+                    dt = new BC.Data.Context.BCDataContext(UtiliSetting.AppSetting("SQLSERVER_CONNECTION_STRING"));
                 }
 
                 return dt;
