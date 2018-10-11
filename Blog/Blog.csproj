@@ -666,7 +666,6 @@
     <Content Include="Views\Comment\Details.cshtml" />
     <Content Include="Views\CommentAdmin\MarkAsRead.cshtml" />
     <None Include="packages.config" />
-    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
     <Content Include="_demo\jquery-loader\themeswitcher\README.md" />
     <Content Include="_demo\jquery-ui-checkbox\themeswitcher\README.md" />
     <Content Include="_demo\jquery-ui-jalert\themeswitcher\README.md" />
