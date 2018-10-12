@@ -128,4 +128,8 @@ fieldset { padding-top: 10px;  }
     .no-print, .no-print * {
         display: none !important;
     }
+
+    a:link:after, a:visited:after {
+        content: " [" attr(href) "] ";
+    }
 }
