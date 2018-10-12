@@ -27,7 +27,7 @@
             <div id="title">
                 <h1>@Html.ActionLink("BlogCore Admin Panel", "index", "admin")</h1>
             </div>
-            
+
             <div id="menu-container">
                 <ul id="menu" class="sf-menu">
                     <li>
@@ -44,11 +44,11 @@
         </div>
         <div id="main">
             @RenderBody()
+
+            <div id="footer">
+                @Html.Partial("_LoginPartial")
+            </div>
         </div>
-    </div>
-    
-    <div id="footer">
-        @Html.Partial("_LoginPartial")
     </div>
 </body>
 </html>

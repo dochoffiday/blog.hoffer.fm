@@ -93,6 +93,9 @@ fieldset { padding-top: 10px;  }
 .comment-name {   }
 .comment-text { padding: 10px; border: solid 1px White; margin-top: 10px; margin-bottom: 10px; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; }
 .comment-text.comment-user { border: solid 1px #F57A00; }
+@media print {
+    .comment-text { border: none !important; }
+}
 .comment-date { font-size: 12px; font-weight: normal; margin-bottom: 10px; }
 
 /* BUTTONS
@@ -115,4 +118,14 @@ fieldset { padding-top: 10px;  }
 *:focus 
 {
     outline: 0;
+}
+
+@media print {
+    html, body {
+        height: initial;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
 }

@@ -15,7 +15,7 @@
             @Html.Raw(Model.Body)
         </div>
     </div>
-    <div class="fourcol info last">
+    <div class="fourcol info last no-print">
         <p>
             @{ Html.RenderAction("Info", "Post", new { post = Model }); }
         </p> 

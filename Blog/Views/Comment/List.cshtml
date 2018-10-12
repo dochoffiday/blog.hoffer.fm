@@ -24,7 +24,7 @@
 
     @if (Model.Results.Count() == 0 && ViewBag.IsCommentsOpen)
     {
-        <div class="mtop row" id="comment-first">
+        <div class="mtop row no-print" id="comment-first">
             <div class="twocol">
                 &nbsp;
             </div>
@@ -38,25 +38,27 @@
     }
 </div>
 
-@if (ViewBag.IsCommentsOpen)
-{
-    <text>
-        @{ Html.RenderAction("Create", "Comment", new { postID = ViewBag.PostID }); }
-    </text>
-}
-else
-{
-    <text>
-        <div class="mtop row">
-            <div class="twocol">
-                &nbsp;
+<div class="no-print">
+    @if (ViewBag.IsCommentsOpen)
+    {
+        <text>
+            @{ Html.RenderAction("Create", "Comment", new { postID = ViewBag.PostID }); }
+        </text>
+    }
+    else
+    {
+        <text>
+            <div class="mtop row">
+                <div class="twocol">
+                    &nbsp;
+                </div>
+                <div class="sixcol">
+                    <p>The comments for this post are currently closed.</p>
+                </div>
+                <div class="fourcol last">
+                    &nbsp;
+                </div>
             </div>
-            <div class="sixcol">
-                <p>The comments for this post are currently closed.</p>
-            </div>
-            <div class="fourcol last">
-                &nbsp;
-            </div>
-        </div>
-    </text>
-}
+        </text>
+    }
+</div>
