@@ -470,7 +470,6 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Public.cshtml" />
     <Content Include="Views\Web.config" />
-    <Content Include="_resume\resume.html" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Blog.Core\Blog.Core.csproj">
