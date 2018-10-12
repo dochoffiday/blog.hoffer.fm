@@ -1,4 +1,0 @@
-﻿.ui-table { border-collapse: collapse; }
-.ui-table TD { font-weight: normal !important; padding: .4em; border-top-width: 0px !important; }
-.ui-table TH { text-align: center; padding: .8em .4em; }
-.ui-table TD.noleft, .ui-table TH.noleft { border-left-width: 0px !important; }
