@@ -5,7 +5,7 @@
 }
 
 <script type="text/javascript" src="http://balupton.github.com/jquery-syntaxhighlighter/scripts/jquery.syntaxhighlighter.min.js"></script>
-<script type="text/javascript" src="@Url.Content("~/Scripts/Pages/post.details.js")"> </script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/Pages/post.details.js")"></script>
 
 <div class="mtop row">
     <div class="twocol">&nbsp;</div>
@@ -15,11 +15,21 @@
             @Html.Raw(Model.Body)
         </div>
     </div>
-    <div class="fourcol info last">
+    <div class="fourcol info last no-print">
         <p>
             @{ Html.RenderAction("Info", "Post", new { post = Model }); }
-        </p> 
+        </p>
     </div>
+</div>
+
+<div class="mtop row print-only">
+    <div class="twocol">&nbsp;</div>
+    <div class="sixcol">
+        <p style="border: solid 1px #333; padding: 10px;">
+            @{ Html.RenderAction("Info", "Post", new { post = Model }); }
+        </p>
+    </div>
+    <div class="fourcol">&nbsp;</div>
 </div>
 
 @if (Model.IsCommentsVisible)
