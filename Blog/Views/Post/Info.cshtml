@@ -8,7 +8,7 @@
     var tags = Model.Tags().ToList();
 }
 
-<span class="info-title"><b>@Model.Title</b> <br /> </span>@Model.LocalPublishDate.ToString("M.dd.yyyy ~ hh:mm tt") <br />  posted in @Html.ActionLink(category.Name.ToLower(), "index", "category", new { id = category.Name.ToLower() }, "") <br /> 
+<span class="info-title"><b>@Model.Title</b> <br /> </span>@Model.LocalPublishDate.ToString("MM.dd.yyyy ~ hh:mm tt") <br />  posted in @Html.ActionLink(category.Name.ToLower(), "index", "category", new { id = category.Name.ToLower() }, "") <br /> 
 
 @if(tags.Count > 0)
 {
