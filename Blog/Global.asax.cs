@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Configuration;
 using System.Web.Mvc;
 using System.Web.Routing;
 
@@ -130,6 +131,20 @@ namespace BC
             //{
             //    RouteDebug.RouteDebugger.RewriteRoutesForTesting(RouteTable.Routes);
             //}
+        }
+
+        protected void Application_BeginRequest(Object sender, EventArgs e)
+        {
+            if (WebConfigurationManager.AppSettings.Get("settings.ssl.force") == "true")
+            {
+                if (!HttpContext.Current.Request.IsLocal)
+                {
+                    if (!HttpContext.Current.Request.IsSecureConnection)
+                    {
+                        Response.Redirect("https://" + Request.ServerVariables["HTTP_HOST"] + HttpContext.Current.Request.RawUrl);
+                    }
+                }
+            }
         }
     }
 }
