@@ -44,7 +44,7 @@
             @Html.LabelFor(model => model.Slug)
         </div>
         <div class="slug-field">
-            http://@BC.Core.Context.Current.Domain<span id="category">category</span>/ @Html.EditorFor(model => model.Slug)
+            https://@BC.Core.Context.Current.Domain<span id="category">category</span>/ @Html.EditorFor(model => model.Slug)
             <a id="slug-update" class="pointer">update</a>
             @Html.ValidationMessageFor(model => model.Slug)
         </div>

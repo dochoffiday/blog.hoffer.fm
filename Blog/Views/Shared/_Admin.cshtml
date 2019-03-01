@@ -2,13 +2,13 @@
 <html>
 <head>
     <title>@ViewBag.Title</title>
-    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.2r1/build/reset/reset-min.css" />
-    <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="//yui.yahooapis.com/2.8.2r1/build/reset/reset-min.css" />
+    <link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/smoothness/jquery-ui.css" />
 
     @Html.Raw(SquishIt.Framework.Bundle.Css().Add("~/Content/admin.css").Add("~/Scripts/controls/superfish/superfish.css").ForceRelease().Render("~/Content/combined_admin_#.css"))
 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.8/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.8/jquery-ui.min.js"></script>
 
     @Html.Raw(SquishIt.Framework.Bundle.JavaScript().Add("~/Scripts/admin.min.js").Add("~/Scripts/controls/superfish/hoverIntent.js").Add("~/Scripts/controls/superfish/jquery.bgiframe.min.js").Add("~/Scripts/controls/superfish/superfish.js").Add("~/Scripts/controls/superfish/supersubs.js").ForceRelease().Render("~/Scripts/combined_admin_#.js"))
 

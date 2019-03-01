@@ -63,7 +63,7 @@ namespace BC.Controllers
         public ActionResult Sitemap()
         {
             String xml;
-            String url = "http://dochoffiday.com";
+            String url = "https://dochoffiday.com";
 
             using (MemoryStream ms = new MemoryStream())
             {
