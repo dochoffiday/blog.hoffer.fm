@@ -1,6 +1,6 @@
 ﻿$.SyntaxHighlighter.init({
-    'prettifyBaseUrl': 'https://balupton.github.com/jquery-syntaxhighlighter/prettify',
-    'baseUrl': 'https://balupton.github.com/jquery-syntaxhighlighter'
+    'prettifyBaseUrl': '/scripts/highlighter/prettify',
+    'baseUrl': '/scripts/highlighter'
 });
 
 (function ($) {

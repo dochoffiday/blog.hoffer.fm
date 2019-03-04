@@ -4,11 +4,11 @@
     Layout = null;
 }
     
-<script type="text/javascript" src="https://balupton.github.com/jquery-syntaxhighlighter/scripts/jquery.syntaxhighlighter.min.js"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/highlighter/jquery.syntaxhighlighter.js")"></script>
 <script type="text/javascript">
     $.SyntaxHighlighter.init({
-        'prettifyBaseUrl': 'https://balupton.github.com/jquery-syntaxhighlighter/prettify',
-        'baseUrl': 'https://balupton.github.com/jquery-syntaxhighlighter'
+        'prettifyBaseUrl': '/scripts/highlighter/prettify',
+        'baseUrl': '/scripts/highlighter'
     });
 </script>
 
