@@ -349,13 +349,13 @@ if (typeof window.console.emulated === 'undefined') {
 				 * The baseUrl to load Google's Prettify from.
 				 * This is used to load in Google's Prettify if the load option is true and it was not found.
 				 */
-                'prettifyBaseUrl': false ? 'http://192.168.1.2/repos/jquery-syntaxhighlighter/prettify' : '//balupton.github.com/jquery-syntaxhighlighter/prettify',
+                'prettifyBaseUrl': false ? 'http://192.168.1.2/repos/jquery-syntaxhighlighter/prettify' : 'https://balupton.github.com/jquery-syntaxhighlighter/prettify',
 
 				/**
 				 * The baseUrl to load our Syntax Highlighter from.
 				 * This is used to load in the stylesheet and additional themes.
 				 */
-                'baseUrl': false ? 'http://192.168.1.2/repos/jquery-syntaxhighlighter' : '//balupton.github.com/jquery-syntaxhighlighter'
+                'baseUrl': false ? 'http://192.168.1.2/repos/jquery-syntaxhighlighter' : 'https://balupton.github.com/jquery-syntaxhighlighter'
             },
 
             // Init
