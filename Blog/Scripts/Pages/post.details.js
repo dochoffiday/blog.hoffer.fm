@@ -1,4 +1,7 @@
-﻿$.SyntaxHighlighter.init();
+﻿$.SyntaxHighlighter.init({
+    'prettifyBaseUrl': 'https://balupton.github.com/jquery-syntaxhighlighter/prettify',
+    'baseUrl': 'https://balupton.github.com/jquery-syntaxhighlighter'
+});
 
 (function ($) {
     $.fn.autowidth = function () {

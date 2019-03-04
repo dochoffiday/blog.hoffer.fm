@@ -430,7 +430,6 @@
     <Content Include="Scripts\Controls\tiny_mce\utils\form_utils.js" />
     <Content Include="Scripts\Controls\tiny_mce\utils\mctabs.js" />
     <Content Include="Scripts\Controls\tiny_mce\utils\validate.js" />
-    <Content Include="Scripts\jquery.syntaxhighlighter.js" />
     <Content Include="Scripts\Pages\pageAdmin.edit.js" />
     <Content Include="Scripts\Pages\home.js" />
     <Content Include="Scripts\Pages\post.details.js" />

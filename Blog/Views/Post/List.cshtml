@@ -4,9 +4,13 @@
     Layout = null;
 }
     
-@*<script type="text/javascript" src="//balupton.github.com/jquery-syntaxhighlighter/scripts/jquery.syntaxhighlighter.min.js"></script>*@
-<script type="text/javascript" src="@Url.Content("~/Scripts/jquery.syntaxhighlighter.js")"></script>
-<script type="text/javascript">$.SyntaxHighlighter.init();</script>
+<script type="text/javascript" src="//balupton.github.com/jquery-syntaxhighlighter/scripts/jquery.syntaxhighlighter.min.js"></script>
+<script type="text/javascript">
+    $.SyntaxHighlighter.init({
+        'prettifyBaseUrl': 'https://balupton.github.com/jquery-syntaxhighlighter/prettify',
+        'baseUrl': 'https://balupton.github.com/jquery-syntaxhighlighter'
+    });
+</script>
 
 @foreach (var item in Model.Results)
 {
