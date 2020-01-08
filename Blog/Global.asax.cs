@@ -44,6 +44,13 @@ namespace BC
             );
 
             routes.MapRoute(
+                "ExportDataToJson",
+                "admin/exportdatatojson",
+                new { controller = "Admin", action = "ExportDataToJson", id = UrlParameter.Optional },
+                new string[] { "BC.Controllers" }
+            );
+
+            routes.MapRoute(
                 "Category_Admin",
                 "admin/category/{action}/{id}",
                 new { controller = "categoryadmin", action = "index", id = UrlParameter.Optional },

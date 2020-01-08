@@ -1,0 +1,1079 @@
+{
+  "Pages": [
+    {
+      "PageID": 1,
+      "Title": "About Me",
+      "Slug": "about",
+      "Body": "<p><img style=\"width: 25%; float: right; border-radius: 1px; border: solid 1px #fff; padding: 1px; margin: 0 0 15px 15px;\" src=\"https://i.stack.imgur.com/mN8R6.jpg\" alt=\"\" /></p>\r\n<p>Shall I begin with an ice-breaker?</p>\r\n<p>No?... Oh... Well, in that case, my name is Alexander Hoffer, although I'm colloquially referred to as AJ.</p>\r\n<p>I live in the heart of Lancaster, PA &ndash; very underrated &ndash; and work as a freelance software developer. If you're unsure what that means, you're not alone! Below are some common responses I get after giving people my job title.</p>\r\n<ul>\r\n<li>So... comp<em>oo</em>ters?</li>\r\n<li>You write the codes?!</li>\r\n<li>Oh. *blank stares*</li>\r\n</ul>\r\n<p>When I&rsquo;m not working, you can see me out on the frisbee fields or in the garden reaping the fruits of my labor [or, more commonly, the vegetables of my labor].</p>",
+      "Created": "2014-08-07T05:55:37",
+      "Modified": "2019-03-04T18:34:04.76",
+      "IsPublished": true
+    },
+    {
+      "PageID": 4,
+      "Title": "AJ's Christmas Wishlist - 2018",
+      "Slug": "aj-s-christmas-wishlist-2018",
+      "Body": "<ol>\r\n<li><a href=\"https://www.patagonia.com/product/hestra-touch-point-warmth-gloves-5-finger/O2105.html?dwvar_O2105_color=GRA\" target=\"_blank\">Gloves ($45)</a></li>\r\n<li><a href=\"https://www.patagonia.com/product/capilene-thermal-weight-balaclava/28690.html?dwvar_28690_color=FGX\" target=\"_blank\">Balaclava [Forge Grey] ($35)</a></li>\r\n<li><a href=\"https://www.americantrench.com/collections/socks/products/fair-isle-in-merino-and-cashmere-blend\" target=\"_blank\">Socks [Royal/White/Golde] ($28)</a></li>\r\n<li><a href=\"https://www.americantrench.com/collections/socks/products/boot-socks-in-wool-and-silk\" target=\"_blank\">Socks [Red] ($29.50)</a></li>\r\n<li><a href=\"https://www.amazon.com/Premium-Cooking-Sprayer-Clog-Free-CHEFVANTAGE/dp/B076Q7VWFZ/?tag=dream098-20&amp;th=1&amp;psc=1\" target=\"_blank\">Oil Sprayer ($24.97)</a></li>\r\n<li>Chocolate Chip Cookies, Brownies</li>\r\n<li>Frozen Pizzas</li>\r\n<li>Gift card to Steel Peel, LUCA, Callaloo</li>\r\n</ol>",
+      "Created": "2018-11-27T16:54:05",
+      "Modified": "2018-12-03T15:20:23.283",
+      "IsPublished": true
+    },
+    {
+      "PageID": 5,
+      "Title": "AJ's Christmas Wishlist - 2018 (For Jerry and Beth)",
+      "Slug": "aj-s-christmas-wishlist-2018-for-jerry-and-beth",
+      "Body": "<ol>\r\n<li><a href=\"https://www.altrarunning.com/shop/trail/lone-peak-4-low-rsm-alm1855l?variationId=330\" target=\"_blank\">Shoes [Green/12.5] ($150)</a></li>\r\n<li><a href=\"https://www.patagonia.com/product/mens-torrentshell-rain-pants/83812.html?dwvar_83812_color=FGE&amp;cgid=mens-snow-pants\" target=\"_blank\">Rain Pants [Forge Grey] ($99)</a></li>\r\n<li><a href=\"https://cherrychrest.ticketleap.com/2019-season-holiday-specials/dates/Nov-19-2018_at_0100AM\" target=\"_blank\">Cherry Crest Adventure Farms <strong><em>Flex Passes</em></strong> [we'd like up to 2] ($70 each)</a></li>\r\n<li><a href=\"https://www.amazon.com/dp/1501131656/?coliid=I1CZYOFFZVI2PP&amp;colid=37K68K2PVS07D&amp;psc=0&amp;ref_=lv_ov_lig_dp_it\">How to Talk so Little Kids Will Listen [Hardcover] ($18)</a></li>\r\n</ol>",
+      "Created": "2018-11-27T17:11:50",
+      "Modified": "2018-12-11T16:05:02.1",
+      "IsPublished": true
+    }
+  ],
+  "Comments": [
+    {
+      "CommentID": 1,
+      "PostID": 2,
+      "Name": "Ryan",
+      "IsUser": false,
+      "Email": "-n/a-",
+      "Url": null,
+      "Text": "Dude, I have no idea what any of this means. But I like how the words make me feel inside. Jittery.",
+      "Created": "2014-01-03T20:30:00",
+      "Modified": "2014-01-03T20:30:00",
+      "IsRead": true,
+      "IP": null
+    },
+    {
+      "CommentID": 2,
+      "PostID": 2,
+      "Name": "Zachary",
+      "IsUser": false,
+      "Email": "-n/a-",
+      "Url": null,
+      "Text": "Cool! Is there something like it for a normal class library.  \n\nI'm running MSTests, and a class with the above mention attribute doesn't fire.\n\nAny time an assembly is referenced, or when MsTest starts up.",
+      "Created": "2014-05-19T16:11:00",
+      "Modified": "2014-05-19T16:11:00",
+      "IsRead": true,
+      "IP": null
+    },
+    {
+      "CommentID": 3,
+      "PostID": 3,
+      "Name": "B",
+      "IsUser": false,
+      "Email": "-n/a-",
+      "Url": null,
+      "Text": "Think I'm in love with you",
+      "Created": "2014-03-09T03:16:00",
+      "Modified": "2014-03-09T03:16:00",
+      "IsRead": true,
+      "IP": null
+    },
+    {
+      "CommentID": 4,
+      "PostID": 3,
+      "Name": "R",
+      "IsUser": false,
+      "Email": "-n/a-",
+      "Url": null,
+      "Text": "Think I'm in more love with you than @B",
+      "Created": "2014-03-12T15:48:00",
+      "Modified": "2014-03-12T15:48:00",
+      "IsRead": true,
+      "IP": null
+    },
+    {
+      "CommentID": 5,
+      "PostID": 3,
+      "Name": "BB",
+      "IsUser": false,
+      "Email": "-n/a-",
+      "Url": null,
+      "Text": "You're top notch grade A meat!",
+      "Created": "2014-03-13T19:13:00",
+      "Modified": "2014-03-13T19:13:00",
+      "IsRead": true,
+      "IP": null
+    },
+    {
+      "CommentID": 7,
+      "PostID": 3,
+      "Name": "dochoffiday",
+      "IsUser": true,
+      "Email": "-n/a-",
+      "Url": null,
+      "Text": "aw gee wiz thanks! now if I could only learn to love myself :'(",
+      "Created": "2014-03-13T19:14:00",
+      "Modified": "2014-03-13T19:14:00",
+      "IsRead": true,
+      "IP": null
+    },
+    {
+      "CommentID": 9,
+      "PostID": 4,
+      "Name": "Ryan Bizzle",
+      "IsUser": false,
+      "Email": "-n/a-",
+      "Url": null,
+      "Text": "Do you personally use this umbrella? I've never once seen it.",
+      "Created": "2014-01-22T21:59:00",
+      "Modified": "2014-01-22T21:59:00",
+      "IsRead": true,
+      "IP": null
+    },
+    {
+      "CommentID": 10,
+      "PostID": 4,
+      "Name": "dochoffiday",
+      "IsUser": true,
+      "Email": "-n/a-",
+      "Url": null,
+      "Text": "@Ryan - but of course! In fact, the helve has molded to my hand thanks to my firm, masculine, grip.",
+      "Created": "2014-01-22T23:40:00",
+      "Modified": "2014-01-22T23:40:00",
+      "IsRead": true,
+      "IP": null
+    },
+    {
+      "CommentID": 11,
+      "PostID": 5,
+      "Name": "Alex Rad",
+      "IsUser": false,
+      "Email": "-n/a-",
+      "Url": null,
+      "Text": "Great plugin. However, there is a problem (or I am not using it correctly) with $.jConfirm. Unlike javascript \"confirm\" it does not wait for the user confirmation:\r\n\t\r\nfunction myfunction (param) {\r\n\t$.jConfirm('Are you sure?', 'highlight', function(result) {\r\n\t\treturn (result);\r\n\t}, { show: '' });\r\n\t\r\n\talert ('I should not see this but I do!');\r\n}\r\n\r\nHow can I make it wait for the user's conformation?",
+      "Created": "2011-06-18T08:40:00",
+      "Modified": "2011-06-18T08:40:00",
+      "IsRead": true,
+      "IP": null
+    },
+    {
+      "CommentID": 12,
+      "PostID": 5,
+      "Name": "dochoffiday",
+      "IsUser": true,
+      "Email": "-n/a-",
+      "Url": null,
+      "Text": "There's nothing you can do in javascript to block execution like the native \"alert\" and \"confirm\" functions do.\r\n\t\r\nThat's why there's callbacks - put the code in the callback instead of after invoking the plugin:\r\n\t\r\nfunction myfunction(param) {\r\n\t$.jConfirm('Are you sure?', 'highlight', function (result) {\r\n\t\talert('I should not see this and I DONT (until the user clicks a button)');\r\n\t\treturn (result);\r\n\t}, { show: '' });\r\n\t\talert('I should not see this but I do!');\r\n}",
+      "Created": "2011-07-05T19:34:00",
+      "Modified": "2011-07-05T19:34:00",
+      "IsRead": true,
+      "IP": null
+    },
+    {
+      "CommentID": 13,
+      "PostID": 5,
+      "Name": "Thomas",
+      "IsUser": false,
+      "Email": "-n/a-",
+      "Url": null,
+      "Text": "Hello,\r\n\r\nI had to make the following change in my case to make the titlebar of the dialogboxes disappear. On line 43, change\r\n\t\r\ndialogClass: options.wrapperClass + dialogCSS,\r\nto\r\ndialogClass: options.wrapperClass + ' ' +dialogCSS,\r\n\r\nThat's it :)\r\n\r\nOtherwise it produced a messed up classname that caused the issue with the titlebar.",
+      "Created": "2012-05-29T21:48:00",
+      "Modified": "2012-05-29T21:48:00",
+      "IsRead": true,
+      "IP": null
+    },
+    {
+      "CommentID": 14,
+      "PostID": 5,
+      "Name": "Herb",
+      "IsUser": false,
+      "Email": "-n/a-",
+      "Url": null,
+      "Text": "Thank god for these enabled comments. I would have wasted so much time thinking there is an actual real replacement to \"alert\" and \"confirm\".",
+      "Created": "2012-08-11T16:54:00",
+      "Modified": "2012-08-11T16:54:00",
+      "IsRead": true,
+      "IP": null
+    },
+    {
+      "CommentID": 15,
+      "PostID": 5,
+      "Name": "anon",
+      "IsUser": false,
+      "Email": "-n/a-",
+      "Url": null,
+      "Text": "@dochoffiday: It doesn't solve this though:\r\n\t\r\n$('form').bind('submit', function() {\r\n\tvar me = this;\r\n\t$.jConfirm('¿Estás seguro?', 'highlight', function(answer) {\r\n\t\tif (answer) {\r\n\t\t\t$(me).submit();\r\n\t\t}\r\n\t});\r\n\treturn false; // Will always be executed\r\n});\r\n\r\nUnless I'm not seeing something...",
+      "Created": "2012-12-14T13:41:00",
+      "Modified": "2012-12-14T13:41:00",
+      "IsRead": true,
+      "IP": null
+    },
+    {
+      "CommentID": 16,
+      "PostID": 5,
+      "Name": "anon",
+      "IsUser": false,
+      "Email": "-n/a-",
+      "Url": null,
+      "Text": "I was:\r\n\t\r\nevent.preventDefault() must be used.",
+      "Created": "2012-12-14T13:42:00",
+      "Modified": "2012-12-14T13:42:00",
+      "IsRead": true,
+      "IP": null
+    },
+    {
+      "CommentID": 17,
+      "PostID": 5,
+      "Name": "tony",
+      "IsUser": false,
+      "Email": "-n/a-",
+      "Url": null,
+      "Text": "Where can i get a full list of the options list?",
+      "Created": "2013-02-06T09:49:00",
+      "Modified": "2013-02-06T09:49:00",
+      "IsRead": true,
+      "IP": null
+    },
+    {
+      "CommentID": 18,
+      "PostID": 5,
+      "Name": "Mitch",
+      "IsUser": false,
+      "Email": "-n/a-",
+      "Url": null,
+      "Text": "Where do I download this?",
+      "Created": "2013-06-06T10:30:00",
+      "Modified": "2013-06-06T10:30:00",
+      "IsRead": true,
+      "IP": null
+    },
+    {
+      "CommentID": 19,
+      "PostID": 5,
+      "Name": "dochoffiday",
+      "IsUser": true,
+      "Email": "-n/a-",
+      "Url": null,
+      "Text": "@Mitch - sorry, I should have put a link to these resources.\r\n\t\r\nhttp://demo.dochoffiday.com/jquery-ui-jalert/jquery.ui-jalert.css\r\nhttp://demo.dochoffiday.com/jquery-ui-jalert/jquery.ui-jalert.js",
+      "Created": "2013-06-11T21:25:00",
+      "Modified": "2013-06-11T21:25:00",
+      "IsRead": true,
+      "IP": null
+    },
+    {
+      "CommentID": 20,
+      "PostID": 5,
+      "Name": "Lee",
+      "IsUser": false,
+      "Email": "-n/a-",
+      "Url": null,
+      "Text": "Do you happen to provide security update notices for jAlert updates?",
+      "Created": "2013-10-29T13:54:00",
+      "Modified": "2013-10-29T13:54:00",
+      "IsRead": true,
+      "IP": null
+    },
+    {
+      "CommentID": 21,
+      "PostID": 5,
+      "Name": "nagi",
+      "IsUser": false,
+      "Email": "-n/a-",
+      "Url": null,
+      "Text": "please how to implement this function send me reply my mail sir",
+      "Created": "2014-01-18T13:40:00",
+      "Modified": "2014-01-18T13:40:00",
+      "IsRead": true,
+      "IP": null
+    },
+    {
+      "CommentID": 22,
+      "PostID": 5,
+      "Name": "Dev",
+      "IsUser": false,
+      "Email": "-n/a-",
+      "Url": null,
+      "Text": "What about the images? Where are they?",
+      "Created": "2014-01-30T10:28:00",
+      "Modified": "2014-01-30T10:28:00",
+      "IsRead": true,
+      "IP": null
+    },
+    {
+      "CommentID": 23,
+      "PostID": 15,
+      "Name": "Rose",
+      "IsUser": false,
+      "Email": "-n/a-",
+      "Url": null,
+      "Text": "I added the assembly also in web.config. Still, in 'Using System.Web.Script.Serialization, Script is red underlined. What to do now?",
+      "Created": "2013-06-26T07:35:00",
+      "Modified": "2013-06-26T07:35:00",
+      "IsRead": true,
+      "IP": null
+    },
+    {
+      "CommentID": 24,
+      "PostID": 17,
+      "Name": "Jared",
+      "IsUser": false,
+      "Email": "-n/a-",
+      "Url": null,
+      "Text": "Great snippet! I have been looking for an improvement to jQuery UI's checkboxes. One suggestion that I have would be to add \"outline: none;\" to the CSS. Otherwise, a distracting outline to the right of the checkbox is displayed in IE 8. Thanks for sharing!",
+      "Created": "2011-07-21T13:50:00",
+      "Modified": "2011-07-21T13:50:00",
+      "IsRead": true,
+      "IP": null
+    },
+    {
+      "CommentID": 25,
+      "PostID": 17,
+      "Name": "Xavier",
+      "IsUser": false,
+      "Email": "-n/a-",
+      "Url": null,
+      "Text": "Hello,\r\n\t\r\nThanks for this script, but could you tell me how to dynamically check or uncheck a checkbox managed by this plugin ?\r\n\r\nRegards,\r\n\r\nXavier",
+      "Created": "2011-09-29T13:20:00",
+      "Modified": "2011-09-29T13:20:00",
+      "IsRead": true,
+      "IP": null
+    },
+    {
+      "CommentID": 26,
+      "PostID": 17,
+      "Name": "Uwe",
+      "IsUser": false,
+      "Email": "-n/a-",
+      "Url": null,
+      "Text": "Hi,\r\n\t\r\nthanks for this script. I wanted to set other icons and noticed a little bug: in the refresh method you always set/unset your default icons. To change this I've modified it like this:\r\n\r\nrefresh: function () {\r\n\tvar isDisabled = this.element.is(\":disabled\");\r\n\tif (isDisabled !== this.options.disabled) {\r\n\t\tthis._setOption(\"disabled\", isDisabled);\r\n\t}\r\n\ticons = this.options.icons;\r\n\tif (this.type === \"radio\") {\r\n\t\tradioGroup(this.element[0]).each(function () {\r\n\t\t\tif ($(this).is(\":checked\")) {\r\n\t\t\t\t$(this).checkbox(\"widget\").addClass(\"ui-state-active\").attr(\"aria-pressed\", true).find('.ui-button-icon-primary').addClass(icons.on).removeClass(icons.off);\r\n\t\t\t} else {\r\n\t\t\t\t$(this).checkbox(\"widget\").removeClass(\"ui-state-active\").attr(\"aria-pressed\", false).find('.ui-button-icon-primary').removeClass(icons.on).addClass(icons.off);\r\n\t\t\t}\r\n\t\t});\r\n\t} else if (this.type === \"checkbox\") {\r\n\t\tif (this.element.is(\":checked\")) {\r\n\t\t\tthis.buttonElement.addClass(\"ui-state-active\").attr(\"aria-pressed\", true).find('.ui-button-icon-primary').addClass(icons.on).removeClass(icons.off);\r\n\t\t} else {\r\n\t\t\tthis.buttonElement.removeClass(\"ui-state-active\").attr(\"aria-pressed\", false).find('.ui-button-icon-primary').removeClass(icons.on).addClass(icons.off);\r\n\t\t}\r\n\t}\r\n}",
+      "Created": "2012-01-20T11:27:00",
+      "Modified": "2012-01-20T11:27:00",
+      "IsRead": true,
+      "IP": null
+    },
+    {
+      "CommentID": 28,
+      "PostID": 15,
+      "Name": "Danish Sami",
+      "IsUser": false,
+      "Email": "danish.sami@outlook.com",
+      "Url": null,
+      "Text": "Don't know what to say but sending this message with bundle to thanks.\n\nThis line saved my whole day\n <... targetFramework=\"4.0\">\n\nYou rock.\n\n-Danish.",
+      "Created": "2014-09-07T06:46:35.03",
+      "Modified": "2014-09-07T06:46:35.03",
+      "IsRead": true,
+      "IP": null
+    },
+    {
+      "CommentID": 29,
+      "PostID": 5,
+      "Name": "Cao Thanh Liêm",
+      "IsUser": false,
+      "Email": "caothanhliem@gmail.com",
+      "Url": null,
+      "Text": "Send me link download Plase :D Thanks you so much",
+      "Created": "2014-09-19T05:43:27.72",
+      "Modified": "2014-09-19T05:43:27.72",
+      "IsRead": true,
+      "IP": null
+    },
+    {
+      "CommentID": 30,
+      "PostID": 5,
+      "Name": "dochoffiday",
+      "IsUser": true,
+      "Email": "mrhoffer@gmail.com",
+      "Url": null,
+      "Text": "@Cao - sorry, I forgot the download links changed:\n\nhttp://dochoffiday.com/_demo/jquery-ui-jalert/jquery.ui-jalert.css\nhttp://dochoffiday.com/_demo/jquery-ui-jalert/jquery.ui-jalert.js",
+      "Created": "2014-09-23T18:58:13.98",
+      "Modified": "2014-09-23T18:58:13.98",
+      "IsRead": true,
+      "IP": null
+    },
+    {
+      "CommentID": 31,
+      "PostID": 19,
+      "Name": "Lorem Ipsum",
+      "IsUser": false,
+      "Email": "loremipsum@gmail.com",
+      "Url": "http://www.lipsum.com/",
+      "Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in ullamcorper nibh, vitae porta sem. Nam non dolor eget libero gravida varius. Etiam non maximus nibh, faucibus efficitur erat. Nullam a dignissim enim. Pellentesque sollicitudin metus non lacus elementum, sed efficitur sem feugiat. Vivamus accumsan malesuada semper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla et efficitur arcu, consectetur porta est. Cras vitae venenatis leo, non placerat lacus.\n\nProin condimentum dapibus dapibus. In commodo ac nunc non euismod. Duis aliquet euismod porta. Quisque nec faucibus erat. Nam et ligula sagittis, tempor erat eget, consectetur nisl. Mauris nec facilisis ante. Proin nisi nisi, convallis viverra dolor at, aliquet consequat ipsum.\n\nVestibulum metus nunc, varius non metus maximus, malesuada laoreet lectus. Nunc tristique, tellus sed pharetra cursus, orci augue lobortis arcu, eu eleifend mauris urna vitae ipsum. Nulla eget dui venenatis eros blandit posuere a eget mi. Fusce aliquet risus ac nisl sagittis fermentum. Fusce non ipsum varius eros aliquet feugiat. Proin sit amet velit hendrerit, eleifend leo et, suscipit nisl. Nam cursus velit augue, vel dapibus nibh ornare ac. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;\n\nWorks great.",
+      "Created": "2014-10-15T18:56:42.01",
+      "Modified": "2014-10-15T18:56:42.01",
+      "IsRead": true,
+      "IP": null
+    },
+    {
+      "CommentID": 34,
+      "PostID": 5,
+      "Name": "S.Sinha",
+      "IsUser": false,
+      "Email": "sbs0211@gmail.com",
+      "Url": null,
+      "Text": "Please let me know how can you replace the \"!\" mark that preceded the statement with JAlert. ",
+      "Created": "2015-08-04T03:21:22.64",
+      "Modified": "2015-08-04T03:21:22.64",
+      "IsRead": true,
+      "IP": "119.93.55.13"
+    },
+    {
+      "CommentID": 35,
+      "PostID": 5,
+      "Name": "meena",
+      "IsUser": false,
+      "Email": "meenakshi281191@gmail.com",
+      "Url": "http://dochoffiday.com/Professional/jalert-a-jquery-ui-alert-confirm-replacement",
+      "Text": "will this confirm box work even if user has a pop-up blocker ?",
+      "Created": "2016-04-18T21:50:39.733",
+      "Modified": "2016-04-18T21:50:39.733",
+      "IsRead": true,
+      "IP": "69.70.84.186"
+    },
+    {
+      "CommentID": 321,
+      "PostID": 24,
+      "Name": "Kruno",
+      "IsUser": false,
+      "Email": null,
+      "Url": null,
+      "Text": "Thank you for providing this, very useful!",
+      "Created": "2018-12-18T13:23:24.34",
+      "Modified": "2018-12-18T13:23:24.34",
+      "IsRead": true,
+      "IP": "93.140.12.198"
+    }
+  ],
+  "Tags": [
+    {
+      "TagID": 1,
+      "PostID": 1,
+      "Name": "asp-net"
+    },
+    {
+      "TagID": 2,
+      "PostID": 1,
+      "Name": "mvc"
+    },
+    {
+      "TagID": 3,
+      "PostID": 1,
+      "Name": "orchard"
+    },
+    {
+      "TagID": 4,
+      "PostID": 1,
+      "Name": "orchard-cms"
+    },
+    {
+      "TagID": 5,
+      "PostID": 1,
+      "Name": "c#"
+    },
+    {
+      "TagID": 6,
+      "PostID": 2,
+      "Name": "asp-net"
+    },
+    {
+      "TagID": 7,
+      "PostID": 2,
+      "Name": "c#"
+    },
+    {
+      "TagID": 8,
+      "PostID": 3,
+      "Name": "men-stuff"
+    },
+    {
+      "TagID": 9,
+      "PostID": 3,
+      "Name": "brogramming"
+    },
+    {
+      "TagID": 10,
+      "PostID": 4,
+      "Name": "men-stuff"
+    },
+    {
+      "TagID": 11,
+      "PostID": 4,
+      "Name": "brogramming"
+    },
+    {
+      "TagID": 12,
+      "PostID": 5,
+      "Name": "jquery"
+    },
+    {
+      "TagID": 13,
+      "PostID": 5,
+      "Name": "jquery-ui"
+    },
+    {
+      "TagID": 14,
+      "PostID": 5,
+      "Name": "plugin"
+    },
+    {
+      "TagID": 15,
+      "PostID": 6,
+      "Name": "c#"
+    },
+    {
+      "TagID": 16,
+      "PostID": 6,
+      "Name": "asp-net"
+    },
+    {
+      "TagID": 17,
+      "PostID": 7,
+      "Name": "christmas"
+    },
+    {
+      "TagID": 18,
+      "PostID": 7,
+      "Name": "mvc"
+    },
+    {
+      "TagID": 19,
+      "PostID": 7,
+      "Name": "facebook"
+    },
+    {
+      "TagID": 20,
+      "PostID": 8,
+      "Name": "scheduled-tasks"
+    },
+    {
+      "TagID": 21,
+      "PostID": 8,
+      "Name": "c#"
+    },
+    {
+      "TagID": 22,
+      "PostID": 8,
+      "Name": "asp-net"
+    },
+    {
+      "TagID": 23,
+      "PostID": 9,
+      "Name": "jquery"
+    },
+    {
+      "TagID": 24,
+      "PostID": 9,
+      "Name": "plugin"
+    },
+    {
+      "TagID": 25,
+      "PostID": 10,
+      "Name": "jquery"
+    },
+    {
+      "TagID": 26,
+      "PostID": 10,
+      "Name": "jquery-ui"
+    },
+    {
+      "TagID": 27,
+      "PostID": 10,
+      "Name": "plugin"
+    },
+    {
+      "TagID": 28,
+      "PostID": 11,
+      "Name": "jquery"
+    },
+    {
+      "TagID": 29,
+      "PostID": 11,
+      "Name": "jquery-ui"
+    },
+    {
+      "TagID": 30,
+      "PostID": 11,
+      "Name": "plugin"
+    },
+    {
+      "TagID": 31,
+      "PostID": 12,
+      "Name": "c#"
+    },
+    {
+      "TagID": 32,
+      "PostID": 12,
+      "Name": "asp-net"
+    },
+    {
+      "TagID": 33,
+      "PostID": 12,
+      "Name": "orchard"
+    },
+    {
+      "TagID": 34,
+      "PostID": 12,
+      "Name": "orchard-cms"
+    },
+    {
+      "TagID": 35,
+      "PostID": 13,
+      "Name": "mvc"
+    },
+    {
+      "TagID": 36,
+      "PostID": 13,
+      "Name": "asp-net"
+    },
+    {
+      "TagID": 37,
+      "PostID": 14,
+      "Name": "sharepoint"
+    },
+    {
+      "TagID": 38,
+      "PostID": 14,
+      "Name": "c#"
+    },
+    {
+      "TagID": 39,
+      "PostID": 14,
+      "Name": "asp-net"
+    },
+    {
+      "TagID": 40,
+      "PostID": 15,
+      "Name": "c#"
+    },
+    {
+      "TagID": 41,
+      "PostID": 15,
+      "Name": "asp-net"
+    },
+    {
+      "TagID": 46,
+      "PostID": 17,
+      "Name": "jquery"
+    },
+    {
+      "TagID": 47,
+      "PostID": 17,
+      "Name": "jquery-ui"
+    },
+    {
+      "TagID": 48,
+      "PostID": 17,
+      "Name": "plugin"
+    },
+    {
+      "TagID": 49,
+      "PostID": 18,
+      "Name": "c#"
+    },
+    {
+      "TagID": 50,
+      "PostID": 18,
+      "Name": "asp-net"
+    },
+    {
+      "TagID": 51,
+      "PostID": 18,
+      "Name": "extension-methods"
+    },
+    {
+      "TagID": 52,
+      "PostID": 19,
+      "Name": "c#"
+    },
+    {
+      "TagID": 53,
+      "PostID": 19,
+      "Name": "asp-net"
+    },
+    {
+      "TagID": 54,
+      "PostID": 20,
+      "Name": "jquery"
+    },
+    {
+      "TagID": 55,
+      "PostID": 20,
+      "Name": "jquery-ui"
+    },
+    {
+      "TagID": 56,
+      "PostID": 20,
+      "Name": "plugin"
+    },
+    {
+      "TagID": 57,
+      "PostID": 21,
+      "Name": "new-year-resolutions"
+    },
+    {
+      "TagID": 58,
+      "PostID": 21,
+      "Name": "bring-it"
+    },
+    {
+      "TagID": 60,
+      "PostID": 22,
+      "Name": "html"
+    },
+    {
+      "TagID": 61,
+      "PostID": 23,
+      "Name": "javascript"
+    },
+    {
+      "TagID": 62,
+      "PostID": 23,
+      "Name": "jquery"
+    },
+    {
+      "TagID": 63,
+      "PostID": 23,
+      "Name": "knockout"
+    },
+    {
+      "TagID": 64,
+      "PostID": 23,
+      "Name": "pagerjs"
+    },
+    {
+      "TagID": 66,
+      "PostID": 24,
+      "Name": "c#"
+    },
+    {
+      "TagID": 67,
+      "PostID": 25,
+      "Name": "c#"
+    },
+    {
+      "TagID": 68,
+      "PostID": 25,
+      "Name": "forms-authentication"
+    },
+    {
+      "TagID": 69,
+      "PostID": 22,
+      "Name": "squarespace"
+    }
+  ],
+  "Posts": [
+    {
+      "PostID": 1,
+      "CategoryID": 1,
+      "Title": "Improved ASP.NET MVC Sections",
+      "Slug": "improved-asp-net-mvc-sections",
+      "Body": "<p><em>I'm taking a break from my <a href=\"../../../personal/a-yuppies-guide-to-walking-in-the-rain-like-a-man\" target=\"_blank\">umbrella</a> series in an effort to contribute to society, instead of distracting it!</em></p>\r\n<p>I <em>really</em> wanted to like <a href=\"http://weblogs.asp.net/scottgu/archive/2010/12/30/asp-net-mvc-3-layouts-and-sections-with-razor.aspx\" target=\"_blank\">ASP.NET MVC Sections</a>... but I just couldn't. They just seem so rigid.</p>\r\n<p>For instance, say I had a section right before the end of my body tag to stash all JavaScript files -- this is great, except I can only add code to this section one time, from one View. But what if my View renders other [partial] Views, all of which need to add JavaScript to the end of the body? Because of this drawback, sections became almost entirely useless to me.</p>\r\n<p><a href=\"http://www.orchardproject.net/\" target=\"_blank\">Orchard</a>&nbsp;[a popular CMS engine I've talked about <a href=\"../../../professional/orchard-cms-errors-when-pushing-changes-in-the-migrations-file\" target=\"_blank\">before</a>]&nbsp;has the <a href=\"http://orchard.codeplex.com/discussions/283849\" target=\"_blank\">Script.Head()</a> and Script.Foot() methods, and these seemed like a big improvement. You could add code to these anywhere, and as many times as you liked. Unfortunately, while it is a step in the right direction, it still isn't quite dynamic enough. It only allows&nbsp;<em>two</em> sections: the head and the foot (and not to mention the application has to be built within Orchard). So yet again, even though these Orchard helpers are good, they aren't good enough.</p>\r\n<h5>The Solution</h5>\r\n<p>Piggybacking of off some other <a href=\"http://stackoverflow.com/a/5433722/234132\" target=\"_blank\">solutions</a>, I was able to create something that gave me everything I wanted:</p>\r\n<ol>\r\n<li>Unlimited sections.</li>\r\n<li>No restriction on the number of codes blocks that could be added to a section.</li>\r\n</ol>\r\n<p>The source code is hosted on <a href=\"https://github.com/dochoffiday/ContentSection\" target=\"_blank\">GitHub</a>, so I won't reproduce it here, but I will show you how easy it is to use.</p>\r\n<p>In your layout View, or wherever you want the section to be rendered, include the following code:</p>\r\n<pre class=\"highlight\">&lt;!DOCTYPE html&gt;\r\n&lt;html lang=\"en\"&gt;\r\n&lt;head&gt;\r\n    &lt;title&gt;@ViewBag.Title&lt;/title&gt;\r\n    @this.Section(\"header\")\r\n&lt;/head&gt;\r\n&lt;body&gt;\r\n    @this.Section(\"prebody\")\r\n\r\n\t@RenderBody()\r\n\t\t\r\n    @this.Section(\"footer\")\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n</pre>\r\n<p>Then, to add content blocks to your sections:</p>\r\n<pre class=\"highlight\">@using(this.AddToSection(\"footer\"))\r\n{\r\n    &lt;script src=\"//js.stripe.com/v2/\" type=\"text/javascript\"&gt;&lt;/script&gt;\r\n}\r\n\r\n@using(this.AddToSection(\"footer\"))\r\n{\r\n    &lt;div&gt;add as many code blocks as you want!&lt;/div&gt;\r\n}\r\n</pre>\r\n<p><a href=\"http://www.youtube.com/watch?v=NeFI9aPZvKI#t=44\" target=\"_blank\">That's it and that's all</a>! There are some improvements that could be made, like a parameter to order the content added to a section, but even in its basic form, I hope it's helpful!</p>\r\n<p><em>Available as a <a href=\"https://www.nuget.org/packages/FlexibleSections/\" target=\"_blank\">NuGet package</a>!</em></p>\r\n<p class=\"highlighter\"><em><a href=\"https://github.com/dochoffiday/FlexibleSections\" target=\"_blank\">Fork On GitHub!</a></em></p>",
+      "IsCommentsVisible": true,
+      "IsCommentsOpen": false,
+      "Created": "2014-08-09T22:19:10",
+      "Modified": "2020-01-08T16:38:21.117",
+      "IsPublished": true,
+      "PublishDate": "2014-01-25T13:50:00"
+    },
+    {
+      "PostID": 2,
+      "CategoryID": 1,
+      "Title": "Simulate \"Application_Start\" in Class Library",
+      "Slug": "simulate-application-start-in-class-library",
+      "Body": "<p>In the past, if you needed to run startup code in a class library, you included a method call in the \"Application_Start\" of the Global.asax file. Thankfully, .NET 4.0 has made things easier with the <a href=\"http://msdn.microsoft.com/en-us/library/system.web.preapplicationstartmethodattribute\" target=\"_blank\">PreApplicationStartMethodAttribute</a>! This helpful attribute allows us to hand-pick code to execute when the application starts without ever modifying the Global.asax file, or messier yet, creating an HttpHandler.</p>\r\n<p>Let's see it in action!</p>\r\n<h5>Old &amp; Busted</h5>\r\n<p>First, here's a refresher of the old way. Say we have a chunk of code in our library that needs to be executed when the application starts:</p>\r\n<pre class=\"highlight\">namespace ClassLibrary\r\n{\r\n    public class Startup\r\n    {\r\n        public static void Start()\r\n        {\r\n            // do some awesome stuff here!\r\n        }\r\n    }\r\n}\r\n</pre>\r\n<p>In the past, we had to manually add a reference to this in the \"Application_Start\" of our Global.asax file:</p>\r\n<pre class=\"highlight\">protected void Application_Start(object sender, EventArgs e)\r\n{\r\n\tClassLibrary.Startup.Start();\r\n}\r\n</pre>\r\n<h5>New Hotness</h5>\r\n<p>Now that we live in the future, all we have to do is add a PreApplicationStartMethod assembly attribute (which is a part of the System.Web namespace) to our class library with parameters specifying our class and method to be executed:</p>\r\n<pre class=\"highlight\">[assembly: PreApplicationStartMethod(typeof(ClassLibrary.Startup), \"Start\")]\r\n</pre>\r\n<p>You can add this assembly attribute anywhere, but I find it best to either include it in the AssemblyInfo.cs file, or at the beginning of the class containing the code to be executed. Here's the Startup class in its entirety to demonstrate my meaning:</p>\r\n<pre class=\"highlight\">using System.Web;\r\n\r\n[assembly: PreApplicationStartMethod(typeof(ClassLibrary.Startup), \"Start\")]\r\n\r\nnamespace ClassLibrary\r\n{\r\n    public class Startup\r\n    {\r\n        public static void Start()\r\n        {\r\n            // do some awesome stuff here!\r\n        }\r\n    }\r\n}\r\n</pre>\r\n<p>It's as simple as that! The only downside is you need to be using the .NET Framework 4.0 or later (which is why I was not able to use this for a previous <a href=\"http://www.dochoffiday.com/professional/simulate-application-start-in-sharepoint\" target=\"_blank\">Sharepoint solution</a>). But, if you are using 4.0 or later, this is a great way to keep your library code <a href=\"http://en.wikipedia.org/wiki/Separation_of_concerns\" target=\"_blank\">separate</a> from your web project.</p>\r\n<h5>Notes and Such</h5>\r\n<p>It's worth mentioning that the behaviour of the PreApplicationStartMethodAttribute is <a href=\"http://stackoverflow.com/a/11800997/234132\" target=\"_blank\">a little different</a> between .NET Frameworks <a href=\"http://msdn.microsoft.com/en-us/library/system.web.preapplicationstartmethodattribute(v=vs.100).aspx\" target=\"_blank\">4.0</a> and <a href=\"http://msdn.microsoft.com/en-us/library/system.web.preapplicationstartmethodattribute(v=vs.110)\" target=\"_blank\">4.5</a>. In 4.0, \"AllowMultiple\" is set to \"false\", so you can only include this attribute ONCE in your library - so all your code must be within one method. However, in 4.5, \"AllowMultiple\" is set to \"true\", so you may include as many startup methods as your heart desires!</p>\r\n<h5>Shout-outs</h5>\r\n<p>Lastly, I'd be remiss if I didn't mention <a href=\"https://github.com/davidebbo/WebActivator\" target=\"_blank\">WebActivator</a>. It's an excellent library that leverages the PreApplicationStartMethodAttribute but adds a little more <em>oomph</em> and versatility (including the ability to have startup <em>and</em> shutdown code!).</p>\r\n<p>Now go and code!</p>",
+      "IsCommentsVisible": true,
+      "IsCommentsOpen": false,
+      "Created": "2014-08-09T22:21:26",
+      "Modified": "2020-01-08T16:38:31.957",
+      "IsPublished": true,
+      "PublishDate": "2013-12-30T00:37:00"
+    },
+    {
+      "PostID": 3,
+      "CategoryID": 2,
+      "Title": "A Yuppies Guide to Walking in the Rain like a Man",
+      "Slug": "a-yuppies-guide-to-walking-in-the-rain-like-a-man",
+      "Body": "<p>Congratulations, you&rsquo;re a yuppie! (sellout!)</p>\r\n<p>Life is a breeze. Your days are filled with pointless meetings, cubicle gossip, and, if you play your cards right, very little actual work.</p>\r\n<p>In fact you&rsquo;re probably reading this right now <em>at work</em>... I rest my case.</p>\r\n<p>But that doesn&rsquo;t mean you don&rsquo;t have your fair share of challenges, and it&rsquo;s important you confront those challenges head-on in the most classy and manly way possible.</p>\r\n<p>Being a yuppie, you almost definitely walk to lunch on a daily basis (packing a lunch is for 3rd graders&hellip; although between you and me, I miss the snack packs). Heck, if you&rsquo;re doing it right, your home is within walking distance of all the coolest happy-hour haunts.</p>\r\n<p>Again... life is good.</p>\r\n<p>However, one must always account for those rainy days...</p>\r\n<p>Walking in the rain is one of the most emasculating challenges an adult male must face. I don&rsquo;t care who you are, or how tough you may be - it&rsquo;s the anti-spinach. You are probably all too familiar with its effects: shrugged up shoulders, squinting, pained eyes, and a face that screams \"oh crap, I&rsquo;m going to have to spend the rest of the day in soiled trousers\".</p>\r\n<p>In movies, the only time a man is ever shown in the rain is in the dreaded chick flick. Even then, it&rsquo;s either after he&rsquo;s been kicked to the curb, or when he&rsquo;s outside defiantly proclaiming his love come hell or high water (what a wimp!) ... or if he&rsquo;s being portrayed by <a href=\"http://gawker.com/5496712/john-cusack-may-have-the-most-rain-scenes-in-movies-than-any-other-actor\" target=\"_blank\">John Cusack</a>.</p>\r\n<p>Keep in mind, this is only done to subliminally give the impression that the man is crying, without having to make him physically do it. Proving that even though women may say that want a sensitive man, you better not be so sensitive that you cry like a blubbering idiot.</p>\r\n<p>Therefore, when combating an enemy as ancient as the earth itself, it&rsquo;s important to be prepared both mentally and physically.</p>\r\n<p>So, what is a man supposed to do in these difficult and wet times?</p>\r\n<h5>STEP ONE: Choosing the Right Umbrella</h5>\r\n<p>And by the \"right umbrella,\" I mean the <a href=\"http://www.amazon.com/gp/product/B000W4W4I0/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B000W4W4I0&amp;linkCode=as2&amp;tag=dochoffiday-20\" target=\"_blank\">Totes Vented Canopy Auto-Open Golf Stick Umbrella</a>.</p>\r\n<p>Exhibit A:</p>\r\n<p><img src=\"http://dl.dropboxusercontent.com/u/6594300/cdn/umbrella.jpg\" alt=\"\" /></p>\r\n<p>It boasts every feature on the umbrella checklist:</p>\r\n<ol>\r\n<li>functional</li>\r\n</ol>\r\n<p>... and <em>nothing more</em>.</p>\r\n<p>No design patterns. No little hook handle. It&rsquo;s not attached to a hat. It&rsquo;s the perfect way to keep your new <a href=\"http://www.bonobos.com/\" target=\"_blank\">Bonobos</a> shirt clean and crisp.</p>\r\n<p>Now let me pause for a moment to mention that this is an exciting time for \"male fashion.\" For starters, it&rsquo;s apparently a thing - which was news to me.</p>\r\n<p>In this day and age, men are encouraged to explore their creative side through the unique format of trendy clothing and \"manly\" accessories.</p>\r\n<p>This is not one of those times. Just stick to the plan.</p>\r\n<p>At this point, you might be saying to yourself \"but what about an umbrella shaped like a sword or one with a flannel design... those are macho!\"</p>\r\n<p>False. Straying from the functional will only land you in \"accessory\" territory.</p>\r\n<p>Also, you&rsquo;re saying the word \"macho,\" which is basically a word invented by marketing agencies to get fake and superficially masculine things seems genuinely manly - true manliness speaks for itself and doesn&rsquo;t need fluff words to hype it.</p>\r\n<p>Besides, there was only one \"Macho Man\" - Randy Savage (RIP) - and he took that title with him to the grave.</p>\r\n<p>He was so manly that the only voice he spoke in was a <a href=\"http://www.youtube.com/watch?v=rWrlAmT4jyA#t=5\" target=\"_blank\">whisper scream</a>. He was the only man intrepid enough to offset the visual connotations of the <a href=\"https://dl.dropboxusercontent.com/u/6594300/cdn/village-macho.jpg\" target=\"_blank\">Village People.</a></p>\r\n<p>Also, he was the spokesperson for beef jerky.</p>\r\n<p>So please, don&rsquo;t delude yourself into thinking you can pull it off. You are no Randy Savage.</p>\r\n<p>[Go read <a href=\"http://www.dochoffiday.com/personal/a-yuppies-guide-to-walking-in-the-rain-like-a-man-part-two\">part two</a>!]</p>",
+      "IsCommentsVisible": true,
+      "IsCommentsOpen": false,
+      "Created": "2014-08-09T22:25:32",
+      "Modified": "2020-01-08T16:38:28.083",
+      "IsPublished": true,
+      "PublishDate": "2014-01-10T16:30:00"
+    },
+    {
+      "PostID": 4,
+      "CategoryID": 2,
+      "Title": "A Yuppies Guide to Walking in the Rain like a Man [Part Two]",
+      "Slug": "a-yuppies-guide-to-walking-in-the-rain-like-a-man-part-two",
+      "Body": "<p>If you haven&rsquo;t already done so, go read <a href=\"http://www.dochoffiday.com/personal/a-yuppies-guide-to-walking-in-the-rain-like-a-man\">part one</a>! If you don&rsquo;t, you&rsquo;ll just be lost and left to wonder, \"What is this dumb thing and why am I reading it?\" I&rsquo;m not saying that reading part one will answer those questions necessarily [50/50 I&rsquo;d posit], but my site could really use the page hits.</p>\r\n<p>Alas, if part one is \"tl;dr\", let me summarize it for you: <a href=\"http://www.amazon.com/gp/product/B000W4W4I0/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B000W4W4I0&amp;linkCode=as2&amp;tag=dochoffiday-20\" target=\"_blank\">get this umbrella</a>!</p>\r\n<p>Now, let&rsquo;s get down to business.</p>\r\n<h5>STEP TWO: Mind Your <em>MAN</em>ners</h5>\r\n<p>Well done! You&rsquo;ve got the proper hardware. But how do you use it? More importantly, how do you use it... like a man?!</p>\r\n<p>When you expand that umbrella, you are agreeing to a [previously] unwritten code of conduct. After all, an umbrella is a PRIVILEGE, not a RIGHT.</p>\r\n<p>Let's break it down!</p>\r\n<h5>The Obvious Stuff</h5>\r\n<p>Before I dive into the subtleties, let me rattle off the UMBRELLA ETIQUETTE 101 basics, i.e. the stuff I shouldn&rsquo;t have to say, but I will, in case you just became a man.</p>\r\n<ol>\r\n<li> Obviously, you are never, <em>ever</em>, to twirl the umbrella. </li>\r\n<li> Do not sing. It may start as an innocent whisper to yourself, \"I&rsquo;m singing in the rain. Just singing in the rain. What a glorious feelin&rsquo;. I&rsquo;m happy ag\" ... crap. See, that&rsquo;s how easy it is to get swept away in song! So, best off to just keep that mouth shut. </li>\r\n</ol>\r\n<p>Hopefully none of this was new information. But now we&rsquo;ll venture in to some trickier areas - but still, the basic rule of thumb is, above all else, BE A GENTLEMAN.</p>\r\n<h5>Lesson One: Share the Road</h5>\r\n<p>By now, Amazon should have shipped your bad-ass piece of hardware, and it&rsquo;s all that you dreamed it could be. Since it&rsquo;s meant to actually protect you from rain and not just look cute, it takes up it&rsquo;s fair share of space. So when walking down a sidewalk, you should <em>always</em> yield to the other pedestrians.</p>\r\n<p>This may seem annoying, and possibly superfluous, but you have to remember: other people may not have the same level of protection that you do. You are under a shield of armour. Others are not so lucky. So make sure you give others the right-of-way -- it may not seem like the <em>yuppie</em> thing to do, but it is the <em>right</em>&nbsp;[and therefore, manly] thing to do.</p>\r\n<h5>Lesson Two: Share the Load</h5>\r\n<p>This is a tough one [I have NOT been looking forward to this lesson]. What do you do if someone else doesn&rsquo;t have an umbrella? Do you let him or her \"come hither\" and share the wealth? Or do you let the victim face the consequences of his or her life choices? [Let&rsquo;s be real, it&rsquo;s the consequences of <em>his</em> life choices -- if it&rsquo;s a girl, you are going to share.]</p>\r\n<p>After all, <em>you</em> came prepared, so you <em>should</em> be rewarded, right? And besides, you don&rsquo;t want to be an umbrella-mooch&nbsp;<em>enabler</em>, do you? They have to learn at some point, don&rsquo;t they? Well, actually... you are absolutely correct! Live and learn, suckers! Can&rsquo;t risk getting those brand new <a href=\"http://www.zappos.com/clarks-desert-boot-taupe-suede\" target=\"_blank\">desert boots</a> wet!</p>\r\n<h5>Lesson Three: Dry it Out</h5>\r\n<p>The last lesson is to always dry the umbrella as much as possible before walking inside. It&rsquo;s just like wiping your shoes on the shoe mat. Never bring in the slop from outside.</p>\r\n<p>The only catch is, when shaking your umbrella dry, always follow the golden rule of shaking: any more than three shakes and you&rsquo;re just playing with yourself... Ok, that analogy's not a perfect fit, but in all seriousness, a few hard shakes will do the trick just fine!</p>\r\n<p>Now go out there and stay dry with some class!</p>\r\n<p>[Stay tuned for part three!]</p>",
+      "IsCommentsVisible": true,
+      "IsCommentsOpen": false,
+      "Created": "2014-08-09T22:31:27",
+      "Modified": "2020-01-08T16:38:24.663",
+      "IsPublished": true,
+      "PublishDate": "2014-01-16T22:38:00"
+    },
+    {
+      "PostID": 5,
+      "CategoryID": 1,
+      "Title": "jAlert - a jQuery UI Alert / Confirm Replacement",
+      "Slug": "jalert-a-jquery-ui-alert-confirm-replacement",
+      "Body": "<p>A themeroller ready replacement for the standard Alert and Confirm dialog boxes.</p>\r\n<h5>The Motivation</h5>\r\n<p>The standard dialog boxes are notoriously user unfriendly. &nbsp;They left developers unable to tweak their functionaly, and designers unable to tweak their design. &nbsp;When all is said and done, they are pretty crude devices.</p>\r\n<p>By having a jQuery UI plugin, you leverage the themability of the UI framework. &nbsp;And, by making it configurable, more control is provided than just the message displayed to the user.</p>\r\n<h5>The Foundation</h5>\r\n<p>At its core, jAlert is a jQuery UI dialog plugin, set-up to specifically mimic [and improve upon] the standard dialog boxes. &nbsp;Also, while many of the options for the underlying UI dialog are pre-set, all of the UI dialog options may be overriden by the optional 'options' parameter.</p>\r\n<h5>Usage</h5>\r\n<pre class=\"highlight\">$.jAlert([message], [highlight level], function() {\r\n\t//callback\r\n}, [options]);\r\n\t\r\n\t\r\n$.jConfirm([message], [highlight-level], function(result) {\r\n\t//callback - result is either 'true' of 'false'\r\n}, [options]);\r\n</pre>\r\n<p>&nbsp;</p>\r\n<ul>\r\n<li>[message] : The message displayed to the user</li>\r\n<li>[highlight&nbsp;level] : The 'highlight level' of the dialog [values: 'highlight', 'error', '']</li>\r\n<li>[options] : optional parameter - additional options for the underlying UI dialog window</li>\r\n</ul>\r\n<p>To see some examples, go the&nbsp;<a href=\"https://dochoffiday.github.io/jquery.ui.alert/\" target=\"_blank\">demo page</a>&nbsp;or view the <a href=\"https://github.com/dochoffiday/jquery.ui.alert\" target=\"_blank\">project on GitHub!</a></p>\r\n<p class=\"highlighter\"><a href=\"https://github.com/dochoffiday/jquery.ui.alert\" target=\"_blank\">Fork On GitHub!</a></p>",
+      "IsCommentsVisible": true,
+      "IsCommentsOpen": false,
+      "Created": "2014-08-09T22:35:53",
+      "Modified": "2018-10-12T19:35:46.183",
+      "IsPublished": true,
+      "PublishDate": "2011-02-04T11:26:00"
+    },
+    {
+      "PostID": 6,
+      "CategoryID": 1,
+      "Title": "C# Delimiter",
+      "Slug": "c-delimiter",
+      "Body": "<p>This is a handy little class that I&rsquo;ve used quit a bit since it&rsquo;s creation, so I thought I&rsquo;d share it with the world.</p>\r\n<h5>The Motivation</h5>\r\n<p>I grew tired of manually outputting delimiter strings, or, even worse, trying to maintain a list stored as one big string with embedded delimiters. So I created a class to do the dirty work for me. &nbsp;Also, feeling sorry for other characters who were sick of seeing the ',' as the default delimiter, this class has the ability to use any string value as its delimiter.</p>\r\n<h5>The Code</h5>\r\n<pre class=\"highlight\">using System;\r\nusing System.Collections.Generic;\r\nusing System.Text;\r\n\r\nnamespace AJ.UtiliTools\r\n{\r\n    public class Delimiter : List\r\n    {\r\n        public String Separator { get; set; }\r\n        public String Replacement { get; set; }\r\n\r\n        public Delimiter(String separator)\r\n        {\r\n            Separator = separator;\r\n            Replacement = \" \";\r\n        }\r\n\r\n        public Delimiter(String separator, String replacement)\r\n        {\r\n            Separator = separator;\r\n            Replacement = replacement;\r\n        }\r\n\r\n        public override string ToString()\r\n        {\r\n            StringBuilder sb = new StringBuilder();\r\n\r\n            for (int r = 0; r &lt; this.Count; r++)\r\n            {\r\n                sb.Append(this[r].Replace(Separator, Replacement));\r\n\r\n                if (r &lt; (this.Count - 1))\r\n                    sb.Append(Separator);\r\n            }\r\n\r\n            return sb.ToString();\r\n        }\r\n    }\r\n}</pre>\r\n<h5>In Practice</h5>\r\n<pre class=\"highlight\">Delimiter d = new Delimiter(\"~\");\r\n\t\r\nd.Add(\"1\");\r\nd.Add(\"2\");\r\nd.Add(\"3\");\r\nd.Add(\"4\");\r\nd.Add(\"5\");\r\n\r\nDebug.WriteLine(d.ToString());\r\n\r\nDelimiter d2 = new Delimiter(\"~\", \",\");\r\n\r\nd2.Add(\"1\");\r\nd2.Add(\"2\");\r\nd2.Add(\"3~4\");\r\nd2.Add(\"5\");\r\n\r\nDebug.WriteLine(d2.ToString());</pre>\r\n<p>:: which will output the following:</p>\r\n<blockquote>\r\n<p>1~2~3~4~5<br />1~2~3,4~5</p>\r\n</blockquote>",
+      "IsCommentsVisible": true,
+      "IsCommentsOpen": false,
+      "Created": "2014-08-09T23:06:54",
+      "Modified": "2014-08-09T23:08:22.663",
+      "IsPublished": true,
+      "PublishDate": "2011-01-13T12:57:00"
+    },
+    {
+      "PostID": 7,
+      "CategoryID": 1,
+      "Title": "Have you been Naughty or Nice?!",
+      "Slug": "have-you-been-naughty-or-nice",
+      "Body": "<p>Ho, Ho, Ho! For this year&rsquo;s company Christmas card, my place of work (<a href=\"http://www.williams-forrest.com/\" target=\"_blank\">Williams-Forrest</a>) decided to make a fun little site that decides whether or not you&rsquo;ve been Naughty or Nice.</p>\r\n<p>The application reads your Facebook posts from the past year while tallying up &ldquo;nice&rdquo; words and &ldquo;naughty&rdquo; words (each with a different weight). Once it&rsquo;s compiled the list, it sums up the total. If your score is above zero, you&rsquo;re nice! However, for those unlucky souls below zero, you will be branded naughty! So you better watch out!</p>\r\n<p>It was a fun project to work on, and the designer, <a href=\"http://ryanbeck.me/\" target=\"_blank\">Ryan Beck</a>, did a pretty killer job.</p>\r\n<p>Check it out <a href=\"http://onlysantacanjudge.me/\" target=\"_blank\">here!</a></p>",
+      "IsCommentsVisible": false,
+      "IsCommentsOpen": false,
+      "Created": "2014-08-09T23:10:08.663",
+      "Modified": "2014-08-09T23:10:08.663",
+      "IsPublished": true,
+      "PublishDate": "2013-12-17T11:03:00"
+    },
+    {
+      "PostID": 8,
+      "CategoryID": 1,
+      "Title": "Introducing \"ScheduleMagic\" A Simple Task Scheduler for ASP.NET",
+      "Slug": "introducing-schedulemagic-a-simple-task-scheduler-for-asp-net",
+      "Body": "<p>Creating background tasks in .NET has always been a bit of a pain. You want to create something localized to your project solution that doesn't have to deal with scheduled tasks or other kinds of tomfoolery. Well, thankfully, those days are far behind us! All we need is a little... magic!</p>\r\n<p>Leveraging the caching on the web server, ScheduleMagic allows you to schedule any task you want on any schedule you want. Simply implement the <em>ISchedule </em>and <em>IScheduledTask </em>to create schedules and tasks. Register those tasks on the application start and voila! ... MAGIC!</p>\r\n<p>To see some working examples, or to download the library for your own use, head on over to the project, hosted on GitHub!</p>\r\n<p class=\"highlighter\"><a href=\"https://github.com/dochoffiday/ScheduleMagic\" target=\"_blank\">Fork On GitHub!</a></p>",
+      "IsCommentsVisible": true,
+      "IsCommentsOpen": false,
+      "Created": "2014-08-09T23:15:27",
+      "Modified": "2014-08-20T04:21:21.217",
+      "IsPublished": true,
+      "PublishDate": "2013-12-03T14:21:00"
+    },
+    {
+      "PostID": 9,
+      "CategoryID": 1,
+      "Title": "jQuery Proximity",
+      "Slug": "jquery-proximity",
+      "Body": "<p>A simple plugin that fires events based on the <em>proximity </em>of the cursor to an element.</p>\r\n<p>Assuming this particular wheel had already been invented, I hit the intrawebs looking for a valid solution. &nbsp;And, after a little digging, <a href=\"http://srobbin.com/blog/jquery-plugins/jquery-approach/\" target=\"_blank\">jQuery Approach</a> pulled ahead as the front-runner. Unfortunately, it just wasn&rsquo;t quite granular enough &ndash; I needed something with a little more control.</p>\r\n<p>So I wrote a simple plugin that, when tied to an element and given a &lsquo;range&rsquo;, fires events that provide feedback, particularly a percentage of how far the cursor is to the element when compared to the total range.</p>\r\n<p>When the cursor is at distance greater than or equal to the &lsquo;range&rsquo;, a percentage of &rsquo;1' is given. If the cursor is hovering over the element, a percentage of &rsquo;0' is given. Anywhere else will give a number between &rsquo;0' and &rsquo;1' depending on the proximity of the cursor to the element.</p>\r\n<p class=\"highlighter\"><a href=\"https://dochoffiday.github.io/jquery.proximity/\">View Demo</a></p>",
+      "IsCommentsVisible": true,
+      "IsCommentsOpen": false,
+      "Created": "2014-08-09T23:17:01",
+      "Modified": "2018-10-12T19:26:12.45",
+      "IsPublished": true,
+      "PublishDate": "2011-01-14T11:15:00"
+    },
+    {
+      "PostID": 10,
+      "CategoryID": 1,
+      "Title": "jQuery UI Loader",
+      "Slug": "jquery-ui-loader",
+      "Body": "<p>Simple jQuery UI widget to overlay an existing area and display an animated progress bar [powered by jQuery progress bar].</p>\r\n<p>To see some examples, go the&nbsp;<a href=\"https://dochoffiday.github.io/jquery.ui.loader/\" target=\"_blank\">demo page</a>&nbsp;or view the <a href=\"https://github.com/dochoffiday/jquery.ui.loader\" target=\"_blank\">project on GitHub!</a></p>\r\n<p class=\"highlighter\"><a href=\"https://github.com/dochoffiday/jquery.ui.loader\" target=\"_blank\">Fork On GitHub!</a></p>",
+      "IsCommentsVisible": true,
+      "IsCommentsOpen": false,
+      "Created": "2014-08-09T23:19:22",
+      "Modified": "2018-10-12T19:46:30.983",
+      "IsPublished": true,
+      "PublishDate": "2011-01-14T11:42:00"
+    },
+    {
+      "PostID": 11,
+      "CategoryID": 1,
+      "Title": "jQuery UI Tables",
+      "Slug": "jquery-ui-tables",
+      "Body": "<p>God Bless the jQuery UI Framework. &nbsp;Designing widgets has always been a curious business where I always end up feeling unsatisfied. &nbsp;So, thanks to the Framework, I can focus more on development, and leave the theming up to the implementation folks [whoever they may be].</p>\r\n<p>However, it's still an incomplete Framework. &nbsp;One feature I always felt lacking was the design of a simple table. &nbsp;I've stubmled upon solutions in the past for complex datagrids, but it always stank of overkill.</p>\r\n<p>As it turns out, I wasn't the only one who felt this feature <a href=\"http://stackoverflow.com/questions/2613632/jquery-ui-themes-and-html-tables/2625525#2625525\" target=\"_blank\">lacking</a>.</p>\r\n<p>I've tinkered with the code quit a bit since that post, but the basic idea is the same. &nbsp;Hope you enjoy!</p>\r\n<p>To see some examples, go the&nbsp;<a href=\"https://dochoffiday.github.io/jquery.ui.tables/\" target=\"_blank\">demo page</a>&nbsp;or view the <a href=\"https://github.com/dochoffiday/jquery.ui.tables\" target=\"_blank\">project on GitHub!</a></p>\r\n<p class=\"highlighter\"><a href=\"https://github.com/dochoffiday/jquery.ui.tables\" target=\"_blank\">Fork On GitHub!</a></p>",
+      "IsCommentsVisible": true,
+      "IsCommentsOpen": false,
+      "Created": "2014-08-09T23:20:29",
+      "Modified": "2018-10-12T19:48:52.743",
+      "IsPublished": true,
+      "PublishDate": "2011-01-14T11:27:00"
+    },
+    {
+      "PostID": 12,
+      "CategoryID": 1,
+      "Title": "Orchard CMS - Errors When Pushing Changes in the Migrations File",
+      "Slug": "orchard-cms-errors-when-pushing-changes-in-the-migrations-file",
+      "Body": "<p>I really love the <a href=\"http://www.orchardproject.net/\">Orchard CMS</a> (the CMS engine built upon the .NET MVC Framework), but it isn't without its quirks. I've found that often times, when I try to delete a column from an existing table in the migrations file, the site inexplicably starts throwing errors. After digging through the error log, I found that the error usually is along the following lines:</p>\r\n<blockquote>\r\n<p>Error when updating module: \"A tenant could not be started: Default NHibernate.PropertyNotFoundException: Could not find a getter for property '{property}' in class '{className}'\"&nbsp;</p>\r\n</blockquote>\r\n<p>Basically, even though the column was deleted in the migrations file, Orchard is still looking for that column.</p>\r\n<h5>The Solution</h5>\r\n<p>This is actually a pretty easy fix. In your App_Data folder, there is a \"Sites\" folder, and within that there should be a folder matching the name of your site (usually \"Default\"). From here, simply <span style=\"text-decoration: underline;\">delete the \"mappings.bin\"</span> file.</p>\r\n<p>This will clear out the mappings and create new ones from scratch. From there, you should be good to go.</p>",
+      "IsCommentsVisible": true,
+      "IsCommentsOpen": false,
+      "Created": "2014-08-09T23:23:28.637",
+      "Modified": "2014-08-09T23:23:28.637",
+      "IsPublished": true,
+      "PublishDate": "2013-02-07T16:57:00"
+    },
+    {
+      "PostID": 13,
+      "CategoryID": 1,
+      "Title": "shov.in – an(other) ASP.NET MVC URL shortener",
+      "Slug": "shov-in-an-other-asp-net-mvc-url-shortener",
+      "Body": "<p>When I was a young recreational internet surfer, cranking out sites on Geocities, I had my first great idea: to make a link navigate the user to a brief page of advertising before redirecting to the actual link. I stumbled upon the idea after noticing just how many links people would post on the internet forums I frequented &ndash; the topics of which I&rsquo;m sure would now embarrass me. While at the time it was a pure money making scheme (one that would prove successful for companies in the future), I was just a wide-eyed pre-teen with no idea how to start such a project. So the window of opportunity opened &ndash; and then shortly thereafter closed.</p>\r\n<p>While the focus now is more on aesthetics and length, the idea is basically the same: have a link that redirects to another link.</p>\r\n<h5>The Motivation</h5>\r\n<p>Flash forward several years, and URL shortening services are a dime a dozen. So why create one now? For starters, It would be nice to have my data on my servers under my control whenever, and as much, as possible. Second, with the return of the <a href=\"http://gizmodo.com/5656971/url-shorteners-in-peril-as-libyan-government-seizes-ly-domain\" target=\"_blank\">Libyans</a>&nbsp;<a href=\"http://www.imdb.com/title/tt0088763/\" target=\"_blank\">(!)</a>, some of the more obscure domain hacks may not be the best place for long-term security. Lastly, a URL shortening service seems to naturally lend itself to ASP.NET MVC &ndash; a technology that I have been craving to sink my teeth into for the past several months.</p>\r\n<p>So, even though I missed the boat on this one, <em>coding is fun</em>.</p>\r\n<h5>Time To Go Shopping</h5>\r\n<p>Much to my surprise, the coding was easy. It was domain shopping that left me frustrated and annoyed. I wanted a domain that fit the following criteria:</p>\r\n<ol>\r\n<li>short</li>\r\n<li>cheap</li>\r\n<li>meaningful</li>\r\n</ol>\r\n<p>&hellip; the first two came easy. The 3rd one, well, not so much. So after an hour or so, I found one that could almost pass for a real word. But if I&rsquo;m being honest, the real reason it stuck was because it reminded me of an Ace Ventura quote that I&rsquo;ve been known to break out every now and again.</p>\r\n<p>[side bar] I really wanted aza.am so I could create http://k.aza.am &ndash; even if it is a bit long.</p>\r\n<p>After much ado: <a href=\"http://shov.in\" target=\"_blank\">http://shov.in</a> &ndash; bought and paid. Feel free to browse around and use it. It even has a handy dandy bookmarklet to &ldquo;shove&rdquo; any page you&rsquo;re currently browsing, as well as a complete API [which has yet to be documented].</p>\r\n<p>I&rsquo;ll try and post the source code sometime soon. Who knows, maybe I&rsquo;ll even github it or something of the sort at some point.</p>\r\n<p class=\"highlighter\"><a href=\"http://shov.in\" target=\"_blank\">View Site</a></p>\r\n<h5>The Source</h5>\r\n<p>UPDATE Now hosted on GitHub : <a href=\"https://github.com/dochoffiday/shov.in\" target=\"_blank\">https://github.com/dochoffiday/shov.in</a></p>",
+      "IsCommentsVisible": true,
+      "IsCommentsOpen": false,
+      "Created": "2014-08-09T23:24:53",
+      "Modified": "2018-10-15T17:26:44.357",
+      "IsPublished": true,
+      "PublishDate": "2011-01-12T18:14:00"
+    },
+    {
+      "PostID": 14,
+      "CategoryID": 1,
+      "Title": "Simulate \"Application_Start\" in Sharepoint",
+      "Slug": "simulate-application-start-in-sharepoint",
+      "Body": "<p>If you've worked within a SharePoint project, you may have noticed the absense of the \"Global.asax\" file. The SharePoint infrastructure doesn't include this file, so all methods within it, including the \"Application_Start\", are also unavailable. However, with some tricky maneuvering, we are able to simulate it.</p>\r\n<p>Instead of doing a line-by-line re-creation, I'll share with you a library I've created on GitHub and outline the basic premise.</p>\r\n<ol>\r\n<li>Create a static class with one public static method that returns \"true\" the first time it's called, otherwise it returns \"false\".</li>\r\n<li>Every time you visit the main master page, call the method in the static class.</li>\r\n<li>If it returns \"false\", do nothing.</li>\r\n<li>If it returns \"true\", execute any code which you would like run when the application starts.</li>\r\n</ol>\r\n<p>That's it from a logic point of view! To view the actual source code, or to just download the binaries, head on over to the GitHub project!</p>\r\n<p class=\"highlighter\"><a href=\"https://github.com/dochoffiday/Sharepoint.Startup\" target=\"_blank\">Fork On GitHub!</a></p>",
+      "IsCommentsVisible": true,
+      "IsCommentsOpen": false,
+      "Created": "2014-08-09T23:27:56",
+      "Modified": "2014-08-27T18:58:50.67",
+      "IsPublished": true,
+      "PublishDate": "2013-11-25T15:30:00"
+    },
+    {
+      "PostID": 15,
+      "CategoryID": 1,
+      "Title": "\"The type or namespace name 'Script' does not exist in the namespace'System.Web' (are you missing an assembly reference?)\"",
+      "Slug": "the-type-or-namespace-name-script-does-not-exist-in-the-namespace-system-web-are-you-missing-an-assembly-reference",
+      "Body": "<p>Sound familiar? How about one of these:</p>\r\n<ol>\r\n<li> The type or namespace name 'KeyValueConfigurationCollection' could not be found (are you missing a using directive or an assembly reference?) </li>\r\n<li> The type or namespace name 'Serialization' does not exist in the namespace 'System.Xml' (are you missing an assembly reference?)</li>\r\n<li> The type or namespace name 'SqlClient' does not exist in the namespace 'System.Data' (are you missing an assembly reference?)</li>\r\n</ol>\r\n<p>The underlying problem is that the assembly being referenced isn&rsquo;t included in the GAC (global assembly cache) on the server. Since developers typically have more control over their local environments, this error is often only exposed when a project is deployed to a production server.</p>\r\n<h5>The \"Web Project\" Solution</h5>\r\n<p>If, in Visual Studio, the project is a Web Project (as opposed to a Web Site), the solution is relatively easy. In your references folder, right-click the assembly in question and click &ldquo;Properties.&rdquo; From the properties window, toggle the &ldquo;Copy Local&rdquo; attribute to &ldquo;true.&rdquo;</p>\r\n<p>This ensures that the .dll for the assembly gets deployed along with your project, <a href=\"http://stackoverflow.com/questions/10341526/is-there-an-explanation-behind-the-error-the-type-or-namespace-name-script-do#10341610\" target=\"_blank\">as outlined here</a>.</p>\r\n<h5>The \"Web Site\" Solution</h5>\r\n<p>What if, however, your project is a Web Site? In a Web Site, this list of references is not available, removing the &ldquo;Copy Local&rdquo; fix as an option.</p>\r\n<p>Luckily, all is not lost. All we have to do is manually add the reference into the web.config file.</p>\r\n<p>This is easy if we know which assembly we have to add; however, not only do we not always know the assembly, but there&rsquo;s no easy way to get the &ldquo;PublicTokenNumber&rdquo; either.</p>\r\n<h5>Determining the Namespace</h5>\r\n<p>Going back to the &ldquo;Script&rdquo; example, the error reveals some other useful information, mainly the erroneous file and line number.</p>\r\n<blockquote>\r\n<p>Exception message: c:\\[file information]\\Extensions.cs(10): error CS0234: The type or namespace name 'Script' does not exist in the namespace 'System.Web' (are you missing an assembly reference?)</p>\r\n</blockquote>\r\n<p>After pulling up the file, here is the problematic line:</p>\r\n<pre class=\"highlight\">using System.Web.Script.Serialization;</pre>\r\n<p class=\"MsoNormal\">So we now know that we&rsquo;re trying to use the &ldquo;System.Web.Script.Serialization&rdquo; namespace, but we don&rsquo;t know yet which assembly this is included in.</p>\r\n<h5 class=\"MsoNormal\">Determining the Assembly</h5>\r\n<p>The quick-and-dirty way to determine this is to pull out the &ldquo;using&rdquo; line, see what class throws an error, then use reflection to get the assembly name for that class.</p>\r\n<p>In my example, when I remove the &ldquo;using&rdquo; line I get the following error:</p>\r\n<blockquote>\r\n<p>Error<span style=\"white-space: pre;\"> </span>1<span style=\"white-space: pre;\"> </span>The type or namespace name 'JavaScriptSerializer' could not be found (are you missing a using directive or an assembly reference?)<span style=\"white-space: pre;\"> </span></p>\r\n</blockquote>\r\n<p><span style=\"white-space: pre;\">o</span>n this line:</p>\r\n<pre class=\"highlight\">JavaScriptSerializer jss = new JavaScriptSerializer();</pre>\r\n<p>So, this is now what we know: the \"JavaScriptSerializer\" is under the \"System.Web.Script.Serialization\" namespace. But we still don&rsquo;t know the assembly.</p>\r\n<p>To grab the assembly, use the following piece of reflection to not only get the assembly, but the exact line needed to add to the web.config to include that assembly manually in the project.</p>\r\n<pre class=\"highlight\">System.Diagnostics.Debug.WriteLine(String.Format(\"&lt;add assembly=\\\"{0}\\\" /&gt;\", System.Reflection.Assembly.GetAssembly(typeof(JavaScriptSerializer)).FullName));</pre>\r\n<p>(if you're problem stems from a different class, just swap it out with the \"JavaScriptSerializer\" class)</p>\r\n<p>When executing that line, we get the following result:</p>\r\n<blockquote>\r\n<p>&lt;add assembly=\"System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35\" /&gt;</p>\r\n</blockquote>\r\n<p>(reference <a href=\"http://stackoverflow.com/questions/2644908/visual-c-sharp-2010-express-output-window\" target=\"_blank\">this page</a> if you are using Visual Studio Express and are unsure of how to view the &ldquo;Output&rdquo; window)</p>\r\n<h5>Modifying the web.config</h5>\r\n<p>Now that we have the information we need, all we have to do is add it to the web.config.</p>\r\n<pre class=\"highlight\">&lt;configuration&gt;\r\n&nbsp; &lt;system.web&gt;\r\n&nbsp; &nbsp; &lt;compilation debug=\"true\" targetFramework=\"4.0\"&gt;\r\n&nbsp; &nbsp; &nbsp; &lt;assemblies&gt;\r\n&nbsp; &nbsp; &nbsp; &nbsp; &lt;add assembly=\"System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35\" /&gt;\r\n&nbsp; &nbsp; &nbsp; &lt;/assemblies&gt;\r\n&nbsp; &nbsp; &lt;/compilation&gt;\r\n&nbsp; &lt;/system.web&gt;\r\n&lt;/configuration&gt;</pre>\r\n<p>And with that, we&rsquo;re safe to deploy!</p>",
+      "IsCommentsVisible": true,
+      "IsCommentsOpen": false,
+      "Created": "2014-08-09T23:29:48",
+      "Modified": "2014-08-09T23:30:26.337",
+      "IsPublished": true,
+      "PublishDate": "2012-05-03T11:18:00"
+    },
+    {
+      "PostID": 17,
+      "CategoryID": 1,
+      "Title": "jQuery UI Checkbox / Radiobutton Replacement",
+      "Slug": "jquery-ui-checkbox-radiobutton-replacement",
+      "Body": "<p>When the jQuery UI Button widget was introduced, I was amused, &nbsp;but I wasn't exactly blown-away. &nbsp;It's not as exciting as Autocomplete, Accordion, or some of the other widgets, but handy nonetheless. &nbsp;However, when I discovered that it supported checkboxes and radiobuttons, I started to get excited, but only because I had yet to learn that the idea was better in theory than in practice.</p>\r\n<p>The state difference between 'on' and 'off' are almost impossible to differentiate on some of the themes, leaving the user unable to discern whether or not his/her checkbox is 'on' or 'off'. &nbsp;The problem isn't as drastic for a radiobutton, since the user can compare with the other radiobuttons in a different state, but it still wasn't practical.</p>\r\n<p>But, there was hope. &nbsp;Having a good foundation, I knew that with a few slight modifications, the Button widget's potential could be fully realized.</p>\r\n<h5>The Solution</h5>\r\n<p>I actually thought of the solution by accident. &nbsp;The widget has a 'primary' and 'secondary' icon options. &nbsp;I mistakenly assumed these were for the 'on' and 'off' icon states. &nbsp;\"Why isn't there an option for an 'on' and 'off' state for icons?\" &nbsp;It was a head scratcher.</p>\r\n<p>To me, having an 'on' and 'off' icon seems like a pretty simple feature, which is why I was surprised when it was overlooked. &nbsp;It also seemed like it would be simple to implement, and it was!</p>\r\n<p>I took the Button widget, modified it, and voila: 'on' and 'off' state icons. [For simplicity, I removed the secondary state icon]</p>\r\n<h5>The Options</h5>\r\n<pre class=\"highlight\">options: {\r\n\tdisabled: null,\r\n\ttext: true,\r\n\tlabel: null,\r\n\ticons: {\r\n\ton: 'ui-icon-circle-check',\r\n\toff: 'ui-icon-minusthick'\r\n\t}\r\n}\r\n</pre>\r\n<p>The only real difference is the 'icons' options, which have been renamed to 'on' and 'off' instead of 'primary' and 'secondary'.</p>\r\n<p>The real beauty is that because it's basically a mod of the Button widget, there isn't a need for new stylesheets - the ones already included for the Button will work just fine.</p>\r\n<p>To see some examples, go the&nbsp;<a href=\"https://dochoffiday.github.io/jquery.ui.checkbox/\" target=\"_blank\">demo page</a>&nbsp;or view the <a href=\"https://github.com/dochoffiday/jquery.ui.checkbox\" target=\"_blank\">project on GitHub!</a></p>\r\n<p class=\"highlighter\"><a href=\"https://github.com/dochoffiday/jquery.ui.checkbox\" target=\"_blank\">Fork On GitHub!</a></p>",
+      "IsCommentsVisible": true,
+      "IsCommentsOpen": false,
+      "Created": "2014-08-09T23:37:19",
+      "Modified": "2018-10-12T19:41:22.333",
+      "IsPublished": true,
+      "PublishDate": "2011-01-18T14:44:00"
+    },
+    {
+      "PostID": 18,
+      "CategoryID": 1,
+      "Title": "Using Regex and Yield to Recursively Find Multiple Controls",
+      "Slug": "using-regex-and-yield-to-recursively-find-multiple-controls",
+      "Body": "<p>This is a simple extension method that finds all child controls whose ID matches the regex pattern.</p>\r\n<h5>The Code</h5>\r\n<script src=\"https://gist.github.com/dochoffiday/0b04a92fc58f304de4184db39cf9df00.js\"></script>\r\n<h5>Demonstration</h5>\r\n<pre class=\"highlight\">foreach (Control control in pnlExample.FindControlsRecursive(@\"[^QuestionID]\"))<br />{<br />\t// do something<br />}</pre>",
+      "IsCommentsVisible": true,
+      "IsCommentsOpen": false,
+      "Created": "2014-08-09T23:44:08",
+      "Modified": "2018-10-12T20:09:56.267",
+      "IsPublished": true,
+      "PublishDate": "2011-06-08T10:33:00"
+    },
+    {
+      "PostID": 19,
+      "CategoryID": 1,
+      "Title": "Introducing Lorem.NET",
+      "Slug": "introducing-lorem-net",
+      "Body": "<p>A .NET library for all things random!</p>\r\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id commodo ante. In sagittis massa metus, ac viverra enim rhoncus vitae. Nunc ac orci orci. Nam sit amet metus nunc. Donec bibendum arcu a volutpat malesuada. Phasellus dapibus sapien non nisl posuere, at molestie ante iaculis. Mauris ligula neque, volutpat quis auctor at, eleifend eget lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. In quis orci id est ullamcorper gravida et porttitor tellus. Proin libero lacus, rhoncus vel nulla at, dignissim pulvinar ante. In hac habitasse platea dictumst. Donec ultricies turpis vitae massa aliquet porttitor. Donec eleifend sagittis dui. Donec venenatis vel dolor id dapibus. Etiam id arcu nibh.</p>\r\n<p>Whoops. Sorry about that...</p>\r\n<h5>What The What?</h5>\r\n<p>Lorem.NET is a random <em>everything</em> generator. From text, to dates, to booleans, and even email addresses, Lorem.NET has you covered. It's the perfect tool for creating real looking data, that isn't.</p>\r\n<p>To get a feel for what it can do, head over to the project site on <a href=\"https://github.com/dochoffiday/Lorem.NET\" target=\"_blank\">GitHub</a>.</p>\r\n<p><em>Available as a <a href=\"https://www.nuget.org/packages/Lorem.NET/\" target=\"_blank\">Nuget package</a>!</em></p>\r\n<p class=\"highlighter\"><em><a href=\"https://github.com/dochoffiday/Lorem.NET\" target=\"_blank\">Fork On GitHub!</a></em></p>",
+      "IsCommentsVisible": true,
+      "IsCommentsOpen": false,
+      "Created": "2014-08-20T03:55:34",
+      "Modified": "2020-01-08T16:38:17.35",
+      "IsPublished": true,
+      "PublishDate": "2014-08-20T03:53:40"
+    },
+    {
+      "PostID": 20,
+      "CategoryID": 1,
+      "Title": "Introducing \"jquery.ui.timeselect\" A jQuery UI Library for Selecting Time",
+      "Slug": "introducing-jquery-ui-timeselect-a-jquery-ui-library-for-selecting-time",
+      "Body": "<p>There is no shortage of timepickers for JavaScript, but the majority of them are overwrought, with timepickers being one of the few categories of plugins that tends to be way more visual than they need to be.</p>\r\n<p>jquery.ui.timeselect leverages the&nbsp;<a href=\"http://jqueryui.com/autocomplete/\" target=\"_blank\">jQuery UI</a>&nbsp;library and the&nbsp;<a href=\"http://www.datejs.com/\" target=\"_blank\">Datejs</a>&nbsp;library that adds an easy-to-use autocomplete feature to an existing input element, which can be used to select a time.</p>\r\n<p>To see some examples, go the&nbsp;<a href=\"https://dochoffiday.github.io/jquery.ui.timeselect/\" target=\"_blank\">demo page</a>&nbsp;or view the <a href=\"https://github.com/dochoffiday/jquery.ui.timeselect\" target=\"_blank\">project on GitHub!</a></p>\r\n<p class=\"highlighter\"><a href=\"https://github.com/dochoffiday/jquery.ui.timeselect\" target=\"_blank\">Fork On GitHub!</a></p>",
+      "IsCommentsVisible": true,
+      "IsCommentsOpen": false,
+      "Created": "2014-11-10T04:21:23",
+      "Modified": "2020-01-08T16:38:14.523",
+      "IsPublished": true,
+      "PublishDate": "2014-11-10T04:15:59"
+    },
+    {
+      "PostID": 21,
+      "CategoryID": 1,
+      "Title": "Professional Goals of 2015 [Updated!]",
+      "Slug": "professional-goals-of-2015",
+      "Body": "<p>For the first time ever, I'm making a list of career goals for the year. I'm shooting for some low-hanging fruit here, but hey, I have to start somewhere! [If you judge me on any of these, maybe YOUR resolution should be to BACK OFF... Ok, phew, sorry. That was uncalled-for... I'll calm down.]</p>\r\n<ol>\r\n<li>Read <a href=\"http://www.amazon.com/gp/product/0735619670/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;linkCode=as2\" target=\"_blank\">Code Complete</a>. This book has been on my nightstand for <em>years</em>. It's my book version of Dumb &amp; Dumber. Before I actually sat down and watched Dumb &amp; Dumber straight through, I watched about 90% of it in bits and pieces [some of them many times over] through re-runs on TV. With Code Complete, I've read most of it by just picking pieces here and there to read. But this year, I'm going to finish what I started! Probably. Err... Hopefully!</li>\r\n<li>Get business cards. Ok. So this one is probably more of a personal goal, because I don't actually think I need them and basically just want something to show off, but I have enough personal resolutions as it is, so this goal put in for a transfer.</li>\r\n<li>Increase my StackOverflow reputation by 1,000. Right now I'm at a mildly-respectable (I think?) score of 3,165 [I'm no&nbsp;<a href=\"http://stackoverflow.com/users/22656/jon-skeet\" target=\"_blank\">Jon Skeet</a>]. By this time next year I hope to be <em>at least</em>&nbsp;at 4,165.</li>\r\n<li>Make <em>one</em>&nbsp;contribution to <em>one</em>&nbsp;open source project. When it comes to open source, I've made a habit out of feeding off the goodwill of others without giving anything back. So this year I just want to contribute <em>something</em>.&nbsp;My primary road bump has always been thinking, \"what could little ol' me have to contribute?\" So I guess part of this goal is to gain a little confidence, <a href=\"http://m5.paperblog.com/i/30/301926/fabulous-filmic-fashion-friday-the-wizard-of--L-zQOisU.jpeg\" target=\"_blank\">scarecrow style</a>. [<strong>Update: </strong><a href=\"https://github.com/finnsson/pagerjs/pull/210\" target=\"_blank\">done!</a>]</li>\r\n</ol>\r\n<p>That's it for now! Check back in about 365 days to see how I did!</p>\r\n<ol> </ol>",
+      "IsCommentsVisible": true,
+      "IsCommentsOpen": false,
+      "Created": "2015-01-05T21:46:13",
+      "Modified": "2020-01-08T16:38:10.957",
+      "IsPublished": true,
+      "PublishDate": "2015-01-05T21:36:49"
+    },
+    {
+      "PostID": 22,
+      "CategoryID": 1,
+      "Title": "Include \"$\" (dollar sign) in a menu item description in Squarespace",
+      "Slug": "include-dollar-sign-in-a-menu-item-description-in-squarespace",
+      "Body": "<p>I'm using <a href=\"http://www.squarespace.com/\">Squarespace</a> to create a fairly straightforward site for a restaurant. Squarespace uses their flavour of markdown syntax when creating menu items, and for the most part it's pretty fool-proof. I did hit a small hiccup, however, when I needed to add a dollar sign ($) to a description for a menu item.</p>\r\n<p>The problem is that when Squarespace sees the dollar sign, it assumes that text is for the price, and moves it to the bottom (which messes up everything else).</p>\r\n<p>Here's the <em>incorrect</em> markdown:</p>\r\n<blockquote>Loch Duart Scottish Salmon Salad<br /> Grilled sustainable salmon served a top of mixed spring greens, tomatoes and cucumber, with your choice of dressing (substitute with sesame crusted seared tuna steak for an additional $3)<br /> $14</blockquote>\r\n<h5>The Fix</h5>\r\n<p>To fix it, all you have to do is use the ASCII equivalent (&amp;#36;3) and it will work just fine!</p>\r\n<blockquote>Loch Duart Scottish Salmon Salad<br /> Grilled sustainable salmon served a top of mixed spring greens, tomatoes and cucumber, with your choice of dressing (substitute with sesame crusted seared tuna steak for an additional &amp;#36;3)<br /> $14</blockquote>\r\n<h5 style=\"margin-top: 0 !important;\">&nbsp;</h5>\r\n<p><strong>Update [12/20/2018]:</strong> This post used to have images portraying the correct and incorrect way in action, but the service they were hosted on expired the images.</p>",
+      "IsCommentsVisible": true,
+      "IsCommentsOpen": false,
+      "Created": "2015-02-15T04:05:08",
+      "Modified": "2020-01-08T16:38:08.423",
+      "IsPublished": true,
+      "PublishDate": "2015-02-15T03:58:13"
+    },
+    {
+      "PostID": 23,
+      "CategoryID": 1,
+      "Title": "Creating a 404 page with pager.js",
+      "Slug": "creating-a-404-page-with-pager-js",
+      "Body": "<p><a href=\"https://github.com/finnsson/pagerjs\" target=\"_blank\">Pager.js</a> is a single-page application framework for <a href=\"http://knockoutjs.com/\" target=\"_blank\">KnockoutJS</a>, and it has a lot of neat things out-of-the-box. But if you're using it, you may wonder how to create a 404 page, since there's no explicit method for this purpose.</p>\r\n<p>It turns out, however, that this is pretty easy! Pager.js has a built-in system for <a href=\"#\" target=\"_blank\">wildcards</a> that provides a sort of \"catch-all\" for routes. So, if you create a <a href=\"http://pagerjs.com/demo/#!/navigation/structure\" target=\"_blank\">root page</a> (as in a page that is not nested under any other pages), just set the id to \"?\" (i.e. the wildcard marker).</p>\r\n<pre class=\"highlight\">&lt;div data-bind=\"page: {id: '?', title: '404 - Page Not Found', scrollToTop: true, sourceCache: true }\"&gt;\r\n    &lt;h1&gt;404 :'(&lt;/h1&gt;\r\n&lt;/div&gt;\r\n</pre>\r\n<p>If you do this, <em>any</em> routes that don't have matching page will fall to the root wildcard page (like what happens <a href=\"http://pagerjs.com/demo/#!/gobbledigook\" target=\"_blank\">here</a>)! Which you can design however you want!</p>",
+      "IsCommentsVisible": true,
+      "IsCommentsOpen": false,
+      "Created": "2015-09-08T20:59:35",
+      "Modified": "2015-09-08T22:40:48.357",
+      "IsPublished": true,
+      "PublishDate": "2015-09-08T20:51:14"
+    },
+    {
+      "PostID": 24,
+      "CategoryID": 1,
+      "Title": "Adding Up Rounded Percentages to Equal 100%",
+      "Slug": "adding-up-rounded-percentages-to-equal-100",
+      "Body": "<p>When working with rounded percentages, it's actually <em>not</em> that easy to make sure the percentages add up to 100%. Take the following example:</p>\r\n<ul>\r\n<li>40.5%</li>\r\n<li>20.6%</li>\r\n<li>38.9%</li>\r\n</ul>\r\n<p>If you use basic rounding, you'll get 41%, 21%, and 39%... which adds up to 101%!</p>\r\n<p>So, what can we do?</p>\r\n<h5>The Solution</h5>\r\n<p>The logic behind the solution is fairly straightforward and is just a spin-off of the <a href=\"https://en.wikipedia.org/wiki/Largest_remainder_method\" target=\"_blank\">largest remainder method</a>:</p>\r\n<ol>\r\n<li>Instead of rounding to the closest integer, round everything <em>down</em>.</li>\r\n<li>Take the sum of those numbers, and subtract it from 100 to determine the difference.</li>\r\n<li>Re-allocate the difference by adding <em>1</em> to the numbers with the highest decimal.</li>\r\n</ol>\r\n<p>Going back to our example:</p>\r\n<ol>\r\n<li>We round the numbers to 40, 20, and 38.</li>\r\n<li>We subtract the sum of those (98) from 100, which equals <strong>2</strong>.</li>\r\n<li>We add <em>1</em> to the top <strong>2</strong> highest decimals, which gives us 40, 21, and 39... the sum of which equals 100!</li>\r\n</ol>\r\n<p>That was the <em>easy</em> part. The real trick is duplicating that in code. Thankfully, it's already been done! Read the next section for a class that automatically rounds these numbers, while still preserving their original order.</p>\r\n<h5>The Code</h5>\r\n<script src=\"https://gist.github.com/dochoffiday/333a22e937f7503cd770ed70a429df23.js\"></script>\r\n<p>To see the full gist, <a href=\"https://gist.github.com/dochoffiday/333a22e937f7503cd770ed70a429df23\" target=\"_blank\">click here</a>.</p>",
+      "IsCommentsVisible": true,
+      "IsCommentsOpen": false,
+      "Created": "2017-08-17T15:08:40",
+      "Modified": "2020-01-08T16:38:02.567",
+      "IsPublished": true,
+      "PublishDate": "2017-08-17T15:06:54"
+    },
+    {
+      "PostID": 25,
+      "CategoryID": 1,
+      "Title": "How to Store Additional User Information in Forms Authentication",
+      "Slug": "how-to-store-additional-user-information-in-forms-authentication",
+      "Body": "<p>When using Forms Authentication, it can be desirable to store additional information with the authentication cookie, like the user's first name, or whether or not they are an admin. Thankfully, while not super intuitive, Forms Authentication <em>does</em> provide this using the FormsAuthenticationTicket's UserData property.</p>\r\n<p>The UserData property is a <code>string</code>, so you can store pipe-separated data, or even a serialized object.</p>\r\n<h5>The Code</h5>\r\n<script src=\"https://gist.github.com/dochoffiday/badfd41c4b1bc51971d00080d157943b.js\"></script>\r\n<p>To see the full gist, <a href=\"https://gist.github.com/dochoffiday/badfd41c4b1bc51971d00080d157943b\" target=\"_blank\">click here</a>.</p>\r\n<h5>Further Reading</h5>\r\n<ul>\r\n<li><a href=\"https://docs.microsoft.com/en-us/aspnet/web-forms/overview/older-versions-security/introduction/forms-authentication-configuration-and-advanced-topics-cs#step-4-storing-additional-user-data-in-the-ticket\" target=\"_blank\">Forms Authentication Configuration and Advanced Topics (C#)</a></li>\r\n</ul>",
+      "IsCommentsVisible": true,
+      "IsCommentsOpen": false,
+      "Created": "2018-12-07T16:02:18",
+      "Modified": "2020-01-08T16:37:59.59",
+      "IsPublished": true,
+      "PublishDate": "2018-12-07T15:49:02"
+    }
+  ],
+  "Categories": [
+    {
+      "CategoryID": 1,
+      "Name": "Professional",
+      "Description": "Professional"
+    },
+    {
+      "CategoryID": 2,
+      "Name": "Personal",
+      "Description": "Personal"
+    }
+  ]
+}
