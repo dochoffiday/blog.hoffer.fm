@@ -28,728 +28,6 @@
       "IsPublished": true
     }
   ],
-  "Comments": [
-    {
-      "CommentID": 1,
-      "PostID": 2,
-      "Name": "Ryan",
-      "IsUser": false,
-      "Email": "-n/a-",
-      "Url": null,
-      "Text": "Dude, I have no idea what any of this means. But I like how the words make me feel inside. Jittery.",
-      "Created": "2014-01-03T20:30:00",
-      "Modified": "2014-01-03T20:30:00",
-      "IsRead": true,
-      "IP": null
-    },
-    {
-      "CommentID": 2,
-      "PostID": 2,
-      "Name": "Zachary",
-      "IsUser": false,
-      "Email": "-n/a-",
-      "Url": null,
-      "Text": "Cool! Is there something like it for a normal class library.  \n\nI'm running MSTests, and a class with the above mention attribute doesn't fire.\n\nAny time an assembly is referenced, or when MsTest starts up.",
-      "Created": "2014-05-19T16:11:00",
-      "Modified": "2014-05-19T16:11:00",
-      "IsRead": true,
-      "IP": null
-    },
-    {
-      "CommentID": 3,
-      "PostID": 3,
-      "Name": "B",
-      "IsUser": false,
-      "Email": "-n/a-",
-      "Url": null,
-      "Text": "Think I'm in love with you",
-      "Created": "2014-03-09T03:16:00",
-      "Modified": "2014-03-09T03:16:00",
-      "IsRead": true,
-      "IP": null
-    },
-    {
-      "CommentID": 4,
-      "PostID": 3,
-      "Name": "R",
-      "IsUser": false,
-      "Email": "-n/a-",
-      "Url": null,
-      "Text": "Think I'm in more love with you than @B",
-      "Created": "2014-03-12T15:48:00",
-      "Modified": "2014-03-12T15:48:00",
-      "IsRead": true,
-      "IP": null
-    },
-    {
-      "CommentID": 5,
-      "PostID": 3,
-      "Name": "BB",
-      "IsUser": false,
-      "Email": "-n/a-",
-      "Url": null,
-      "Text": "You're top notch grade A meat!",
-      "Created": "2014-03-13T19:13:00",
-      "Modified": "2014-03-13T19:13:00",
-      "IsRead": true,
-      "IP": null
-    },
-    {
-      "CommentID": 7,
-      "PostID": 3,
-      "Name": "dochoffiday",
-      "IsUser": true,
-      "Email": "-n/a-",
-      "Url": null,
-      "Text": "aw gee wiz thanks! now if I could only learn to love myself :'(",
-      "Created": "2014-03-13T19:14:00",
-      "Modified": "2014-03-13T19:14:00",
-      "IsRead": true,
-      "IP": null
-    },
-    {
-      "CommentID": 9,
-      "PostID": 4,
-      "Name": "Ryan Bizzle",
-      "IsUser": false,
-      "Email": "-n/a-",
-      "Url": null,
-      "Text": "Do you personally use this umbrella? I've never once seen it.",
-      "Created": "2014-01-22T21:59:00",
-      "Modified": "2014-01-22T21:59:00",
-      "IsRead": true,
-      "IP": null
-    },
-    {
-      "CommentID": 10,
-      "PostID": 4,
-      "Name": "dochoffiday",
-      "IsUser": true,
-      "Email": "-n/a-",
-      "Url": null,
-      "Text": "@Ryan - but of course! In fact, the helve has molded to my hand thanks to my firm, masculine, grip.",
-      "Created": "2014-01-22T23:40:00",
-      "Modified": "2014-01-22T23:40:00",
-      "IsRead": true,
-      "IP": null
-    },
-    {
-      "CommentID": 11,
-      "PostID": 5,
-      "Name": "Alex Rad",
-      "IsUser": false,
-      "Email": "-n/a-",
-      "Url": null,
-      "Text": "Great plugin. However, there is a problem (or I am not using it correctly) with $.jConfirm. Unlike javascript \"confirm\" it does not wait for the user confirmation:\r\n\t\r\nfunction myfunction (param) {\r\n\t$.jConfirm('Are you sure?', 'highlight', function(result) {\r\n\t\treturn (result);\r\n\t}, { show: '' });\r\n\t\r\n\talert ('I should not see this but I do!');\r\n}\r\n\r\nHow can I make it wait for the user's conformation?",
-      "Created": "2011-06-18T08:40:00",
-      "Modified": "2011-06-18T08:40:00",
-      "IsRead": true,
-      "IP": null
-    },
-    {
-      "CommentID": 12,
-      "PostID": 5,
-      "Name": "dochoffiday",
-      "IsUser": true,
-      "Email": "-n/a-",
-      "Url": null,
-      "Text": "There's nothing you can do in javascript to block execution like the native \"alert\" and \"confirm\" functions do.\r\n\t\r\nThat's why there's callbacks - put the code in the callback instead of after invoking the plugin:\r\n\t\r\nfunction myfunction(param) {\r\n\t$.jConfirm('Are you sure?', 'highlight', function (result) {\r\n\t\talert('I should not see this and I DONT (until the user clicks a button)');\r\n\t\treturn (result);\r\n\t}, { show: '' });\r\n\t\talert('I should not see this but I do!');\r\n}",
-      "Created": "2011-07-05T19:34:00",
-      "Modified": "2011-07-05T19:34:00",
-      "IsRead": true,
-      "IP": null
-    },
-    {
-      "CommentID": 13,
-      "PostID": 5,
-      "Name": "Thomas",
-      "IsUser": false,
-      "Email": "-n/a-",
-      "Url": null,
-      "Text": "Hello,\r\n\r\nI had to make the following change in my case to make the titlebar of the dialogboxes disappear. On line 43, change\r\n\t\r\ndialogClass: options.wrapperClass + dialogCSS,\r\nto\r\ndialogClass: options.wrapperClass + ' ' +dialogCSS,\r\n\r\nThat's it :)\r\n\r\nOtherwise it produced a messed up classname that caused the issue with the titlebar.",
-      "Created": "2012-05-29T21:48:00",
-      "Modified": "2012-05-29T21:48:00",
-      "IsRead": true,
-      "IP": null
-    },
-    {
-      "CommentID": 14,
-      "PostID": 5,
-      "Name": "Herb",
-      "IsUser": false,
-      "Email": "-n/a-",
-      "Url": null,
-      "Text": "Thank god for these enabled comments. I would have wasted so much time thinking there is an actual real replacement to \"alert\" and \"confirm\".",
-      "Created": "2012-08-11T16:54:00",
-      "Modified": "2012-08-11T16:54:00",
-      "IsRead": true,
-      "IP": null
-    },
-    {
-      "CommentID": 15,
-      "PostID": 5,
-      "Name": "anon",
-      "IsUser": false,
-      "Email": "-n/a-",
-      "Url": null,
-      "Text": "@dochoffiday: It doesn't solve this though:\r\n\t\r\n$('form').bind('submit', function() {\r\n\tvar me = this;\r\n\t$.jConfirm('¿Estás seguro?', 'highlight', function(answer) {\r\n\t\tif (answer) {\r\n\t\t\t$(me).submit();\r\n\t\t}\r\n\t});\r\n\treturn false; // Will always be executed\r\n});\r\n\r\nUnless I'm not seeing something...",
-      "Created": "2012-12-14T13:41:00",
-      "Modified": "2012-12-14T13:41:00",
-      "IsRead": true,
-      "IP": null
-    },
-    {
-      "CommentID": 16,
-      "PostID": 5,
-      "Name": "anon",
-      "IsUser": false,
-      "Email": "-n/a-",
-      "Url": null,
-      "Text": "I was:\r\n\t\r\nevent.preventDefault() must be used.",
-      "Created": "2012-12-14T13:42:00",
-      "Modified": "2012-12-14T13:42:00",
-      "IsRead": true,
-      "IP": null
-    },
-    {
-      "CommentID": 17,
-      "PostID": 5,
-      "Name": "tony",
-      "IsUser": false,
-      "Email": "-n/a-",
-      "Url": null,
-      "Text": "Where can i get a full list of the options list?",
-      "Created": "2013-02-06T09:49:00",
-      "Modified": "2013-02-06T09:49:00",
-      "IsRead": true,
-      "IP": null
-    },
-    {
-      "CommentID": 18,
-      "PostID": 5,
-      "Name": "Mitch",
-      "IsUser": false,
-      "Email": "-n/a-",
-      "Url": null,
-      "Text": "Where do I download this?",
-      "Created": "2013-06-06T10:30:00",
-      "Modified": "2013-06-06T10:30:00",
-      "IsRead": true,
-      "IP": null
-    },
-    {
-      "CommentID": 19,
-      "PostID": 5,
-      "Name": "dochoffiday",
-      "IsUser": true,
-      "Email": "-n/a-",
-      "Url": null,
-      "Text": "@Mitch - sorry, I should have put a link to these resources.\r\n\t\r\nhttp://demo.dochoffiday.com/jquery-ui-jalert/jquery.ui-jalert.css\r\nhttp://demo.dochoffiday.com/jquery-ui-jalert/jquery.ui-jalert.js",
-      "Created": "2013-06-11T21:25:00",
-      "Modified": "2013-06-11T21:25:00",
-      "IsRead": true,
-      "IP": null
-    },
-    {
-      "CommentID": 20,
-      "PostID": 5,
-      "Name": "Lee",
-      "IsUser": false,
-      "Email": "-n/a-",
-      "Url": null,
-      "Text": "Do you happen to provide security update notices for jAlert updates?",
-      "Created": "2013-10-29T13:54:00",
-      "Modified": "2013-10-29T13:54:00",
-      "IsRead": true,
-      "IP": null
-    },
-    {
-      "CommentID": 21,
-      "PostID": 5,
-      "Name": "nagi",
-      "IsUser": false,
-      "Email": "-n/a-",
-      "Url": null,
-      "Text": "please how to implement this function send me reply my mail sir",
-      "Created": "2014-01-18T13:40:00",
-      "Modified": "2014-01-18T13:40:00",
-      "IsRead": true,
-      "IP": null
-    },
-    {
-      "CommentID": 22,
-      "PostID": 5,
-      "Name": "Dev",
-      "IsUser": false,
-      "Email": "-n/a-",
-      "Url": null,
-      "Text": "What about the images? Where are they?",
-      "Created": "2014-01-30T10:28:00",
-      "Modified": "2014-01-30T10:28:00",
-      "IsRead": true,
-      "IP": null
-    },
-    {
-      "CommentID": 23,
-      "PostID": 15,
-      "Name": "Rose",
-      "IsUser": false,
-      "Email": "-n/a-",
-      "Url": null,
-      "Text": "I added the assembly also in web.config. Still, in 'Using System.Web.Script.Serialization, Script is red underlined. What to do now?",
-      "Created": "2013-06-26T07:35:00",
-      "Modified": "2013-06-26T07:35:00",
-      "IsRead": true,
-      "IP": null
-    },
-    {
-      "CommentID": 24,
-      "PostID": 17,
-      "Name": "Jared",
-      "IsUser": false,
-      "Email": "-n/a-",
-      "Url": null,
-      "Text": "Great snippet! I have been looking for an improvement to jQuery UI's checkboxes. One suggestion that I have would be to add \"outline: none;\" to the CSS. Otherwise, a distracting outline to the right of the checkbox is displayed in IE 8. Thanks for sharing!",
-      "Created": "2011-07-21T13:50:00",
-      "Modified": "2011-07-21T13:50:00",
-      "IsRead": true,
-      "IP": null
-    },
-    {
-      "CommentID": 25,
-      "PostID": 17,
-      "Name": "Xavier",
-      "IsUser": false,
-      "Email": "-n/a-",
-      "Url": null,
-      "Text": "Hello,\r\n\t\r\nThanks for this script, but could you tell me how to dynamically check or uncheck a checkbox managed by this plugin ?\r\n\r\nRegards,\r\n\r\nXavier",
-      "Created": "2011-09-29T13:20:00",
-      "Modified": "2011-09-29T13:20:00",
-      "IsRead": true,
-      "IP": null
-    },
-    {
-      "CommentID": 26,
-      "PostID": 17,
-      "Name": "Uwe",
-      "IsUser": false,
-      "Email": "-n/a-",
-      "Url": null,
-      "Text": "Hi,\r\n\t\r\nthanks for this script. I wanted to set other icons and noticed a little bug: in the refresh method you always set/unset your default icons. To change this I've modified it like this:\r\n\r\nrefresh: function () {\r\n\tvar isDisabled = this.element.is(\":disabled\");\r\n\tif (isDisabled !== this.options.disabled) {\r\n\t\tthis._setOption(\"disabled\", isDisabled);\r\n\t}\r\n\ticons = this.options.icons;\r\n\tif (this.type === \"radio\") {\r\n\t\tradioGroup(this.element[0]).each(function () {\r\n\t\t\tif ($(this).is(\":checked\")) {\r\n\t\t\t\t$(this).checkbox(\"widget\").addClass(\"ui-state-active\").attr(\"aria-pressed\", true).find('.ui-button-icon-primary').addClass(icons.on).removeClass(icons.off);\r\n\t\t\t} else {\r\n\t\t\t\t$(this).checkbox(\"widget\").removeClass(\"ui-state-active\").attr(\"aria-pressed\", false).find('.ui-button-icon-primary').removeClass(icons.on).addClass(icons.off);\r\n\t\t\t}\r\n\t\t});\r\n\t} else if (this.type === \"checkbox\") {\r\n\t\tif (this.element.is(\":checked\")) {\r\n\t\t\tthis.buttonElement.addClass(\"ui-state-active\").attr(\"aria-pressed\", true).find('.ui-button-icon-primary').addClass(icons.on).removeClass(icons.off);\r\n\t\t} else {\r\n\t\t\tthis.buttonElement.removeClass(\"ui-state-active\").attr(\"aria-pressed\", false).find('.ui-button-icon-primary').removeClass(icons.on).addClass(icons.off);\r\n\t\t}\r\n\t}\r\n}",
-      "Created": "2012-01-20T11:27:00",
-      "Modified": "2012-01-20T11:27:00",
-      "IsRead": true,
-      "IP": null
-    },
-    {
-      "CommentID": 28,
-      "PostID": 15,
-      "Name": "Danish Sami",
-      "IsUser": false,
-      "Email": "danish.sami@outlook.com",
-      "Url": null,
-      "Text": "Don't know what to say but sending this message with bundle to thanks.\n\nThis line saved my whole day\n <... targetFramework=\"4.0\">\n\nYou rock.\n\n-Danish.",
-      "Created": "2014-09-07T06:46:35.03",
-      "Modified": "2014-09-07T06:46:35.03",
-      "IsRead": true,
-      "IP": null
-    },
-    {
-      "CommentID": 29,
-      "PostID": 5,
-      "Name": "Cao Thanh Liêm",
-      "IsUser": false,
-      "Email": "caothanhliem@gmail.com",
-      "Url": null,
-      "Text": "Send me link download Plase :D Thanks you so much",
-      "Created": "2014-09-19T05:43:27.72",
-      "Modified": "2014-09-19T05:43:27.72",
-      "IsRead": true,
-      "IP": null
-    },
-    {
-      "CommentID": 30,
-      "PostID": 5,
-      "Name": "dochoffiday",
-      "IsUser": true,
-      "Email": "mrhoffer@gmail.com",
-      "Url": null,
-      "Text": "@Cao - sorry, I forgot the download links changed:\n\nhttp://dochoffiday.com/_demo/jquery-ui-jalert/jquery.ui-jalert.css\nhttp://dochoffiday.com/_demo/jquery-ui-jalert/jquery.ui-jalert.js",
-      "Created": "2014-09-23T18:58:13.98",
-      "Modified": "2014-09-23T18:58:13.98",
-      "IsRead": true,
-      "IP": null
-    },
-    {
-      "CommentID": 31,
-      "PostID": 19,
-      "Name": "Lorem Ipsum",
-      "IsUser": false,
-      "Email": "loremipsum@gmail.com",
-      "Url": "http://www.lipsum.com/",
-      "Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in ullamcorper nibh, vitae porta sem. Nam non dolor eget libero gravida varius. Etiam non maximus nibh, faucibus efficitur erat. Nullam a dignissim enim. Pellentesque sollicitudin metus non lacus elementum, sed efficitur sem feugiat. Vivamus accumsan malesuada semper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla et efficitur arcu, consectetur porta est. Cras vitae venenatis leo, non placerat lacus.\n\nProin condimentum dapibus dapibus. In commodo ac nunc non euismod. Duis aliquet euismod porta. Quisque nec faucibus erat. Nam et ligula sagittis, tempor erat eget, consectetur nisl. Mauris nec facilisis ante. Proin nisi nisi, convallis viverra dolor at, aliquet consequat ipsum.\n\nVestibulum metus nunc, varius non metus maximus, malesuada laoreet lectus. Nunc tristique, tellus sed pharetra cursus, orci augue lobortis arcu, eu eleifend mauris urna vitae ipsum. Nulla eget dui venenatis eros blandit posuere a eget mi. Fusce aliquet risus ac nisl sagittis fermentum. Fusce non ipsum varius eros aliquet feugiat. Proin sit amet velit hendrerit, eleifend leo et, suscipit nisl. Nam cursus velit augue, vel dapibus nibh ornare ac. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;\n\nWorks great.",
-      "Created": "2014-10-15T18:56:42.01",
-      "Modified": "2014-10-15T18:56:42.01",
-      "IsRead": true,
-      "IP": null
-    },
-    {
-      "CommentID": 34,
-      "PostID": 5,
-      "Name": "S.Sinha",
-      "IsUser": false,
-      "Email": "sbs0211@gmail.com",
-      "Url": null,
-      "Text": "Please let me know how can you replace the \"!\" mark that preceded the statement with JAlert. ",
-      "Created": "2015-08-04T03:21:22.64",
-      "Modified": "2015-08-04T03:21:22.64",
-      "IsRead": true,
-      "IP": "119.93.55.13"
-    },
-    {
-      "CommentID": 35,
-      "PostID": 5,
-      "Name": "meena",
-      "IsUser": false,
-      "Email": "meenakshi281191@gmail.com",
-      "Url": "http://dochoffiday.com/Professional/jalert-a-jquery-ui-alert-confirm-replacement",
-      "Text": "will this confirm box work even if user has a pop-up blocker ?",
-      "Created": "2016-04-18T21:50:39.733",
-      "Modified": "2016-04-18T21:50:39.733",
-      "IsRead": true,
-      "IP": "69.70.84.186"
-    },
-    {
-      "CommentID": 321,
-      "PostID": 24,
-      "Name": "Kruno",
-      "IsUser": false,
-      "Email": null,
-      "Url": null,
-      "Text": "Thank you for providing this, very useful!",
-      "Created": "2018-12-18T13:23:24.34",
-      "Modified": "2018-12-18T13:23:24.34",
-      "IsRead": true,
-      "IP": "93.140.12.198"
-    }
-  ],
-  "Tags": [
-    {
-      "TagID": 1,
-      "PostID": 1,
-      "Name": "asp-net"
-    },
-    {
-      "TagID": 2,
-      "PostID": 1,
-      "Name": "mvc"
-    },
-    {
-      "TagID": 3,
-      "PostID": 1,
-      "Name": "orchard"
-    },
-    {
-      "TagID": 4,
-      "PostID": 1,
-      "Name": "orchard-cms"
-    },
-    {
-      "TagID": 5,
-      "PostID": 1,
-      "Name": "c#"
-    },
-    {
-      "TagID": 6,
-      "PostID": 2,
-      "Name": "asp-net"
-    },
-    {
-      "TagID": 7,
-      "PostID": 2,
-      "Name": "c#"
-    },
-    {
-      "TagID": 8,
-      "PostID": 3,
-      "Name": "men-stuff"
-    },
-    {
-      "TagID": 9,
-      "PostID": 3,
-      "Name": "brogramming"
-    },
-    {
-      "TagID": 10,
-      "PostID": 4,
-      "Name": "men-stuff"
-    },
-    {
-      "TagID": 11,
-      "PostID": 4,
-      "Name": "brogramming"
-    },
-    {
-      "TagID": 12,
-      "PostID": 5,
-      "Name": "jquery"
-    },
-    {
-      "TagID": 13,
-      "PostID": 5,
-      "Name": "jquery-ui"
-    },
-    {
-      "TagID": 14,
-      "PostID": 5,
-      "Name": "plugin"
-    },
-    {
-      "TagID": 15,
-      "PostID": 6,
-      "Name": "c#"
-    },
-    {
-      "TagID": 16,
-      "PostID": 6,
-      "Name": "asp-net"
-    },
-    {
-      "TagID": 17,
-      "PostID": 7,
-      "Name": "christmas"
-    },
-    {
-      "TagID": 18,
-      "PostID": 7,
-      "Name": "mvc"
-    },
-    {
-      "TagID": 19,
-      "PostID": 7,
-      "Name": "facebook"
-    },
-    {
-      "TagID": 20,
-      "PostID": 8,
-      "Name": "scheduled-tasks"
-    },
-    {
-      "TagID": 21,
-      "PostID": 8,
-      "Name": "c#"
-    },
-    {
-      "TagID": 22,
-      "PostID": 8,
-      "Name": "asp-net"
-    },
-    {
-      "TagID": 23,
-      "PostID": 9,
-      "Name": "jquery"
-    },
-    {
-      "TagID": 24,
-      "PostID": 9,
-      "Name": "plugin"
-    },
-    {
-      "TagID": 25,
-      "PostID": 10,
-      "Name": "jquery"
-    },
-    {
-      "TagID": 26,
-      "PostID": 10,
-      "Name": "jquery-ui"
-    },
-    {
-      "TagID": 27,
-      "PostID": 10,
-      "Name": "plugin"
-    },
-    {
-      "TagID": 28,
-      "PostID": 11,
-      "Name": "jquery"
-    },
-    {
-      "TagID": 29,
-      "PostID": 11,
-      "Name": "jquery-ui"
-    },
-    {
-      "TagID": 30,
-      "PostID": 11,
-      "Name": "plugin"
-    },
-    {
-      "TagID": 31,
-      "PostID": 12,
-      "Name": "c#"
-    },
-    {
-      "TagID": 32,
-      "PostID": 12,
-      "Name": "asp-net"
-    },
-    {
-      "TagID": 33,
-      "PostID": 12,
-      "Name": "orchard"
-    },
-    {
-      "TagID": 34,
-      "PostID": 12,
-      "Name": "orchard-cms"
-    },
-    {
-      "TagID": 35,
-      "PostID": 13,
-      "Name": "mvc"
-    },
-    {
-      "TagID": 36,
-      "PostID": 13,
-      "Name": "asp-net"
-    },
-    {
-      "TagID": 37,
-      "PostID": 14,
-      "Name": "sharepoint"
-    },
-    {
-      "TagID": 38,
-      "PostID": 14,
-      "Name": "c#"
-    },
-    {
-      "TagID": 39,
-      "PostID": 14,
-      "Name": "asp-net"
-    },
-    {
-      "TagID": 40,
-      "PostID": 15,
-      "Name": "c#"
-    },
-    {
-      "TagID": 41,
-      "PostID": 15,
-      "Name": "asp-net"
-    },
-    {
-      "TagID": 46,
-      "PostID": 17,
-      "Name": "jquery"
-    },
-    {
-      "TagID": 47,
-      "PostID": 17,
-      "Name": "jquery-ui"
-    },
-    {
-      "TagID": 48,
-      "PostID": 17,
-      "Name": "plugin"
-    },
-    {
-      "TagID": 49,
-      "PostID": 18,
-      "Name": "c#"
-    },
-    {
-      "TagID": 50,
-      "PostID": 18,
-      "Name": "asp-net"
-    },
-    {
-      "TagID": 51,
-      "PostID": 18,
-      "Name": "extension-methods"
-    },
-    {
-      "TagID": 52,
-      "PostID": 19,
-      "Name": "c#"
-    },
-    {
-      "TagID": 53,
-      "PostID": 19,
-      "Name": "asp-net"
-    },
-    {
-      "TagID": 54,
-      "PostID": 20,
-      "Name": "jquery"
-    },
-    {
-      "TagID": 55,
-      "PostID": 20,
-      "Name": "jquery-ui"
-    },
-    {
-      "TagID": 56,
-      "PostID": 20,
-      "Name": "plugin"
-    },
-    {
-      "TagID": 57,
-      "PostID": 21,
-      "Name": "new-year-resolutions"
-    },
-    {
-      "TagID": 58,
-      "PostID": 21,
-      "Name": "bring-it"
-    },
-    {
-      "TagID": 60,
-      "PostID": 22,
-      "Name": "html"
-    },
-    {
-      "TagID": 61,
-      "PostID": 23,
-      "Name": "javascript"
-    },
-    {
-      "TagID": 62,
-      "PostID": 23,
-      "Name": "jquery"
-    },
-    {
-      "TagID": 63,
-      "PostID": 23,
-      "Name": "knockout"
-    },
-    {
-      "TagID": 64,
-      "PostID": 23,
-      "Name": "pagerjs"
-    },
-    {
-      "TagID": 66,
-      "PostID": 24,
-      "Name": "c#"
-    },
-    {
-      "TagID": 67,
-      "PostID": 25,
-      "Name": "c#"
-    },
-    {
-      "TagID": 68,
-      "PostID": 25,
-      "Name": "forms-authentication"
-    },
-    {
-      "TagID": 69,
-      "PostID": 22,
-      "Name": "squarespace"
-    }
-  ],
   "Posts": [
     {
       "PostID": 1,
@@ -762,7 +40,21 @@
       "Created": "2014-08-09T22:19:10",
       "Modified": "2020-01-08T16:38:21.117",
       "IsPublished": true,
-      "PublishDate": "2014-01-25T13:50:00"
+      "PublishDate": "2014-01-25T13:50:00",
+      "LocalPublishDate": "2014-01-25T08:50:00-05:00",
+      "Category": {
+        "CategoryID": 1,
+        "Name": "Professional",
+        "Description": "Professional"
+      },
+      "Tags": [
+        "asp-net",
+        "c#",
+        "mvc",
+        "orchard",
+        "orchard-cms"
+      ],
+      "Comments": []
     },
     {
       "PostID": 2,
@@ -775,7 +67,45 @@
       "Created": "2014-08-09T22:21:26",
       "Modified": "2020-01-08T16:38:31.957",
       "IsPublished": true,
-      "PublishDate": "2013-12-30T00:37:00"
+      "PublishDate": "2013-12-30T00:37:00",
+      "LocalPublishDate": "2013-12-29T19:37:00-05:00",
+      "Category": {
+        "CategoryID": 1,
+        "Name": "Professional",
+        "Description": "Professional"
+      },
+      "Tags": [
+        "asp-net",
+        "c#"
+      ],
+      "Comments": [
+        {
+          "CommentID": 1,
+          "PostID": 2,
+          "Name": "Ryan",
+          "IsUser": false,
+          "Email": "-n/a-",
+          "Url": null,
+          "Text": "Dude, I have no idea what any of this means. But I like how the words make me feel inside. Jittery.",
+          "Created": "2014-01-03T20:30:00",
+          "Modified": "2014-01-03T20:30:00",
+          "IsRead": true,
+          "IP": null
+        },
+        {
+          "CommentID": 2,
+          "PostID": 2,
+          "Name": "Zachary",
+          "IsUser": false,
+          "Email": "-n/a-",
+          "Url": null,
+          "Text": "Cool! Is there something like it for a normal class library.  \n\nI'm running MSTests, and a class with the above mention attribute doesn't fire.\n\nAny time an assembly is referenced, or when MsTest starts up.",
+          "Created": "2014-05-19T16:11:00",
+          "Modified": "2014-05-19T16:11:00",
+          "IsRead": true,
+          "IP": null
+        }
+      ]
     },
     {
       "PostID": 3,
@@ -788,7 +118,71 @@
       "Created": "2014-08-09T22:25:32",
       "Modified": "2020-01-08T16:38:28.083",
       "IsPublished": true,
-      "PublishDate": "2014-01-10T16:30:00"
+      "PublishDate": "2014-01-10T16:30:00",
+      "LocalPublishDate": "2014-01-10T11:30:00-05:00",
+      "Category": {
+        "CategoryID": 2,
+        "Name": "Personal",
+        "Description": "Personal"
+      },
+      "Tags": [
+        "brogramming",
+        "men-stuff"
+      ],
+      "Comments": [
+        {
+          "CommentID": 3,
+          "PostID": 3,
+          "Name": "B",
+          "IsUser": false,
+          "Email": "-n/a-",
+          "Url": null,
+          "Text": "Think I'm in love with you",
+          "Created": "2014-03-09T03:16:00",
+          "Modified": "2014-03-09T03:16:00",
+          "IsRead": true,
+          "IP": null
+        },
+        {
+          "CommentID": 4,
+          "PostID": 3,
+          "Name": "R",
+          "IsUser": false,
+          "Email": "-n/a-",
+          "Url": null,
+          "Text": "Think I'm in more love with you than @B",
+          "Created": "2014-03-12T15:48:00",
+          "Modified": "2014-03-12T15:48:00",
+          "IsRead": true,
+          "IP": null
+        },
+        {
+          "CommentID": 5,
+          "PostID": 3,
+          "Name": "BB",
+          "IsUser": false,
+          "Email": "-n/a-",
+          "Url": null,
+          "Text": "You're top notch grade A meat!",
+          "Created": "2014-03-13T19:13:00",
+          "Modified": "2014-03-13T19:13:00",
+          "IsRead": true,
+          "IP": null
+        },
+        {
+          "CommentID": 7,
+          "PostID": 3,
+          "Name": "dochoffiday",
+          "IsUser": true,
+          "Email": "-n/a-",
+          "Url": null,
+          "Text": "aw gee wiz thanks! now if I could only learn to love myself :'(",
+          "Created": "2014-03-13T19:14:00",
+          "Modified": "2014-03-13T19:14:00",
+          "IsRead": true,
+          "IP": null
+        }
+      ]
     },
     {
       "PostID": 4,
@@ -801,7 +195,45 @@
       "Created": "2014-08-09T22:31:27",
       "Modified": "2020-01-08T16:38:24.663",
       "IsPublished": true,
-      "PublishDate": "2014-01-16T22:38:00"
+      "PublishDate": "2014-01-16T22:38:00",
+      "LocalPublishDate": "2014-01-16T17:38:00-05:00",
+      "Category": {
+        "CategoryID": 2,
+        "Name": "Personal",
+        "Description": "Personal"
+      },
+      "Tags": [
+        "brogramming",
+        "men-stuff"
+      ],
+      "Comments": [
+        {
+          "CommentID": 9,
+          "PostID": 4,
+          "Name": "Ryan Bizzle",
+          "IsUser": false,
+          "Email": "-n/a-",
+          "Url": null,
+          "Text": "Do you personally use this umbrella? I've never once seen it.",
+          "Created": "2014-01-22T21:59:00",
+          "Modified": "2014-01-22T21:59:00",
+          "IsRead": true,
+          "IP": null
+        },
+        {
+          "CommentID": 10,
+          "PostID": 4,
+          "Name": "dochoffiday",
+          "IsUser": true,
+          "Email": "-n/a-",
+          "Url": null,
+          "Text": "@Ryan - but of course! In fact, the helve has molded to my hand thanks to my firm, masculine, grip.",
+          "Created": "2014-01-22T23:40:00",
+          "Modified": "2014-01-22T23:40:00",
+          "IsRead": true,
+          "IP": null
+        }
+      ]
     },
     {
       "PostID": 5,
@@ -814,7 +246,228 @@
       "Created": "2014-08-09T22:35:53",
       "Modified": "2018-10-12T19:35:46.183",
       "IsPublished": true,
-      "PublishDate": "2011-02-04T11:26:00"
+      "PublishDate": "2011-02-04T11:26:00",
+      "LocalPublishDate": "2011-02-04T06:26:00-05:00",
+      "Category": {
+        "CategoryID": 1,
+        "Name": "Professional",
+        "Description": "Professional"
+      },
+      "Tags": [
+        "jquery",
+        "jquery-ui",
+        "plugin"
+      ],
+      "Comments": [
+        {
+          "CommentID": 11,
+          "PostID": 5,
+          "Name": "Alex Rad",
+          "IsUser": false,
+          "Email": "-n/a-",
+          "Url": null,
+          "Text": "Great plugin. However, there is a problem (or I am not using it correctly) with $.jConfirm. Unlike javascript \"confirm\" it does not wait for the user confirmation:\r\n\t\r\nfunction myfunction (param) {\r\n\t$.jConfirm('Are you sure?', 'highlight', function(result) {\r\n\t\treturn (result);\r\n\t}, { show: '' });\r\n\t\r\n\talert ('I should not see this but I do!');\r\n}\r\n\r\nHow can I make it wait for the user's conformation?",
+          "Created": "2011-06-18T08:40:00",
+          "Modified": "2011-06-18T08:40:00",
+          "IsRead": true,
+          "IP": null
+        },
+        {
+          "CommentID": 12,
+          "PostID": 5,
+          "Name": "dochoffiday",
+          "IsUser": true,
+          "Email": "-n/a-",
+          "Url": null,
+          "Text": "There's nothing you can do in javascript to block execution like the native \"alert\" and \"confirm\" functions do.\r\n\t\r\nThat's why there's callbacks - put the code in the callback instead of after invoking the plugin:\r\n\t\r\nfunction myfunction(param) {\r\n\t$.jConfirm('Are you sure?', 'highlight', function (result) {\r\n\t\talert('I should not see this and I DONT (until the user clicks a button)');\r\n\t\treturn (result);\r\n\t}, { show: '' });\r\n\t\talert('I should not see this but I do!');\r\n}",
+          "Created": "2011-07-05T19:34:00",
+          "Modified": "2011-07-05T19:34:00",
+          "IsRead": true,
+          "IP": null
+        },
+        {
+          "CommentID": 13,
+          "PostID": 5,
+          "Name": "Thomas",
+          "IsUser": false,
+          "Email": "-n/a-",
+          "Url": null,
+          "Text": "Hello,\r\n\r\nI had to make the following change in my case to make the titlebar of the dialogboxes disappear. On line 43, change\r\n\t\r\ndialogClass: options.wrapperClass + dialogCSS,\r\nto\r\ndialogClass: options.wrapperClass + ' ' +dialogCSS,\r\n\r\nThat's it :)\r\n\r\nOtherwise it produced a messed up classname that caused the issue with the titlebar.",
+          "Created": "2012-05-29T21:48:00",
+          "Modified": "2012-05-29T21:48:00",
+          "IsRead": true,
+          "IP": null
+        },
+        {
+          "CommentID": 14,
+          "PostID": 5,
+          "Name": "Herb",
+          "IsUser": false,
+          "Email": "-n/a-",
+          "Url": null,
+          "Text": "Thank god for these enabled comments. I would have wasted so much time thinking there is an actual real replacement to \"alert\" and \"confirm\".",
+          "Created": "2012-08-11T16:54:00",
+          "Modified": "2012-08-11T16:54:00",
+          "IsRead": true,
+          "IP": null
+        },
+        {
+          "CommentID": 15,
+          "PostID": 5,
+          "Name": "anon",
+          "IsUser": false,
+          "Email": "-n/a-",
+          "Url": null,
+          "Text": "@dochoffiday: It doesn't solve this though:\r\n\t\r\n$('form').bind('submit', function() {\r\n\tvar me = this;\r\n\t$.jConfirm('¿Estás seguro?', 'highlight', function(answer) {\r\n\t\tif (answer) {\r\n\t\t\t$(me).submit();\r\n\t\t}\r\n\t});\r\n\treturn false; // Will always be executed\r\n});\r\n\r\nUnless I'm not seeing something...",
+          "Created": "2012-12-14T13:41:00",
+          "Modified": "2012-12-14T13:41:00",
+          "IsRead": true,
+          "IP": null
+        },
+        {
+          "CommentID": 16,
+          "PostID": 5,
+          "Name": "anon",
+          "IsUser": false,
+          "Email": "-n/a-",
+          "Url": null,
+          "Text": "I was:\r\n\t\r\nevent.preventDefault() must be used.",
+          "Created": "2012-12-14T13:42:00",
+          "Modified": "2012-12-14T13:42:00",
+          "IsRead": true,
+          "IP": null
+        },
+        {
+          "CommentID": 17,
+          "PostID": 5,
+          "Name": "tony",
+          "IsUser": false,
+          "Email": "-n/a-",
+          "Url": null,
+          "Text": "Where can i get a full list of the options list?",
+          "Created": "2013-02-06T09:49:00",
+          "Modified": "2013-02-06T09:49:00",
+          "IsRead": true,
+          "IP": null
+        },
+        {
+          "CommentID": 18,
+          "PostID": 5,
+          "Name": "Mitch",
+          "IsUser": false,
+          "Email": "-n/a-",
+          "Url": null,
+          "Text": "Where do I download this?",
+          "Created": "2013-06-06T10:30:00",
+          "Modified": "2013-06-06T10:30:00",
+          "IsRead": true,
+          "IP": null
+        },
+        {
+          "CommentID": 19,
+          "PostID": 5,
+          "Name": "dochoffiday",
+          "IsUser": true,
+          "Email": "-n/a-",
+          "Url": null,
+          "Text": "@Mitch - sorry, I should have put a link to these resources.\r\n\t\r\nhttp://demo.dochoffiday.com/jquery-ui-jalert/jquery.ui-jalert.css\r\nhttp://demo.dochoffiday.com/jquery-ui-jalert/jquery.ui-jalert.js",
+          "Created": "2013-06-11T21:25:00",
+          "Modified": "2013-06-11T21:25:00",
+          "IsRead": true,
+          "IP": null
+        },
+        {
+          "CommentID": 20,
+          "PostID": 5,
+          "Name": "Lee",
+          "IsUser": false,
+          "Email": "-n/a-",
+          "Url": null,
+          "Text": "Do you happen to provide security update notices for jAlert updates?",
+          "Created": "2013-10-29T13:54:00",
+          "Modified": "2013-10-29T13:54:00",
+          "IsRead": true,
+          "IP": null
+        },
+        {
+          "CommentID": 21,
+          "PostID": 5,
+          "Name": "nagi",
+          "IsUser": false,
+          "Email": "-n/a-",
+          "Url": null,
+          "Text": "please how to implement this function send me reply my mail sir",
+          "Created": "2014-01-18T13:40:00",
+          "Modified": "2014-01-18T13:40:00",
+          "IsRead": true,
+          "IP": null
+        },
+        {
+          "CommentID": 22,
+          "PostID": 5,
+          "Name": "Dev",
+          "IsUser": false,
+          "Email": "-n/a-",
+          "Url": null,
+          "Text": "What about the images? Where are they?",
+          "Created": "2014-01-30T10:28:00",
+          "Modified": "2014-01-30T10:28:00",
+          "IsRead": true,
+          "IP": null
+        },
+        {
+          "CommentID": 29,
+          "PostID": 5,
+          "Name": "Cao Thanh Liêm",
+          "IsUser": false,
+          "Email": "caothanhliem@gmail.com",
+          "Url": null,
+          "Text": "Send me link download Plase :D Thanks you so much",
+          "Created": "2014-09-19T05:43:27.72",
+          "Modified": "2014-09-19T05:43:27.72",
+          "IsRead": true,
+          "IP": null
+        },
+        {
+          "CommentID": 30,
+          "PostID": 5,
+          "Name": "dochoffiday",
+          "IsUser": true,
+          "Email": "mrhoffer@gmail.com",
+          "Url": null,
+          "Text": "@Cao - sorry, I forgot the download links changed:\n\nhttp://dochoffiday.com/_demo/jquery-ui-jalert/jquery.ui-jalert.css\nhttp://dochoffiday.com/_demo/jquery-ui-jalert/jquery.ui-jalert.js",
+          "Created": "2014-09-23T18:58:13.98",
+          "Modified": "2014-09-23T18:58:13.98",
+          "IsRead": true,
+          "IP": null
+        },
+        {
+          "CommentID": 34,
+          "PostID": 5,
+          "Name": "S.Sinha",
+          "IsUser": false,
+          "Email": "sbs0211@gmail.com",
+          "Url": null,
+          "Text": "Please let me know how can you replace the \"!\" mark that preceded the statement with JAlert. ",
+          "Created": "2015-08-04T03:21:22.64",
+          "Modified": "2015-08-04T03:21:22.64",
+          "IsRead": true,
+          "IP": "119.93.55.13"
+        },
+        {
+          "CommentID": 35,
+          "PostID": 5,
+          "Name": "meena",
+          "IsUser": false,
+          "Email": "meenakshi281191@gmail.com",
+          "Url": "http://dochoffiday.com/Professional/jalert-a-jquery-ui-alert-confirm-replacement",
+          "Text": "will this confirm box work even if user has a pop-up blocker ?",
+          "Created": "2016-04-18T21:50:39.733",
+          "Modified": "2016-04-18T21:50:39.733",
+          "IsRead": true,
+          "IP": "69.70.84.186"
+        }
+      ]
     },
     {
       "PostID": 6,
@@ -827,7 +480,18 @@
       "Created": "2014-08-09T23:06:54",
       "Modified": "2014-08-09T23:08:22.663",
       "IsPublished": true,
-      "PublishDate": "2011-01-13T12:57:00"
+      "PublishDate": "2011-01-13T12:57:00",
+      "LocalPublishDate": "2011-01-13T07:57:00-05:00",
+      "Category": {
+        "CategoryID": 1,
+        "Name": "Professional",
+        "Description": "Professional"
+      },
+      "Tags": [
+        "asp-net",
+        "c#"
+      ],
+      "Comments": []
     },
     {
       "PostID": 7,
@@ -840,7 +504,19 @@
       "Created": "2014-08-09T23:10:08.663",
       "Modified": "2014-08-09T23:10:08.663",
       "IsPublished": true,
-      "PublishDate": "2013-12-17T11:03:00"
+      "PublishDate": "2013-12-17T11:03:00",
+      "LocalPublishDate": "2013-12-17T06:03:00-05:00",
+      "Category": {
+        "CategoryID": 1,
+        "Name": "Professional",
+        "Description": "Professional"
+      },
+      "Tags": [
+        "christmas",
+        "facebook",
+        "mvc"
+      ],
+      "Comments": []
     },
     {
       "PostID": 8,
@@ -853,7 +529,19 @@
       "Created": "2014-08-09T23:15:27",
       "Modified": "2014-08-20T04:21:21.217",
       "IsPublished": true,
-      "PublishDate": "2013-12-03T14:21:00"
+      "PublishDate": "2013-12-03T14:21:00",
+      "LocalPublishDate": "2013-12-03T09:21:00-05:00",
+      "Category": {
+        "CategoryID": 1,
+        "Name": "Professional",
+        "Description": "Professional"
+      },
+      "Tags": [
+        "asp-net",
+        "c#",
+        "scheduled-tasks"
+      ],
+      "Comments": []
     },
     {
       "PostID": 9,
@@ -866,7 +554,18 @@
       "Created": "2014-08-09T23:17:01",
       "Modified": "2018-10-12T19:26:12.45",
       "IsPublished": true,
-      "PublishDate": "2011-01-14T11:15:00"
+      "PublishDate": "2011-01-14T11:15:00",
+      "LocalPublishDate": "2011-01-14T06:15:00-05:00",
+      "Category": {
+        "CategoryID": 1,
+        "Name": "Professional",
+        "Description": "Professional"
+      },
+      "Tags": [
+        "jquery",
+        "plugin"
+      ],
+      "Comments": []
     },
     {
       "PostID": 10,
@@ -879,7 +578,19 @@
       "Created": "2014-08-09T23:19:22",
       "Modified": "2018-10-12T19:46:30.983",
       "IsPublished": true,
-      "PublishDate": "2011-01-14T11:42:00"
+      "PublishDate": "2011-01-14T11:42:00",
+      "LocalPublishDate": "2011-01-14T06:42:00-05:00",
+      "Category": {
+        "CategoryID": 1,
+        "Name": "Professional",
+        "Description": "Professional"
+      },
+      "Tags": [
+        "jquery",
+        "jquery-ui",
+        "plugin"
+      ],
+      "Comments": []
     },
     {
       "PostID": 11,
@@ -892,7 +603,19 @@
       "Created": "2014-08-09T23:20:29",
       "Modified": "2018-10-12T19:48:52.743",
       "IsPublished": true,
-      "PublishDate": "2011-01-14T11:27:00"
+      "PublishDate": "2011-01-14T11:27:00",
+      "LocalPublishDate": "2011-01-14T06:27:00-05:00",
+      "Category": {
+        "CategoryID": 1,
+        "Name": "Professional",
+        "Description": "Professional"
+      },
+      "Tags": [
+        "jquery",
+        "jquery-ui",
+        "plugin"
+      ],
+      "Comments": []
     },
     {
       "PostID": 12,
@@ -905,7 +628,20 @@
       "Created": "2014-08-09T23:23:28.637",
       "Modified": "2014-08-09T23:23:28.637",
       "IsPublished": true,
-      "PublishDate": "2013-02-07T16:57:00"
+      "PublishDate": "2013-02-07T16:57:00",
+      "LocalPublishDate": "2013-02-07T11:57:00-05:00",
+      "Category": {
+        "CategoryID": 1,
+        "Name": "Professional",
+        "Description": "Professional"
+      },
+      "Tags": [
+        "asp-net",
+        "c#",
+        "orchard",
+        "orchard-cms"
+      ],
+      "Comments": []
     },
     {
       "PostID": 13,
@@ -918,7 +654,18 @@
       "Created": "2014-08-09T23:24:53",
       "Modified": "2018-10-15T17:26:44.357",
       "IsPublished": true,
-      "PublishDate": "2011-01-12T18:14:00"
+      "PublishDate": "2011-01-12T18:14:00",
+      "LocalPublishDate": "2011-01-12T13:14:00-05:00",
+      "Category": {
+        "CategoryID": 1,
+        "Name": "Professional",
+        "Description": "Professional"
+      },
+      "Tags": [
+        "asp-net",
+        "mvc"
+      ],
+      "Comments": []
     },
     {
       "PostID": 14,
@@ -931,7 +678,19 @@
       "Created": "2014-08-09T23:27:56",
       "Modified": "2014-08-27T18:58:50.67",
       "IsPublished": true,
-      "PublishDate": "2013-11-25T15:30:00"
+      "PublishDate": "2013-11-25T15:30:00",
+      "LocalPublishDate": "2013-11-25T10:30:00-05:00",
+      "Category": {
+        "CategoryID": 1,
+        "Name": "Professional",
+        "Description": "Professional"
+      },
+      "Tags": [
+        "asp-net",
+        "c#",
+        "sharepoint"
+      ],
+      "Comments": []
     },
     {
       "PostID": 15,
@@ -944,7 +703,45 @@
       "Created": "2014-08-09T23:29:48",
       "Modified": "2014-08-09T23:30:26.337",
       "IsPublished": true,
-      "PublishDate": "2012-05-03T11:18:00"
+      "PublishDate": "2012-05-03T11:18:00",
+      "LocalPublishDate": "2012-05-03T07:18:00-04:00",
+      "Category": {
+        "CategoryID": 1,
+        "Name": "Professional",
+        "Description": "Professional"
+      },
+      "Tags": [
+        "asp-net",
+        "c#"
+      ],
+      "Comments": [
+        {
+          "CommentID": 23,
+          "PostID": 15,
+          "Name": "Rose",
+          "IsUser": false,
+          "Email": "-n/a-",
+          "Url": null,
+          "Text": "I added the assembly also in web.config. Still, in 'Using System.Web.Script.Serialization, Script is red underlined. What to do now?",
+          "Created": "2013-06-26T07:35:00",
+          "Modified": "2013-06-26T07:35:00",
+          "IsRead": true,
+          "IP": null
+        },
+        {
+          "CommentID": 28,
+          "PostID": 15,
+          "Name": "Danish Sami",
+          "IsUser": false,
+          "Email": "danish.sami@outlook.com",
+          "Url": null,
+          "Text": "Don't know what to say but sending this message with bundle to thanks.\n\nThis line saved my whole day\n <... targetFramework=\"4.0\">\n\nYou rock.\n\n-Danish.",
+          "Created": "2014-09-07T06:46:35.03",
+          "Modified": "2014-09-07T06:46:35.03",
+          "IsRead": true,
+          "IP": null
+        }
+      ]
     },
     {
       "PostID": 17,
@@ -957,7 +754,59 @@
       "Created": "2014-08-09T23:37:19",
       "Modified": "2018-10-12T19:41:22.333",
       "IsPublished": true,
-      "PublishDate": "2011-01-18T14:44:00"
+      "PublishDate": "2011-01-18T14:44:00",
+      "LocalPublishDate": "2011-01-18T09:44:00-05:00",
+      "Category": {
+        "CategoryID": 1,
+        "Name": "Professional",
+        "Description": "Professional"
+      },
+      "Tags": [
+        "jquery",
+        "jquery-ui",
+        "plugin"
+      ],
+      "Comments": [
+        {
+          "CommentID": 24,
+          "PostID": 17,
+          "Name": "Jared",
+          "IsUser": false,
+          "Email": "-n/a-",
+          "Url": null,
+          "Text": "Great snippet! I have been looking for an improvement to jQuery UI's checkboxes. One suggestion that I have would be to add \"outline: none;\" to the CSS. Otherwise, a distracting outline to the right of the checkbox is displayed in IE 8. Thanks for sharing!",
+          "Created": "2011-07-21T13:50:00",
+          "Modified": "2011-07-21T13:50:00",
+          "IsRead": true,
+          "IP": null
+        },
+        {
+          "CommentID": 25,
+          "PostID": 17,
+          "Name": "Xavier",
+          "IsUser": false,
+          "Email": "-n/a-",
+          "Url": null,
+          "Text": "Hello,\r\n\t\r\nThanks for this script, but could you tell me how to dynamically check or uncheck a checkbox managed by this plugin ?\r\n\r\nRegards,\r\n\r\nXavier",
+          "Created": "2011-09-29T13:20:00",
+          "Modified": "2011-09-29T13:20:00",
+          "IsRead": true,
+          "IP": null
+        },
+        {
+          "CommentID": 26,
+          "PostID": 17,
+          "Name": "Uwe",
+          "IsUser": false,
+          "Email": "-n/a-",
+          "Url": null,
+          "Text": "Hi,\r\n\t\r\nthanks for this script. I wanted to set other icons and noticed a little bug: in the refresh method you always set/unset your default icons. To change this I've modified it like this:\r\n\r\nrefresh: function () {\r\n\tvar isDisabled = this.element.is(\":disabled\");\r\n\tif (isDisabled !== this.options.disabled) {\r\n\t\tthis._setOption(\"disabled\", isDisabled);\r\n\t}\r\n\ticons = this.options.icons;\r\n\tif (this.type === \"radio\") {\r\n\t\tradioGroup(this.element[0]).each(function () {\r\n\t\t\tif ($(this).is(\":checked\")) {\r\n\t\t\t\t$(this).checkbox(\"widget\").addClass(\"ui-state-active\").attr(\"aria-pressed\", true).find('.ui-button-icon-primary').addClass(icons.on).removeClass(icons.off);\r\n\t\t\t} else {\r\n\t\t\t\t$(this).checkbox(\"widget\").removeClass(\"ui-state-active\").attr(\"aria-pressed\", false).find('.ui-button-icon-primary').removeClass(icons.on).addClass(icons.off);\r\n\t\t\t}\r\n\t\t});\r\n\t} else if (this.type === \"checkbox\") {\r\n\t\tif (this.element.is(\":checked\")) {\r\n\t\t\tthis.buttonElement.addClass(\"ui-state-active\").attr(\"aria-pressed\", true).find('.ui-button-icon-primary').addClass(icons.on).removeClass(icons.off);\r\n\t\t} else {\r\n\t\t\tthis.buttonElement.removeClass(\"ui-state-active\").attr(\"aria-pressed\", false).find('.ui-button-icon-primary').removeClass(icons.on).addClass(icons.off);\r\n\t\t}\r\n\t}\r\n}",
+          "Created": "2012-01-20T11:27:00",
+          "Modified": "2012-01-20T11:27:00",
+          "IsRead": true,
+          "IP": null
+        }
+      ]
     },
     {
       "PostID": 18,
@@ -970,7 +819,19 @@
       "Created": "2014-08-09T23:44:08",
       "Modified": "2018-10-12T20:09:56.267",
       "IsPublished": true,
-      "PublishDate": "2011-06-08T10:33:00"
+      "PublishDate": "2011-06-08T10:33:00",
+      "LocalPublishDate": "2011-06-08T06:33:00-04:00",
+      "Category": {
+        "CategoryID": 1,
+        "Name": "Professional",
+        "Description": "Professional"
+      },
+      "Tags": [
+        "asp-net",
+        "c#",
+        "extension-methods"
+      ],
+      "Comments": []
     },
     {
       "PostID": 19,
@@ -983,7 +844,32 @@
       "Created": "2014-08-20T03:55:34",
       "Modified": "2020-01-08T16:38:17.35",
       "IsPublished": true,
-      "PublishDate": "2014-08-20T03:53:40"
+      "PublishDate": "2014-08-20T03:53:40",
+      "LocalPublishDate": "2014-08-19T23:53:40-04:00",
+      "Category": {
+        "CategoryID": 1,
+        "Name": "Professional",
+        "Description": "Professional"
+      },
+      "Tags": [
+        "asp-net",
+        "c#"
+      ],
+      "Comments": [
+        {
+          "CommentID": 31,
+          "PostID": 19,
+          "Name": "Lorem Ipsum",
+          "IsUser": false,
+          "Email": "loremipsum@gmail.com",
+          "Url": "http://www.lipsum.com/",
+          "Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in ullamcorper nibh, vitae porta sem. Nam non dolor eget libero gravida varius. Etiam non maximus nibh, faucibus efficitur erat. Nullam a dignissim enim. Pellentesque sollicitudin metus non lacus elementum, sed efficitur sem feugiat. Vivamus accumsan malesuada semper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla et efficitur arcu, consectetur porta est. Cras vitae venenatis leo, non placerat lacus.\n\nProin condimentum dapibus dapibus. In commodo ac nunc non euismod. Duis aliquet euismod porta. Quisque nec faucibus erat. Nam et ligula sagittis, tempor erat eget, consectetur nisl. Mauris nec facilisis ante. Proin nisi nisi, convallis viverra dolor at, aliquet consequat ipsum.\n\nVestibulum metus nunc, varius non metus maximus, malesuada laoreet lectus. Nunc tristique, tellus sed pharetra cursus, orci augue lobortis arcu, eu eleifend mauris urna vitae ipsum. Nulla eget dui venenatis eros blandit posuere a eget mi. Fusce aliquet risus ac nisl sagittis fermentum. Fusce non ipsum varius eros aliquet feugiat. Proin sit amet velit hendrerit, eleifend leo et, suscipit nisl. Nam cursus velit augue, vel dapibus nibh ornare ac. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;\n\nWorks great.",
+          "Created": "2014-10-15T18:56:42.01",
+          "Modified": "2014-10-15T18:56:42.01",
+          "IsRead": true,
+          "IP": null
+        }
+      ]
     },
     {
       "PostID": 20,
@@ -996,7 +882,19 @@
       "Created": "2014-11-10T04:21:23",
       "Modified": "2020-01-08T16:38:14.523",
       "IsPublished": true,
-      "PublishDate": "2014-11-10T04:15:59"
+      "PublishDate": "2014-11-10T04:15:59",
+      "LocalPublishDate": "2014-11-09T23:15:59-05:00",
+      "Category": {
+        "CategoryID": 1,
+        "Name": "Professional",
+        "Description": "Professional"
+      },
+      "Tags": [
+        "jquery",
+        "jquery-ui",
+        "plugin"
+      ],
+      "Comments": []
     },
     {
       "PostID": 21,
@@ -1009,7 +907,18 @@
       "Created": "2015-01-05T21:46:13",
       "Modified": "2020-01-08T16:38:10.957",
       "IsPublished": true,
-      "PublishDate": "2015-01-05T21:36:49"
+      "PublishDate": "2015-01-05T21:36:49",
+      "LocalPublishDate": "2015-01-05T16:36:49-05:00",
+      "Category": {
+        "CategoryID": 1,
+        "Name": "Professional",
+        "Description": "Professional"
+      },
+      "Tags": [
+        "bring-it",
+        "new-year-resolutions"
+      ],
+      "Comments": []
     },
     {
       "PostID": 22,
@@ -1022,7 +931,18 @@
       "Created": "2015-02-15T04:05:08",
       "Modified": "2020-01-08T16:38:08.423",
       "IsPublished": true,
-      "PublishDate": "2015-02-15T03:58:13"
+      "PublishDate": "2015-02-15T03:58:13",
+      "LocalPublishDate": "2015-02-14T22:58:13-05:00",
+      "Category": {
+        "CategoryID": 1,
+        "Name": "Professional",
+        "Description": "Professional"
+      },
+      "Tags": [
+        "html",
+        "squarespace"
+      ],
+      "Comments": []
     },
     {
       "PostID": 23,
@@ -1035,7 +955,20 @@
       "Created": "2015-09-08T20:59:35",
       "Modified": "2015-09-08T22:40:48.357",
       "IsPublished": true,
-      "PublishDate": "2015-09-08T20:51:14"
+      "PublishDate": "2015-09-08T20:51:14",
+      "LocalPublishDate": "2015-09-08T16:51:14-04:00",
+      "Category": {
+        "CategoryID": 1,
+        "Name": "Professional",
+        "Description": "Professional"
+      },
+      "Tags": [
+        "javascript",
+        "jquery",
+        "knockout",
+        "pagerjs"
+      ],
+      "Comments": []
     },
     {
       "PostID": 24,
@@ -1048,7 +981,31 @@
       "Created": "2017-08-17T15:08:40",
       "Modified": "2020-01-08T16:38:02.567",
       "IsPublished": true,
-      "PublishDate": "2017-08-17T15:06:54"
+      "PublishDate": "2017-08-17T15:06:54",
+      "LocalPublishDate": "2017-08-17T11:06:54-04:00",
+      "Category": {
+        "CategoryID": 1,
+        "Name": "Professional",
+        "Description": "Professional"
+      },
+      "Tags": [
+        "c#"
+      ],
+      "Comments": [
+        {
+          "CommentID": 321,
+          "PostID": 24,
+          "Name": "Kruno",
+          "IsUser": false,
+          "Email": null,
+          "Url": null,
+          "Text": "Thank you for providing this, very useful!",
+          "Created": "2018-12-18T13:23:24.34",
+          "Modified": "2018-12-18T13:23:24.34",
+          "IsRead": true,
+          "IP": "93.140.12.198"
+        }
+      ]
     },
     {
       "PostID": 25,
@@ -1061,19 +1018,18 @@
       "Created": "2018-12-07T16:02:18",
       "Modified": "2020-01-08T16:37:59.59",
       "IsPublished": true,
-      "PublishDate": "2018-12-07T15:49:02"
-    }
-  ],
-  "Categories": [
-    {
-      "CategoryID": 1,
-      "Name": "Professional",
-      "Description": "Professional"
-    },
-    {
-      "CategoryID": 2,
-      "Name": "Personal",
-      "Description": "Personal"
+      "PublishDate": "2018-12-07T15:49:02",
+      "LocalPublishDate": "2018-12-07T10:49:02-05:00",
+      "Category": {
+        "CategoryID": 1,
+        "Name": "Professional",
+        "Description": "Professional"
+      },
+      "Tags": [
+        "c#",
+        "forms-authentication"
+      ],
+      "Comments": []
     }
   ]
 }
