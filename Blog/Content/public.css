@@ -27,7 +27,7 @@ ol li {list-style-type: decimal !important; margin-left: 40px; line-height: 28px
 
 blockquote { border: 1px solid #cccccc; padding-left: 10px !important; margin-left: 20px !important; border-left: 2px solid White !important; }
 
-code { padding: 2px 6px; color: #191919; background: #1abc9c; border-radius: 2px; }
+code { padding: 2px 6px !important; color: #191919; background: #1abc9c; border-radius: 2px; }
 
 /* LAYOUT 
 ----------------------------------------------------------*/
