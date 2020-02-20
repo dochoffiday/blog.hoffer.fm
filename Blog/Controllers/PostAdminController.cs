@@ -105,7 +105,7 @@ namespace BC.Models.Post.Controllers
 
                 PostService.Update(post, BC.Core.Helper.CleanTags(collection["Tags"]));
 
-                return RedirectToAction("Index", "PostAdmin");
+                return RedirectToAction("edit", new { id = post.PostID });
             }
 
             return View(post);

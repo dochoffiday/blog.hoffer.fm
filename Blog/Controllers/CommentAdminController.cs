@@ -113,7 +113,7 @@ namespace BC.Models.Comment.Controllers
             {
                 CommentService.Update(comment);
 
-                return RedirectToAction("Index", "CommentAdmin");
+                return RedirectToAction("edit", new { id = comment.CommentID });
             }
 
             return View(comment);

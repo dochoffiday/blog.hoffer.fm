@@ -91,7 +91,7 @@ namespace BC.Models.Category.Controllers
             {
                 CategoryService.Update(category);
 
-                return RedirectToAction("Index", "CategoryAdmin");
+                return RedirectToAction("edit", new { id = category.CategoryID });
             }
 
             return View(category);

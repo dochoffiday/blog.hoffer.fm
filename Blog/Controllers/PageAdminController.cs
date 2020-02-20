@@ -100,7 +100,7 @@ namespace BC.Models.Page.Controllers
 
                 PageService.Update(page);
 
-                return RedirectToAction("Index", "PageAdmin");
+                return RedirectToAction("edit", new { id = page.PageID });
             }
 
             return View(page);
