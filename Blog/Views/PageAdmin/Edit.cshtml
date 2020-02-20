@@ -13,7 +13,6 @@
 <script type="text/javascript">
     var surl = "@Url.Content("~/Services/AdminService.asmx/slug")";
 </script>
-<script type="text/javascript" src="@Url.Content("~/Scripts/controls/tiny_mce/tiny_mce.js")"></script>
 @Html.Raw(SquishIt.Framework.Bundle.JavaScript().Add("~/Scripts/jquery.validate.min.js").Add("~/Scripts/jquery.validate.unobtrusive.min.js").Add("~/Scripts/controls/alphanumeric/jquery.alphanumeric.min.js").Add("~/Scripts/controls/checkbox/jquery.checkbox.js").Add("~/Scripts/pages/pageAdmin.edit.js").Render("~/Scripts/combined_page_#.js"))
 
 @using (Html.BeginForm()) {
