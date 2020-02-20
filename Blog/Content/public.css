@@ -10,7 +10,7 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
 html { font-family: Verdana, Geneva, sans-serif; background: #191919; font-size: 14px; letter-spacing: 1px; height: 100%; }
 body { background: #191919; color: #E0E0E0; height: 100%; }
 
-a, a:visited { color: #3380CC; text-decoration: none; }
+a, a:visited { color: #2980b9; text-decoration: none; }
 
 h2, h2 a, h2 a:visited { letter-spacing: 1px; font-size: 30px; line-height: 42px; color: White; font-family: PT Sans; margin-bottom: 25px !important; }
 h3 {  font-family: PT Sans; font-size: 20px; line-height: 23px; border-bottom: 1px solid #E0E0E0 !important; }
@@ -26,6 +26,8 @@ ol { margin: 1em 0px !important; }
 ol li {list-style-type: decimal !important; margin-left: 40px; line-height: 28px; }
 
 blockquote { border: 1px solid #cccccc; padding-left: 10px !important; margin-left: 20px !important; border-left: 2px solid White !important; }
+
+code { padding: 2px 6px; color: #191919; background: #1abc9c; border-radius: 2px; }
 
 /* LAYOUT 
 ----------------------------------------------------------*/
