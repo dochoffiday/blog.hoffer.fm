@@ -1,1 +1,0 @@
-﻿Build with https://statiq.dev/ (with the help of https://wellsb.com/csharp/aspnet/create-blog-csharp-statiq/)
