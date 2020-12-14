@@ -8,8 +8,9 @@ namespace StatiqBlog
 {
     class Program
     {
-        static async Task<int> Main(string[] args) =>
-            await Bootstrapper.Factory
+        static async Task<int> Main(string[] args)
+        {
+            var factory = Bootstrapper.Factory
                 .CreateWeb(args)
                 .AddSetting(Keys.Host, new Uri(Constants.SiteUri).Host)
                 .AddSetting(Keys.LinksUseHttps, true)
@@ -24,8 +25,17 @@ namespace StatiqBlog
                                 ? new NormalizedPath(doc.GetDateTime(WebKeys.Published).ToString("yyyy")).Combine(doc.GetString("Category")).Combine(doc.Destination.FileName.ChangeExtension(".html"))
                                 : doc.Destination.ChangeExtension(".html");
                         }
+
                         return doc.Destination;
-                    }))
-                .RunAsync();
+                    }));
+
+#if !DEBUG
+
+factory.DeployToGitHubPagesBranch("dochoffiday", "dochoffiday.com", Config.FromSetting<string>("GITHUB_TOKEN"), "deploy");
+
+#endif
+
+            return await factory.RunAsync();
+        }
     }
 }
