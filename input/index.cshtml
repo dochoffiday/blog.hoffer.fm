@@ -1,14 +1,16 @@
-Title: => $"{Constants.SiteTitle}"
+ArchiveSources: => $"posts/*"
+ArchiveDestination: >
+  => GetInt("Index") <= 1 ? $"index.html" : $"{GetInt("Index")}.html"
+ArchivePageSize: => @Constants.PostsPerPage
+ArchiveOrderKey: Published
+ArchiveOrderDescending: true
 HideSidebar: true
+Title: => $"{Constants.SiteTitle}"
+ArchiveTitle: >
+  => $"{Title}{(GetInt("Index") > 1 ? (" (Page " + GetInt("Index") + ")") : null)}"
 ---
-<div class="jumbotron jumbotron-fluid hero">
-    <div class="container-fluid">
-        <h2 class="display-4 text-center">Lorem Ipsum</h2>
-        <p class="lead text-center">Dolor sit amet.</p>
-        <hr class="my-4">
-        <div class="text-center">
-			<p>Sed vitae tempor enim. Phasellus odio nisl, interdum pulvinar a, interdum non enim. Curabitur eget odio id enim consectetur molestie. Maecenas rutrum, ipsum non.</p>
-			<a class="btn btn-primary btn-lg" href="/" role="button">Go to Blog</a>
-        </div>
+<section class="blog-section">
+    <div class="blog-container">
+        @Html.Partial($"/_posts.cshtml", Document.GetChildren())
     </div>
-</div>
+</section>
