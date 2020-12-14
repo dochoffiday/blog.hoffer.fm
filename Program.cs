@@ -14,18 +14,18 @@ namespace StatiqBlog
                 .AddSetting(Keys.Host, new Uri(Constants.SiteUri).Host)
                 .AddSetting(Keys.LinksUseHttps, true)
                 .AddSetting(
-                        Keys.DestinationPath,
-                        Config.FromDocument((doc, ctx) =>
+                    Keys.DestinationPath,
+                    Config.FromDocument((doc, ctx) =>
+                    {
+                        // Only applies to the content pipeline
+                        if (ctx.PipelineName == nameof(Statiq.Web.Pipelines.Content))
                         {
-                            // Only applies to the content pipeline
-                            if (ctx.PipelineName == nameof(Statiq.Web.Pipelines.Content))
-                            {
-                                return doc.Source.Parent.Segments.Last().SequenceEqual("posts".AsMemory())
-                                    ? new NormalizedPath(Constants.BlogPath).Combine(doc.GetDateTime(WebKeys.Published).ToString("yyyy")).Combine(doc.GetString("Category")).Combine(doc.Destination.FileName.ChangeExtension(".html"))
-                                    : doc.Destination.ChangeExtension(".html");
-                            }
-                            return doc.Destination;
-                        }))
+                            return doc.Source.Parent.Segments.Last().SequenceEqual("posts".AsMemory())
+                                ? new NormalizedPath(Constants.BlogPath).Combine(doc.GetDateTime(WebKeys.Published).ToString("yyyy")).Combine(doc.GetString("Category")).Combine(doc.Destination.FileName.ChangeExtension(".html"))
+                                : doc.Destination.ChangeExtension(".html");
+                        }
+                        return doc.Destination;
+                    }))
                 .RunAsync();
     }
 }
