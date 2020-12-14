@@ -36,7 +36,7 @@ namespace dochoffiday
                 Config.FromSetting<string>("GITHUB_TOKEN"),
                 "live_site_deployed_from_statiq"
             );
-             
+            
             return await factory.RunAsync();
         }
     }
