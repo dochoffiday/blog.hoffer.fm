@@ -29,11 +29,7 @@ namespace StatiqBlog
                         return doc.Destination;
                     }));
 
-#if !DEBUG
-
-factory.DeployToGitHubPagesBranch("dochoffiday", "dochoffiday.com", Config.FromSetting<string>("GITHUB_TOKEN"), "deploy");
-
-#endif
+            factory.DeployToGitHubPagesBranch("dochoffiday", "dochoffiday.com", Config.FromSetting<string>("GITHUB_TOKEN"), "deploy");
 
             return await factory.RunAsync();
         }
