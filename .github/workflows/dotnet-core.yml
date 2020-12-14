@@ -24,6 +24,6 @@ jobs:
     - name: Test
       run: dotnet test --no-restore --verbosity normal
     - name: Deploy
-      run: dotnet run -- deploy
+      run: dotnet run --project dochoffiday -- deploy
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

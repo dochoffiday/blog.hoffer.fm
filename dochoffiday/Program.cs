@@ -30,12 +30,12 @@ namespace dochoffiday
                         return doc.Destination;
                     }));
 
-            factory.DeployToGitHubPagesBranch(
-                "dochoffiday",
-                "dochoffiday.com",
-                Config.FromSetting<string>("GITHUB_TOKEN"),
-                "live_site_deployed_from_statiq"
-            );
+            //factory.DeployToGitHubPagesBranch(
+            //    "dochoffiday",
+            //    "dochoffiday.com",
+            //    Config.FromSetting<string>("GITHUB_TOKEN"),
+            //    "live_site_deployed_from_statiq"
+            //);
             
             return await factory.RunAsync();
         }
