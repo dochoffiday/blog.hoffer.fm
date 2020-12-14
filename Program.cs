@@ -33,7 +33,7 @@ namespace dochoffiday
             factory.DeployToGitHubPagesBranch(
                 "dochoffiday",
                 "dochoffiday.com",
-                "f9abec6afebaa513cc80077374997937fd90c7b4",
+                Config.FromSetting<string>("GITHUB_TOKEN"),
                 "live_site_deployed_from_statiq"
             );
 
