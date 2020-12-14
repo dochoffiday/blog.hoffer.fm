@@ -5,6 +5,12 @@ on:
     branches: [ statiq ]
   pull_request:
     branches: [ statiq ]
+  workflow_dispatch:
+    inputs:
+      deployEnvironment:
+        description: 'Statiq code'     
+        required: true
+        default: 'statiq'
 
 jobs:
   build:
