@@ -1,10 +1,11 @@
-﻿using System;
-using System.Linq;
-using System.Threading.Tasks;
-using Statiq.App;
+﻿using Statiq.App;
 using Statiq.Common;
 using Statiq.Web;
-namespace StatiqBlog
+using System;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace dochoffiday
 {
     class Program
     {
@@ -29,7 +30,12 @@ namespace StatiqBlog
                         return doc.Destination;
                     }));
 
-            factory.DeployToGitHubPagesBranch("dochoffiday", "dochoffiday.com", Config.FromSetting<string>("GITHUB_TOKEN"), "deploy");
+            factory.DeployToGitHubPagesBranch(
+                "dochoffiday",
+                "dochoffiday.com",
+                Config.FromSetting<string>("GITHUB_TOKEN"),
+                "live_site_deployed_from_statiq"
+            );
 
             return await factory.RunAsync();
         }
