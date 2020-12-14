@@ -1,0 +1,31 @@
+ArchiveSources: => $"posts/*"
+ArchiveKey: Category
+ArchiveDestination: >
+  => GetInt("Index") <= 1 ? $"categories/{GroupKey}/index.html" : $"categories/{GroupKey}/{GetInt("Index")}.html"
+ArchivePageSize: => @Constants.PostsPerPage
+ArchiveOrderKey: Published
+Title: Categories
+ArchiveTitle: => Outputs["Data"][$"categories/{GroupKey}.yml"]["Title"]
+---
+<section class="blog-section">
+    <div class="blog-container">
+        @if (Document.ContainsKey(Keys.GroupKey))
+        {
+            <h1>@(Outputs[nameof(Data)][$"categories/{Document.GetString(Keys.GroupKey)}.yml"].GetString("Title"))</h1>
+            <p>@(Outputs[nameof(Data)][$"categories/{Document.GetString(Keys.GroupKey)}.yml"].GetString("Description"))</p>
+            @Html.Partial($"/_posts.cshtml", Document.GetChildren())
+        }
+        else
+        {
+            @foreach (IDocument category in Document.GetChildren())
+            {
+                <div>
+                    <div class="p-3 mb-2 bg-light">
+                        <h4>@Html.DocumentLink(category)</h4>
+                        <p>@(Outputs[nameof(Data)][$"categories/{category.GetString(Keys.GroupKey)}.yml"].GetString("Description"))</p>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</section>

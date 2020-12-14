@@ -3,7 +3,7 @@
     <div class="list-group list-group-flush">
         @foreach (IDocument category in Outputs[nameof(Data)]
        .Flatten()
-       .FilterSources($"{Constants.BlogPath}/categories/*")
+       .FilterSources($"categories/*")
        .OrderBy(x => x.GetString("Title")))
         {
             var link = category.GetLink().RemoveEnd(".yml") ; //remove .yml from path

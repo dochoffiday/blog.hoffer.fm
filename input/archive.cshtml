@@ -1,5 +1,5 @@
-Enumerate: => Inputs.FilterSources($"{Constants.BlogPath}/posts/*").Select(x => x.GetDateTime("Published").ToString("yyyy/MM")).Distinct()
-DestinationPath: => new NormalizedPath($"{Constants.BlogPath}/{Current}/index.html")
+Enumerate: => Inputs.FilterSources($"posts/*").Select(x => x.GetDateTime("Published").ToString("yyyy/MM")).Distinct()
+DestinationPath: => new NormalizedPath($"{Current}/index.html")
 Title: => $"Post Archive - {Current}"
 ---
 <section class="blog-section">
@@ -10,9 +10,9 @@ Title: => $"Post Archive - {Current}"
             {
                 <h1>Post from @archiveDate.ToString("MMMM yyyy")</h1>
             }            
-            @Html.Partial($"/{Constants.BlogPath}/_posts.cshtml", Outputs[nameof(Content)]
+            @Html.Partial($"/_posts.cshtml", Outputs[nameof(Content)]
                 .Flatten()
-                .FilterSources($"{Constants.BlogPath}/posts/*")
+                .FilterSources($"posts/*")
                 .Where(doc => doc.GetDateTime("Published").ToString("yyyy/MM").Equals(Model.GetString(Keys.Current)))
                 .OrderByDescending(doc => doc.GetDateTime("Published")))            
         }
