@@ -2,19 +2,15 @@ Enumerate: => Inputs.FilterSources($"posts/*").Select(x => x.GetDateTime("Publis
 DestinationPath: => new NormalizedPath($"{Current}/index.html")
 Title: => $"Post Archive - {Current}"
 ---
-<section class="blog-section">
-    <div class="blog-container">
-        @{
-            DateTime archiveDate;
-            if (DateTime.TryParse(Model.GetString(Keys.Current), out archiveDate))
-            {
-                <h1>Post from @archiveDate.ToString("MMMM yyyy")</h1>
-            }            
-            @Html.Partial($"/_posts.cshtml", Outputs[nameof(Content)]
-                .Flatten()
-                .FilterSources($"posts/*")
-                .Where(doc => doc.GetDateTime("Published").ToString("yyyy/MM").Equals(Model.GetString(Keys.Current)))
-                .OrderByDescending(doc => doc.GetDateTime("Published")))            
-        }
-    </div>
-</section>
+@{
+    DateTime archiveDate;
+    if (DateTime.TryParse(Model.GetString(Keys.Current), out archiveDate))
+    {
+        <h1>Post from @archiveDate.ToString("MMMM yyyy")</h1>
+    }            
+    @Html.Partial($"/_posts.cshtml", Outputs[nameof(Content)]
+        .Flatten()
+        .FilterSources($"posts/*")
+        .Where(doc => doc.GetDateTime("Published").ToString("yyyy/MM").Equals(Model.GetString(Keys.Current)))
+        .OrderByDescending(doc => doc.GetDateTime("Published")))            
+}
