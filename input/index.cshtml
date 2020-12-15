@@ -4,7 +4,6 @@ ArchiveDestination: >
 ArchivePageSize: => @Constants.PostsPerPage
 ArchiveOrderKey: Published
 ArchiveOrderDescending: true
-HideSidebar: true
 Title: => $"{Constants.SiteTitle}"
 ArchiveTitle: >
   => $"{Title}{(GetInt("Index") > 1 ? (" (Page " + GetInt("Index") + ")") : null)}"

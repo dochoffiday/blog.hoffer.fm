@@ -1,6 +1,6 @@
 Title: Hello World
 Published: 2020-04-01
-Category: news
+Category: Professional
 ---
 ## Heading 1
 ### Subheading 1.1

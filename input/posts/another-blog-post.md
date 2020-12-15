@@ -1,6 +1,6 @@
 Title: Another Blog Post
 Published: 2020-05-05
-Category: opinion
+Category: Personal
 ---
 ## Heading
 Check it out! Integer felis leo, sollicitudin tincidunt sodales et, elementum sed ex. In at lorem risus. Donec rhoncus justo id erat dapibus auctor. Curabitur sed dui eget libero pellentesque vulputate in a diam. Proin pharetra in felis vitae accumsan. Nam euismod libero mi. Sed eget metus tortor. Nulla facilisi. Ut dignissim scelerisque arcu, vel aliquet ligula suscipit id. Maecenas a purus libero. Phasellus nec orci sapien. Integer sit amet mauris et tellus finibus vehicula venenatis eu risus. Proin iaculis porttitor sem. Nulla diam tortor, congue non hendrerit quis, aliquet quis dolor. Mauris tincidunt elit pharetra nibh rhoncus, in elementum sapien molestie. Donec ipsum tellus, condimentum nec dapibus sit amet, ullamcorper nec libero.

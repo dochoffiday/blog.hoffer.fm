@@ -1,60 +1,132 @@
-﻿body.main {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+﻿/* http://meyerweb.com/eric/tools/css/reset/ 
+	v2.0 | 20110126
+	License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
-.main {
-    flex: 1;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
 }
-    .main .top-row {
-        background-color: #f7f7f7;
-        border-bottom: 1px solid #d6d5d5;
-        z-index: 999;
-        height: 3.5rem;
-        display: flex;
-        align-items: center;
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
     }
-        .main .top-row .site-title {
-            margin-right: auto;
-            font-size: 2em;
-            font-weight: bold;
-        }
-        .main .top-row h1.site-title {
-            color: #000000;
-            margin-top: 0px;
-            margin-bottom: 0px;
-        }
-        .main .top-row .links > a, .main .top-row .links > .btn-link {
-            white-space: nowrap;
-            margin-left: 1.5rem;
-        }
-        .main .top-row .links a:first-child {
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        .main .top-row .links a, .main .top-row .links .btn-link {
-        }
-        .main .top-row .links a:hover, .main .top-row .links .btn-link:hover {
-        }
-@media (max-width: 767.98px) {
-    .main .top-row a, .main .top-row .btn-link {
-        margin-left: 0;
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Sans&display=swap');
+
+/* CUSTOM STYLES */
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #2d3436;
+    background: #f1f2f6;
+}
+
+#main {
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    font-size: 5rem;
+    margin: 2rem 0 5rem 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: #2980b9;
+}
+
+.post {
+    margin-bottom: 5rem;
+}
+
+h1, .h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: 'PT Sans', sans-serif;
+}
+
+    h1 a, h1 a:visited, .h1 a, .h1 a:visited {
+        text-decoration: none;
+        color: #2d3436;
     }
+
+p {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    margin: 1em 0;
+    letter-spacing: .04rem;
 }
-@media (min-width: 768px) {
-    .main .top-row {
-        position: sticky;
-        top: 0;
+
+    p .meta {
+        padding-left: 10px;
     }
-    .main > div {
-        padding-left: 2rem !important;
-        padding-right: 1.5rem !important;
-    }
+
+strong {
+    font-weight: bold;
 }
-.archive-index {
-    background-color:#efefef
+
+i {
+    font-style: italic;
 }
-#site_container {
-    padding-top: 1.1rem;
+
+code {
+    padding: .2rem .4rem !important;
+    color: #191919;
+    background: #1abc9c;
+    border-radius: 2px;
 }
-#page_container {
-    padding-top: 1.1rem;
+
+hr {
+    margin: 5em 0;
+}
+
+footer {
+    font-size: 1.4em;
+    margin-bottom: 3em;
 }
