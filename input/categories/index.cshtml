@@ -3,24 +3,22 @@ ArchiveKey: Category
 ArchiveDestination: >
   => GetInt("Index") <= 1 ? $"categories/{GroupKey}/index.html" : $"categories/{GroupKey}/{GetInt("Index")}.html"
 ArchivePageSize: => @Constants.PostsPerPage
-ArchiveOrder: Published
+ArchiveOrderKey: Published
+ArchiveOrderDescending: true
 Title: Categories
 ArchiveTitle: => Outputs["Data"][$"categories/{GroupKey}.yml"]["Title"]
 ---
 @if (Document.ContainsKey(Keys.GroupKey))
 {
-    <h1 class="category">~ @(Outputs[nameof(Data)][$"categories/{Document.GetString(Keys.GroupKey)}.yml"].GetString("Title")) ~</h1>
-    @Html.Partial($"/_posts.cshtml", Document.GetChildren().OrderByDescending(doc => doc.GetDateTime("Published")))
-}
-else
-{
-    @foreach (IDocument category in Document.GetChildren())
-    {
-        <div>
-            <div class="p-3 mb-2 bg-light">
-                <h4>@Html.DocumentLink(category)</h4>
-                <p>@(Outputs[nameof(Data)][$"categories/{category.GetString(Keys.GroupKey)}.yml"].GetString("Description"))</p>
-            </div>
-        </div>
-    }
-}
+<h1 class="category">~ @(Outputs[nameof(Data)][$"categories/{Document.GetString(Keys.GroupKey)}.yml"].GetString("Title")) ~</h1>
+                @Html.Partial($"/_posts.cshtml", Document.GetChildren().OrderByDescending(doc => doc.GetDateTime("Published"))) }
+                            else
+                            {
+                @foreach (IDocument category in Document.GetChildren())
+                {
+<div>
+    <div class="p-3 mb-2 bg-light">
+        <h4>@Html.DocumentLink(category)</h4>
+        <p>@(Outputs[nameof(Data)][$"categories/{category.GetString(Keys.GroupKey)}.yml"].GetString("Description"))</p>
+    </div>
+</div>}}
