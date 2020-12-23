@@ -2,9 +2,9 @@ name: Deploy After Push
 
 on:
   push:
-    branches: [ statiq ]
+    branches: [ master, statiq ]
   pull_request:
-    branches: [ statiq ]
+    branches: [ master, statiq ]
   workflow_dispatch:
 
 jobs:
