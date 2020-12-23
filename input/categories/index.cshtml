@@ -9,7 +9,8 @@ ArchiveTitle: => Outputs["Data"][$"categories/{GroupKey}.yml"]["Title"]
 ---
 @if (Document.ContainsKey(Keys.GroupKey))
 {
-    <h1>@(Outputs[nameof(Data)][$"categories/{Document.GetString(Keys.GroupKey)}.yml"].GetString("Title"))</h1>
+    <h1 style="text-align: center;">~ @(Outputs[nameof(Data)][$"categories/{Document.GetString(Keys.GroupKey)}.yml"].GetString("Title")) ~</h1>
+    <br /><br />
     @Html.Partial($"/_posts.cshtml", Document.GetChildren())
 }
 else
