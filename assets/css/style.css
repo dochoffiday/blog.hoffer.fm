@@ -1,132 +1,62 @@
-﻿/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/ 
 	v2.0 | 20110126
 	License: none (public domain)
 */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 
-body {
-    line-height: 1;
-}
+body { line-height: 1; }
 
-ol, ul {
-    list-style: none;
-}
+ol, ul { list-style: none; }
 
-blockquote, q {
-    quotes: none;
-}
+blockquote, q { quotes: none; }
 
-    blockquote:before, blockquote:after,
-    q:before, q:after {
-        content: '';
-        content: none;
-    }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
 
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
+table { border-collapse: collapse; border-spacing: 0; }
 
-/* FONTS */
+html, body { font-family: Georgia, serif; font-size: 12px; color: #2d3436; background: #f1f2f6; }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Sans&display=swap');
+#main { padding: 1rem; max-width: 800px; margin: 0 auto; }
 
-/* CUSTOM STYLES */
+header { font-size: 5rem; margin: 2rem 0 5rem 0; }
 
-html, body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    color: #2d3436;
-    background: #f1f2f6;
-}
+a, a:visited { text-decoration: none; color: #2980b9; }
 
-#main {
-    padding: 1rem;
-    max-width: 800px;
-    margin: 0 auto;
-}
+.post { margin-bottom: 5rem; }
 
-header {
-    font-size: 5rem;
-    margin: 2rem 0 5rem 0;
-}
+h1, .h1 { font-size: 2.5rem; line-height: 3rem; text-transform: uppercase; font-family: Helvetica, sans-serif; }
 
-a, a:visited {
-    text-decoration: none;
-    color: #2980b9;
-}
+h1 a, h1 a:visited, .h1 a, .h1 a:visited { text-decoration: none; color: #2d3436; }
 
-.post {
-    margin-bottom: 5rem;
-}
+h3, .h3 { font-family: Helvetica, sans-serif; text-transform: uppercase; font-size: 2rem; margin: 3rem 0 2rem 0; border-bottom: 1px dashed; padding-bottom: 10px; }
 
-h1, .h1 {
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    font-family: 'PT Sans', sans-serif;
-}
+p, ul, ol, pre code { font-size: 1.4rem; line-height: 2.2rem; margin: 2rem 0; letter-spacing: .04rem; }
 
-    h1 a, h1 a:visited, .h1 a, .h1 a:visited {
-        text-decoration: none;
-        color: #2d3436;
-    }
+ul, ol { margin-left: 2rem; }
 
-p {
-    font-size: 1.5rem;
-    line-height: 2.2rem;
-    margin: 1em 0;
-    letter-spacing: .04rem;
-}
+ul li, ol li { list-style-position: outside; padding-left: .25rem; }
 
-    p .meta {
-        padding-left: 10px;
-    }
+ul { list-style: disc; }
 
-strong {
-    font-weight: bold;
-}
+ol { list-style: decimal; }
 
-i {
-    font-style: italic;
-}
+p .meta { padding-left: 10px; }
 
-code {
-    padding: .2rem .4rem !important;
-    color: #191919;
-    background: #1abc9c;
-    border-radius: 2px;
-}
+strong { font-weight: bold; }
 
-hr {
-    margin: 5em 0;
-}
+i { font-style: italic; }
 
-footer {
-    font-size: 1.4em;
-    margin-bottom: 3em;
-}
+code { padding: .2rem .4rem; color: #191919; background: #1abc9c; border-radius: 2px; }
+
+pre code { display: block; border-radius: 2px; background-color: #fff; font-size: 1rem; padding: 1rem; border: solid 1px #bdc3c7; }
+
+blockquote { padding: 1rem 0 1rem 2rem; margin-left: .25rem; border-left: solid 2px #1abc9c; }
+
+blockquote ul, blockquote ol { margin: 0; }
+
+hr { margin: 5rem 0; border: solid 1px #7f8c8d; }
+
+footer { font-size: 1.4rem; margin-bottom: 3rem; }

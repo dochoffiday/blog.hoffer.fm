@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    
+<base href="/" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="AJ Hoffer is a software engineer living in Lancaster, PA who helps people solve problems" />
+<meta name="author" content="AJ Hoffer" />
+<title>Spruce Up Your List-Item Bullets with Emojis! - AJ Hoffer</title>
+
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+<link rel="manifest" href="/assets/favicons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<link href="/assets/css/style.css" rel="stylesheet" />
+<link type="application/rss+xml" rel="alternate" title="AJ Hoffer&#x27;s Blog" href=/rss/ />
+
+    
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Spruce Up Your List-Item Bullets with Emojis!">
+
+</head>
+<body>
+    <div id="main">
+        <header>
+    <a href="/">
+        👨‍🚀💬
+    </a>
+</header>
+            <section class="post">
+        <h1>Spruce Up Your List-Item Bullets with Emojis!</h1>
+        <p>If you want to add some pizzazz (🎆) to your lists with flashier bullets, it's easy to do with emojis!</p>
+<p>🤘🚀😎🍕🥓🍩🌭🏓🥇🔨🤷‍♂️🎅🐖🏍☢🎉🎈</p>
+<h3>The Basic Setup</h3>
+<style type="text/css">
+	ul.rocket-one li {
+		list-style-type: none !important;
+	}
+
+	ul.rocket-one li:before {
+		content: '🚀';
+	}
+
+	ul.rocket-two li {
+		list-style-type: none !important;
+		margin-left: 0;
+	}
+
+	ul.rocket-two li:before {
+		content: '🚀';
+        display: inline-block;
+        transform: rotate(45deg);
+	}
+
+	ul.rocket-three {
+		margin-left: 2em !important;
+	}
+
+	ul.rocket-three li {
+		list-style-type: none !important;
+		margin-left: 0;
+		position: relative;
+	}
+
+	ul.rocket-three li:before {
+		content: '🚀';
+		display: inline-block;
+		transform: rotate(45deg);
+		position: absolute;
+		top: -.01em;
+		left: -2em;
+	}
+
+	ul.emojis {
+		margin-left: 2em !important;
+	}
+
+	ul.emojis li {
+		list-style-type: none !important;
+		margin-left: 0;
+		position: relative;
+	}
+
+	ul.emojis li:before {
+		display: inline-block;
+		position: absolute;
+		left: -2em;
+	}
+
+	ul.emojis li.emoji-hot-dog:before {
+		content: '🌭';
+		top: 0;
+	}
+
+	ul.emojis li.emoji-cowboy:before {
+		content: '🤠';
+		top: .01em;
+		transform: rotate(180deg);
+	}
+
+	ul.emojis li.emoji-bacon:before {
+		content: '🥓';
+		top: .1em;
+		animation: spin 4s linear infinite;
+	}
+	@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+</style>
+<p>To start, all we need to do is set the <code>content</code> of the list-item:</p>
+<pre><code>&lt;style type=&quot;text/css&quot;&gt;
+    ul.rocket li {
+        list-style-type: none;
+    }
+       
+    ul.rocket li:before {
+        content: '🚀';
+    }
+&lt;/style&gt;
+&lt;ul class=&quot;rocket&quot;&gt;
+    &lt;li&gt;ten&lt;/li&gt;
+    &lt;li&gt;nine&lt;/li&gt;
+    &lt;li&gt;eight&lt;/li&gt;
+    &lt;li&gt;seven&lt;/li&gt;
+    &lt;li&gt;six&lt;/li&gt;
+    &lt;li&gt;five&lt;/li&gt;
+    &lt;li&gt;four&lt;/li&gt;
+    &lt;li&gt;three&lt;/li&gt;
+    &lt;li&gt;two&lt;/li&gt;
+    &lt;li&gt;one&lt;/li&gt;
+    &lt;li&gt;blast off!&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+<blockquote>
+    <ul class="rocket-one">
+        <li>ten</li>
+        <li>nine</li>
+        <li>eight</li>
+        <li>seven</li>
+        <li>six</li>
+        <li>five</li>
+        <li>four</li>
+        <li>three</li>
+        <li>two</li>
+        <li>one</li>
+        <li>blast off!</li>
+    </ul>
+</blockquote>
+<p>... and that's it! But let's see if we can take it a step further by rotating the 🚀.</p>
+<h3>Rotate!</h3>
+<p>We'll tap into the <code>transform</code> to <em>rotate</em> our little 🚀. Since this is an inline element, we also need to set the <code>::before</code> to <code>display: inline-block;</code> (per the <a href="https://drafts.csswg.org/css-transforms-1/#terminology">W3 specifications</a>).</p>
+<pre><code>&lt;style type=&quot;text/css&quot;&gt;
+    ul.rocket li {
+        list-style-type: none;
+    }
+       
+    ul.rocket li:before {
+        content: '🚀';
+        display: inline-block;
+        transform: rotate(45deg);
+        font-size: .85em; // I also made it a little smaller
+    }
+&lt;/style&gt;</code></pre>
+<blockquote>
+    <ul class="rocket-two">
+        <li>I am the rocket man.</li>
+        <li>I am the rocket man. I am the rocket man. I am the rocket man. I am the rocket man. I am the rocket man. I am the rocket man. I am the rocket man. I am the rocket man. I am the rocket man. I am the rocket man. </li>
+    </ul>
+</blockquote>
+<p>That looks OK, but the 🚀 butts up pretty close to the text, and the text shouldn't wrap <em>under</em> the 🚀. But we can fix all that!</p>
+<pre><code>&lt;style type=&quot;text/css&quot;&gt;
+    ul.rocket {
+        margin-left: 2em; // you may have to fiddle with this
+    }
+       
+    ul.rocket li {
+        list-style-type: none;
+        position: relative;
+    }
+       
+    ul.rocket li:before {
+        content: '🚀';
+        display: inline-block;
+        transform: rotate(45deg);
+        font-size: .85em; // I also made it a little smaller
+        position: absolute;
+        top: -.01em; // you may have to fiddle with this
+        left: -2em; // you may have to fiddle with this
+    }
+&lt;/style&gt;</code></pre>
+<blockquote>
+    <ul class="rocket-three">
+        <li>T minus 10 minutes.</li>
+        <li>T minus 10 minutes. T minus 10 minutes. T minus 10 minutes. T minus 10 minutes. T minus 10 minutes. T minus 10 minutes. T minus 10 minutes. T minus 10 minutes. T minus 10 minutes. T minus 10 minutes. </li>
+        <li>T minus 10 minutes.</li>
+    </ul>
+</blockquote>
+<p>It's looking good! You may have to adjust some of the padding and position depending on which emoji you choose and your existing styles. But the bulk of the work is done. You can mix-and-match emojis if you want and even add some spinning!</p>
+<pre><code>&lt;style type=&quot;text/css&quot;&gt;
+    ul.emojis {
+        margin-left: 2em !important;
+    }
+       
+    ul.emojis li {
+        list-style-type: none !important;
+        position: relative;
+    }
+       
+    ul.emojis li:before {
+        display: inline-block;
+        font-size: .85em;
+        position: absolute;
+        left: -2em;
+    }
+       
+    ul.emojis li.emoji-hot-dog:before {
+        content: '🌭';
+        top: 0;
+    }
+       
+    ul.emojis li.emoji-cowboy:before {
+        content: '🤠';
+        top: .01em;
+        transform: rotate(180deg);
+    }
+       
+    ul.emojis li.emoji-bacon:before {
+        content: '🥓';
+        top: .1em;
+        animation: spin 4s linear infinite;
+    }
+    &#64;keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+&lt;/style&gt;</code></pre>
+<blockquote>
+    <ul class="emojis">
+        <li class="emoji-hot-dog">Hot diggity dog!</li>
+        <li class="emoji-cowboy">Yeehaw!</li>
+        <li class="emoji-bacon">Sizzling!</li>
+    </ul>
+</blockquote>
+        <p class="meta">
+            ~ posted in <a href="/categories/professional">professional</a> on 2020-02-20
+        </p>
+    </section>
+
+
+        <hr />
+        <footer>
+    &copy;
+    <script>document.write(new Date().getFullYear())</script>
+    🤓
+    <a href="https://hoffer.fm">AJ Hoffer</a>
+    |
+    <a href="https://github.com/dochoffiday">GitHub</a>
+    |
+    <a href="https://stackoverflow.com/users/234132/dochoffiday">StackOverflow</a>
+</footer>
+    </div>
+</body>
+</html>
