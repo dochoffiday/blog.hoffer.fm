@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    
+<base href="/" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="AJ Hoffer is a software engineer living in Lancaster, PA who helps people solve problems" />
+<meta name="author" content="AJ Hoffer" />
+<title>The Type or Namespace &#x27;Script&#x27; Doe snot Exist in the Namespace &#x27;SYSTEM.WEB&#x27; (Are You Missing An Assembly Reference?) - AJ Hoffer</title>
+
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+<link rel="manifest" href="/assets/favicons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<link href="/assets/css/style.min.css" rel="stylesheet" />
+<link type="application/rss+xml" rel="alternate" title="AJ Hoffer&#x27;s Blog" href=/rss/ />
+
+    
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="The Type or Namespace &#x27;Script&#x27; Doe snot Exist in the Namespace &#x27;SYSTEM.WEB&#x27; (Are You Missing An Assembly Reference?)">
+
+</head>
+<body>
+    <div id="main">
+        <header>
+    <a href="/">
+        👨‍🚀💬
+    </a>
+</header>
+            <section class="post">
+        <h1>The Type or Namespace &#x27;Script&#x27; Doe snot Exist in the Namespace &#x27;SYSTEM.WEB&#x27; (Are You Missing An Assembly Reference?)</h1>
+        <p>Sound familiar? How about one of these:</p>
+<ol>
+<li>The type or namespace name 'KeyValueConfigurationCollection' could not be found (are you missing a using directive or an assembly reference?)</li>
+<li>The type or namespace name 'Serialization' does not exist in the namespace 'System.Xml' (are you missing an assembly reference?)</li>
+<li>The type or namespace name 'SqlClient' does not exist in the namespace 'System.Data' (are you missing an assembly reference?)</li>
+</ol>
+<p>The underlying problem is that the assembly being referenced isn’t included in the GAC (global assembly cache) on the server. Since developers typically have more control over their local environments, this error is often only exposed when a project is deployed to a production server.</p>
+<h3 id="the-web-project-solution">The &quot;Web Project&quot; Solution</h3>
+<p>If, in Visual Studio, the project is a Web Project (as opposed to a Web Site), the solution is relatively easy. In your references folder, right-click the assembly in question and click “Properties.” From the properties window, toggle the “Copy Local” attribute to “true.”</p>
+<p>This ensures that the .dll for the assembly gets deployed along with your project, as <a href="http://stackoverflow.com/questions/10341526/is-there-an-explanation-behind-the-error-the-type-or-namespace-name-script-do#10341610">outlined here</a>.</p>
+<h3 id="the-web-site-solution">The &quot;Web Site&quot; Solution</h3>
+<p>What if, however, your project is a Web Site? In a Web Site, this list of references is not available, removing the “Copy Local” fix as an option.</p>
+<p>Luckily, all is not lost. All we have to do is manually add the reference into the web.config file.</p>
+<p>This is easy if we know which assembly we have to add; however, not only do we not always know the assembly, but there’s no easy way to get the “PublicTokenNumber” either.</p>
+<h3 id="determining-the-namespace">Determining The Namespace</h3>
+<p>Going back to the “Script” example, the error reveals some other useful information, mainly the erroneous file and line number.</p>
+<blockquote>
+<p>Exception message: c:[file information]\Extensions.cs(10): error CS0234: The type or namespace name 'Script' does not exist in the namespace 'System.Web' (are you missing an assembly reference?)</p>
+</blockquote>
+<pre><code>using System.Web.Script.Serialization;
+</code></pre>
+<p>So we now know that we’re trying to use the “System.Web.Script.Serialization” namespace, but we don’t know yet which assembly this is included in.</p>
+<h3 id="determining-the-assembly">Determining The Assembly</h3>
+<p>The quick-and-dirty way to determine this is to pull out the “using” line, see what class throws an error, then use reflection to get the assembly name for that class.</p>
+<p>In my example, when I remove the “using” line I get the following error:</p>
+<blockquote>
+<p>Error 1 The type or namespace name 'JavaScriptSerializer' could not be found (are you missing a using directive or an assembly reference?)</p>
+</blockquote>
+<p>on this line:</p>
+<pre><code>JavaScriptSerializer jss = new JavaScriptSerializer();
+</code></pre>
+<p>So, this is now what we know: the &quot;JavaScriptSerializer&quot; is under the &quot;System.Web.Script.Serialization&quot; namespace. But we still don’t know the assembly.</p>
+<p>To grab the assembly, use the following piece of reflection to not only get the assembly, but the exact line needed to add to the web.config to include that assembly manually in the project.</p>
+<pre><code>System.Diagnostics.Debug.WriteLine(String.Format(&quot;&lt;add assembly=\&quot;{0}\&quot; /&gt;&quot;, System.Reflection.Assembly.GetAssembly(typeof(JavaScriptSerializer)).FullName));
+</code></pre>
+<p>(if you're problem stems from a different class, just swap it out with the &quot;JavaScriptSerializer&quot; class)</p>
+<p>When executing that line, we get the following result:</p>
+<blockquote>
+ <add assembly="System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+</blockquote>
+<p>(reference <a href="http://stackoverflow.com/questions/2644908/visual-c-sharp-2010-express-output-window">this page</a> if you are using Visual Studio Express and are unsure of how to view the “Output” window)</p>
+<h3 id="modifying-the-web.config">Modifying The Web.Config</h3>
+<p>Now that we have the information we need, all we have to do is add it to the web.config.</p>
+<pre><code>&lt;configuration&gt;
+    &lt;system.web&gt;
+    &lt;compilation debug=&quot;true&quot; targetFramework=&quot;4.0&quot;&gt;
+        &lt;assemblies&gt;
+        &lt;add assembly=&quot;System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35&quot; /&gt;
+        &lt;/assemblies&gt;
+    &lt;/compilation&gt;
+    &lt;/system.web&gt;
+&lt;/configuration&gt;
+</code></pre>
+<p>And with that, we’re safe to deploy!</p>
+
+        <p class="meta">
+            ~ posted in <a href="/categories/professional">professional</a> on 05.03.2012
+        </p>
+    </section>
+
+
+        <hr />
+        <footer>
+    &copy;
+    <script>document.write(new Date().getFullYear())</script>
+    🤓
+    <a href="https://hoffer.fm">AJ Hoffer</a>
+    |
+    <a href="https://github.com/dochoffiday">GitHub</a>
+    |
+    <a href="https://stackoverflow.com/users/234132/dochoffiday">StackOverflow</a>
+</footer>
+    </div>
+</body>
+</html>

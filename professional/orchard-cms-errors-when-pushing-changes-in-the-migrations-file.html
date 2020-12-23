@@ -8,7 +8,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="AJ Hoffer is a software engineer living in Lancaster, PA who helps people solve problems" />
 <meta name="author" content="AJ Hoffer" />
-<title>Adding Up Rounded Percentages to Equal 100% - AJ Hoffer</title>
+<title>Orchard CMS - Errors When Pushing Changes in the Migrations Files - AJ Hoffer</title>
 
 <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-icon-60x60.png">
@@ -33,7 +33,7 @@
 
     
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Adding Up Rounded Percentages to Equal 100%">
+    <meta property="og:title" content="Orchard CMS - Errors When Pushing Changes in the Migrations Files">
 
 </head>
 <body>
@@ -44,35 +44,18 @@
     </a>
 </header>
             <section class="post">
-        <h1>Adding Up Rounded Percentages to Equal 100%</h1>
-        <p>When working with rounded percentages, it's actually not that easy to make sure the percentages add up to 100%. Take the following example:</p>
-<ul>
-<li>40.5%</li>
-<li>20.6%</li>
-<li>38.9%</li>
-</ul>
-<p>If you use basic rounding, you'll get 41%, 21%, and 39%... which adds up to 101%!</p>
-<p>So, what can we do?</p>
+        <h1>Orchard CMS - Errors When Pushing Changes in the Migrations Files</h1>
+        <p>I really love the <a href="http://www.orchardproject.net/">Orchard CMS</a> (a CMS engine built upon the .NET MVC Framework), but it isn't without its quirks. I've found that often times, when I try to delete a column from an existing table in the migrations file, the site inexplicably starts throwing errors. After digging through the error log, I found that the error usually is along the following lines:</p>
+<blockquote>
+<p property="" className="">Error when updating module: &quot;A tenant could not be started: Default NHibernate.PropertyNotFoundException: Could not find a getter for property '' in class ''&quot;</p>
+</blockquote>
+<p>Basically, even though the column was deleted in the migrations file, Orchard is still looking for that column.</p>
 <h3 id="the-solution">The Solution</h3>
-<p>The logic behind the solution is fairly straightforward and is just a spin-off of the <a href="https://en.wikipedia.org/wiki/Largest_remainder_method">largest remainder method</a>:</p>
-<ol>
-<li>Instead of rounding to the closest integer, round everything <em>down</em></li>
-<li>Take the sum of those numbers, and subtract it from 100 to determine the difference</li>
-<li>Re-allocate the difference by adding <em>1</em> to the numbers with the highest decimal</li>
-</ol>
-<p>Going back to our example:</p>
-<ol>
-<li>We round the numbers to 40, 20, and 38</li>
-<li>We subtract the sum of those (98) from 100, which equals <strong>2</strong></li>
-<li>We add <em>1</em> to the top <strong>2</strong> highest decimals, which gives us 40, 21, and 39... the sum of which equals 100!</li>
-</ol>
-<p>That was the <em>easy</em> part. The real trick is duplicating that in code. Thankfully, it's already been done! Read the next section for a class that automatically rounds these numbers, while still preserving their original order.</p>
-<h3 id="the-code">The Code</h3>
-<script src="https://gist.github.com/dochoffiday/333a22e937f7503cd770ed70a429df23.js"></script>
-<p>To see the full gist, <a href="https://gist.github.com/dochoffiday/333a22e937f7503cd770ed70a429df23">click here</a>.</p>
+<p>This is actually a pretty easy fix. In your App_Data folder, there is a &quot;Sites&quot; folder, and within that there should be a folder matching the name of your site (usually &quot;Default&quot;). From here, simply <em>delete the &quot;mappings.bin&quot;</em> file.</p>
+<p>This will clear out the mappings and create new ones from scratch. From there, you should be good to go.</p>
 
         <p class="meta">
-            ~ posted in <a href="/categories/professional">professional</a> on 08.17.2017
+            ~ posted in <a href="/categories/professional">professional</a> on 02.07.2013
         </p>
     </section>
 

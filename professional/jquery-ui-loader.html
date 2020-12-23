@@ -8,7 +8,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="AJ Hoffer is a software engineer living in Lancaster, PA who helps people solve problems" />
 <meta name="author" content="AJ Hoffer" />
-<title>Adding Up Rounded Percentages to Equal 100% - AJ Hoffer</title>
+<title>jQuery UI Loader - AJ Hoffer</title>
 
 <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-icon-60x60.png">
@@ -33,7 +33,7 @@
 
     
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Adding Up Rounded Percentages to Equal 100%">
+    <meta property="og:title" content="jQuery UI Loader">
 
 </head>
 <body>
@@ -44,35 +44,16 @@
     </a>
 </header>
             <section class="post">
-        <h1>Adding Up Rounded Percentages to Equal 100%</h1>
-        <p>When working with rounded percentages, it's actually not that easy to make sure the percentages add up to 100%. Take the following example:</p>
-<ul>
-<li>40.5%</li>
-<li>20.6%</li>
-<li>38.9%</li>
-</ul>
-<p>If you use basic rounding, you'll get 41%, 21%, and 39%... which adds up to 101%!</p>
-<p>So, what can we do?</p>
-<h3 id="the-solution">The Solution</h3>
-<p>The logic behind the solution is fairly straightforward and is just a spin-off of the <a href="https://en.wikipedia.org/wiki/Largest_remainder_method">largest remainder method</a>:</p>
-<ol>
-<li>Instead of rounding to the closest integer, round everything <em>down</em></li>
-<li>Take the sum of those numbers, and subtract it from 100 to determine the difference</li>
-<li>Re-allocate the difference by adding <em>1</em> to the numbers with the highest decimal</li>
-</ol>
-<p>Going back to our example:</p>
-<ol>
-<li>We round the numbers to 40, 20, and 38</li>
-<li>We subtract the sum of those (98) from 100, which equals <strong>2</strong></li>
-<li>We add <em>1</em> to the top <strong>2</strong> highest decimals, which gives us 40, 21, and 39... the sum of which equals 100!</li>
-</ol>
-<p>That was the <em>easy</em> part. The real trick is duplicating that in code. Thankfully, it's already been done! Read the next section for a class that automatically rounds these numbers, while still preserving their original order.</p>
-<h3 id="the-code">The Code</h3>
-<script src="https://gist.github.com/dochoffiday/333a22e937f7503cd770ed70a429df23.js"></script>
-<p>To see the full gist, <a href="https://gist.github.com/dochoffiday/333a22e937f7503cd770ed70a429df23">click here</a>.</p>
+        <h1>jQuery UI Loader</h1>
+        <p>God Bless the jQuery UI Framework. Designing widgets has always been a curious business where I always end up feeling unsatisfied. So, thanks to the Framework, I can focus more on development, and leave the theming up to the implementation folks [whoever they may be].</p>
+<p>However, it's still an incomplete Framework. One feature I always felt lacking was the design of a simple table. I've stubmled upon solutions in the past for complex datagrids, but it always stank of overkill.</p>
+<p>As it turns out, I wasn't the only one who felt this feature <a href="http://stackoverflow.com/questions/2613632/jquery-ui-themes-and-html-tables/2625525#2625525">lacking</a>.</p>
+<p>I've tinkered with the code quit a bit since that post, but the basic idea is the same. Hope you enjoy!</p>
+<p>To see some examples, go the <a href="https://dochoffiday.github.io/jquery.ui.tables/">demo page</a> or view the <a href="https://github.com/dochoffiday/jquery.ui.tables">project on GitHub</a>!</p>
+<p><a href="https://github.com/dochoffiday/jquery.ui.tables" class="highlight">Fork On GitHub!</a></p>
 
         <p class="meta">
-            ~ posted in <a href="/categories/professional">professional</a> on 08.17.2017
+            ~ posted in <a href="/categories/professional">professional</a> on 01.14.2011
         </p>
     </section>
 

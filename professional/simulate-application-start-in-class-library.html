@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    
+<base href="/" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="AJ Hoffer is a software engineer living in Lancaster, PA who helps people solve problems" />
+<meta name="author" content="AJ Hoffer" />
+<title>Simulate &quot;Application_Start&quot; in Class Library - AJ Hoffer</title>
+
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+<link rel="manifest" href="/assets/favicons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<link href="/assets/css/style.min.css" rel="stylesheet" />
+<link type="application/rss+xml" rel="alternate" title="AJ Hoffer&#x27;s Blog" href=/rss/ />
+
+    
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Simulate &quot;Application_Start&quot; in Class Library">
+
+</head>
+<body>
+    <div id="main">
+        <header>
+    <a href="/">
+        👨‍🚀💬
+    </a>
+</header>
+            <section class="post">
+        <h1>Simulate &quot;Application_Start&quot; in Class Library</h1>
+        <p>In the past, if you needed to run startup code in a class library, you included a method call in the &quot;Application_Start&quot; of the Global.asax file. Thankfully, .NET 4.0 has made things easier with the <a href="http://msdn.microsoft.com/en-us/library/system.web.preapplicationstartmethodattribute">PreApplicationStartMethodAttribute</a>! This helpful attribute allows us to hand-pick code to execute when the application starts without ever modifying the Global.asax file, or messier yet, creating an HttpHandler.</p>
+<p>Let's see it in action!</p>
+<h3 id="old-busted">Old &amp; Busted</h3>
+<p>First, here's a refresher of the old way. Say we have a chunk of code in our library that needs to be executed when the application starts:</p>
+<pre><code>namespace ClassLibrary
+{
+    public class Startup
+    {
+        public static void Start()
+        {
+            // do some awesome stuff here!
+        }
+    }
+}
+</code></pre>
+<p>In the past, we had to manually add a reference to this in the &quot;Application_Start&quot; of our Global.asax file:</p>
+<pre><code>protected void Application_Start(object sender, EventArgs e)
+{
+    ClassLibrary.Startup.Start();
+}
+</code></pre>
+<h3 id="new-hotness">New Hotness</h3>
+<p>Now that we live in the future, all we have to do is add a PreApplicationStartMethod assembly attribute (which is a part of the System.Web namespace) to our class library with parameters specifying our class and method to be executed:</p>
+<pre><code>[assembly: PreApplicationStartMethod(typeof(ClassLibrary.Startup), &quot;Start&quot;)]
+</code></pre>
+<p>You can add this assembly attribute anywhere, but I find it best to either include it in the AssemblyInfo.cs file, or at the beginning of the class containing the code to be executed. Here's the Startup class in its entirety to demonstrate my meaning:</p>
+<pre><code>using System.Web;
+
+[assembly: PreApplicationStartMethod(typeof(ClassLibrary.Startup), &quot;Start&quot;)]
+
+namespace ClassLibrary
+{
+    public class Startup
+    {
+        public static void Start()
+        {
+            // do some awesome stuff here!
+        }
+    }
+}
+</code></pre>
+<p>It's as simple as that! The only downside is you need to be using the .NET Framework 4.0 or later (which is why I was not able to use this for a previous <a href="/professional/simulate-application-start-in-sharepoint">Sharepoint solution</a>). But, if you are using 4.0 or later, this is a great way to keep your library code <a href="http://en.wikipedia.org/wiki/Separation_of_concerns">separate</a> from your web project.</p>
+<h3 id="notes-and-such">Notes And Such</h3>
+<p>It's worth mentioning that the behaviour of the PreApplicationStartMethodAttribute is a <a href="http://stackoverflow.com/a/11800997/234132">little different</a> between .NET Frameworks <a href="http://msdn.microsoft.com/en-us/library/system.web.preapplicationstartmethodattribute(v=vs.100).aspx">4.0</a> and <a href="http://msdn.microsoft.com/en-us/library/system.web.preapplicationstartmethodattribute(v=vs.110)">4.5</a>. In 4.0, &quot;AllowMultiple&quot; is set to &quot;false&quot;, so you can only include this attribute ONCE in your library - so all your code must be within one method. However, in 4.5, &quot;AllowMultiple&quot; is set to &quot;true&quot;, so you may include as many startup methods as your heart desires!</p>
+<h3 id="shout-outs">Shout-Outs</h3>
+<p>Lastly, I'd be remiss if I didn't mention <a href="https://github.com/davidebbo/WebActivator">WebActivator</a>. It's an excellent library that leverages the PreApplicationStartMethodAttribute but adds a little more oomph and versatility (including the ability to have startup and shutdown code!).</p>
+<p>Now go and code!</p>
+
+        <p class="meta">
+            ~ posted in <a href="/categories/professional">professional</a> on 12.30.2013
+        </p>
+    </section>
+
+
+        <hr />
+        <footer>
+    &copy;
+    <script>document.write(new Date().getFullYear())</script>
+    🤓
+    <a href="https://hoffer.fm">AJ Hoffer</a>
+    |
+    <a href="https://github.com/dochoffiday">GitHub</a>
+    |
+    <a href="https://stackoverflow.com/users/234132/dochoffiday">StackOverflow</a>
+</footer>
+    </div>
+</body>
+</html>
