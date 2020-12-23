@@ -36,6 +36,11 @@ h1, .h1 {
     font-family: Helvetica, sans-serif;
 }
 
+h1.category {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
 h1 a, h1 a:visited, .h1 a, .h1 a:visited {
     text-decoration: none;
     color: #2d3436;
