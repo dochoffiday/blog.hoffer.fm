@@ -5,8 +5,8 @@
 		<link>https://blog.hoffer.fm/</link>
 		<description />
 		<copyright>2020</copyright>
-		<pubDate>Wed, 23 Dec 2020 00:18:30 GMT</pubDate>
-		<lastBuildDate>Wed, 23 Dec 2020 00:18:30 GMT</lastBuildDate>
+		<pubDate>Wed, 23 Dec 2020 00:25:45 GMT</pubDate>
+		<lastBuildDate>Wed, 23 Dec 2020 00:25:45 GMT</lastBuildDate>
 		<item>
 			<title>Spruce Up Your List-Item Bullets with Emojis!</title>
 			<link>https://blog.hoffer.fm/professional/spruce-up-your-list-item-bullets-with-emojis</link>
@@ -236,6 +236,40 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/aspnet/web-forms/overview/older-versions-security/introduction/forms-authentication-configuration-and-advanced-topics-cs#step-4-storing-additional-user-data-in-the-ticket"&gt;Forms Authentication Configuration and Advanced Topics (C#)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Adding Up Rounded Percentages to Equal 100%</title>
+			<link>https://blog.hoffer.fm/professional/adding-up-rounded-percentages-to-equal-100</link>
+			<description>&lt;p&gt;When working with rounded percentages, it's actually not that easy to make sure the percentages add up to 100%. Take the following example:&lt;/p&gt;</description>
+			<guid>https://blog.hoffer.fm/professional/adding-up-rounded-percentages-to-equal-100</guid>
+			<pubDate>Thu, 17 Aug 2017 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;When working with rounded percentages, it's actually not that easy to make sure the percentages add up to 100%. Take the following example:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;40.5%&lt;/li&gt;
+&lt;li&gt;20.6%&lt;/li&gt;
+&lt;li&gt;38.9%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you use basic rounding, you'll get 41%, 21%, and 39%... which adds up to 101%!&lt;/p&gt;
+&lt;p&gt;So, what can we do?&lt;/p&gt;
+&lt;h3 id="the-solution"&gt;The Solution&lt;/h3&gt;
+&lt;p&gt;The logic behind the solution is fairly straightforward and is just a spin-off of the &lt;a href="https://en.wikipedia.org/wiki/Largest_remainder_method"&gt;largest remainder method&lt;/a&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Instead of rounding to the closest integer, round everything &lt;em&gt;down&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Take the sum of those numbers, and subtract it from 100 to determine the difference&lt;/li&gt;
+&lt;li&gt;Re-allocate the difference by adding &lt;em&gt;1&lt;/em&gt; to the numbers with the highest decimal&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Going back to our example:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;We round the numbers to 40, 20, and 38&lt;/li&gt;
+&lt;li&gt;We subtract the sum of those (98) from 100, which equals &lt;strong&gt;2&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;We add &lt;em&gt;1&lt;/em&gt; to the top &lt;strong&gt;2&lt;/strong&gt; highest decimals, which gives us 40, 21, and 39... the sum of which equals 100!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That was the &lt;em&gt;easy&lt;/em&gt; part. The real trick is duplicating that in code. Thankfully, it's already been done! Read the next section for a class that automatically rounds these numbers, while still preserving their original order.&lt;/p&gt;
+&lt;h3 id="the-code"&gt;The Code&lt;/h3&gt;
+&lt;script src="https://gist.github.com/dochoffiday/333a22e937f7503cd770ed70a429df23.js"&gt;&lt;/script&gt;
+&lt;p&gt;To see the full gist, &lt;a href="https://gist.github.com/dochoffiday/333a22e937f7503cd770ed70a429df23"&gt;click here&lt;/a&gt;.&lt;/p&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
