@@ -3,14 +3,14 @@ ArchiveKey: Category
 ArchiveDestination: >
   => GetInt("Index") <= 1 ? $"categories/{GroupKey}/index.html" : $"categories/{GroupKey}/{GetInt("Index")}.html"
 ArchivePageSize: => @Constants.PostsPerPage
-ArchiveOrderKey: Published
+ArchiveOrder: Published
 Title: Categories
 ArchiveTitle: => Outputs["Data"][$"categories/{GroupKey}.yml"]["Title"]
 ---
 @if (Document.ContainsKey(Keys.GroupKey))
 {
     <h1 class="category">~ @(Outputs[nameof(Data)][$"categories/{Document.GetString(Keys.GroupKey)}.yml"].GetString("Title")) ~</h1>
-    @Html.Partial($"/_posts.cshtml", Document.GetChildren())
+    @Html.Partial($"/_posts.cshtml", Document.GetChildren().OrderByDescending(doc => doc.GetDateTime("Published")))
 }
 else
 {

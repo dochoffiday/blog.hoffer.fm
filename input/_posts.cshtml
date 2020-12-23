@@ -15,7 +15,7 @@
             </h2>
             @Html.Raw(excerpt)
             <p class="meta">
-                ~ posted in <a href="@(topicDocument.GetLink())">@topicDocument.GetTitle()</a> on @post.GetString("Published")
+                ~ posted in <a href="@(topicDocument.GetLink())">@topicDocument.GetTitle()</a> on @post.GetDateTime("Published").ToString("MM.dd.yyyy")
             </p>
         </article>
     }
@@ -27,18 +27,19 @@
 }
 @if (older != null || newer != null)
 {
-    <div class="d-flex flex-row justify-content-between">
-        <div>
+    <div>
+        <div style="float: left;">
             @if (older != null)
             {
-                <a class="btn btn-primary" href="@Context.GetLink(older)" role="button">Older</a>
+                <a class="paging" href="@Context.GetLink(older)" role="button">&larr; Older</a>
             }
         </div>
-        <div>
+        <div style="float: right;">
             @if (newer != null)
             {
-                <a class="btn btn-primary" href="@Context.GetLink(newer)" role="button">Newer</a>
+                <a class="paging" href="@Context.GetLink(newer)" role="button">Newer &rarr;</a>
             }
         </div>
+        <div style="clear: both;"></div>
     </div>
 }

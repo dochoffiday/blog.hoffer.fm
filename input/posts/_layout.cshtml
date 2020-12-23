@@ -8,7 +8,7 @@
         <h1>@Model.GetTitle()</h1>
         @RenderBody()
         <p class="meta">
-            ~ posted in <a href="@(topicDocument.GetLink())">@topicDocument.GetTitle()</a> on @Model.GetString("Published")
+            ~ posted in <a href="@(topicDocument.GetLink())">@topicDocument.GetTitle()</a> on @Model.GetDateTime("Published").ToString("MM.dd.yyyy")
         </p>
     </section>
 }

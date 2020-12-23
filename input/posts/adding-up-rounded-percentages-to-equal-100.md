@@ -1,5 +1,5 @@
 ﻿Title: Adding Up Rounded Percentages to Equal 100%
-Published: 2017/08/17
+Published: 2017-08-17
 Category: professional
 ---
 When working with rounded percentages, it's actually not that easy to make sure the percentages add up to 100%. Take the following example:
