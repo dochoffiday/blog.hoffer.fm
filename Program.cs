@@ -5,7 +5,7 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace dochoffiday
+namespace blog.hoffer.fm
 {
     class Program
     {
@@ -32,7 +32,7 @@ namespace dochoffiday
 
             factory.DeployToGitHubPagesBranch(
                 "dochoffiday",
-                "dochoffiday.com",
+                "blog.hoffer.fm",
                 Config.FromSetting<string>("GITHUB_TOKEN"),
                 "live_site_deployed_from_statiq"
             );

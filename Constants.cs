@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace dochoffiday
+namespace blog.hoffer.fm
 {
     public class Constants
     {
