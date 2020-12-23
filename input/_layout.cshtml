@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    @Html.Partial("_partials/_head")
+    @RenderSection("head", required: false)
+</head>
+<body>
+    <div id="main">
+        @Html.Partial("_partials/_header")
+        @RenderBody()
+        <hr />
+        @Html.Partial("_partials/_footer")
+    </div>
+</body>
+</html>

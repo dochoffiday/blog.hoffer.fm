@@ -1,0 +1,19 @@
+@{
+    Layout = @"/_layout.cshtml";
+}
+@{
+    IDocument topicDocument = Outputs[nameof(Archives)][$"categories/{Model.GetString("Category")}/index.html"];
+
+    <section class="post">
+        <h1>@Model.GetTitle()</h1>
+        @RenderBody()
+        <p class="meta">
+            ~ posted in <a href="@(topicDocument.GetLink())">@topicDocument.GetTitle()</a> on @Model.GetDateTime("Published").ToString("MM.dd.yyyy")
+        </p>
+    </section>
+}
+
+@section head {
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="@Model.GetTitle()">
+}

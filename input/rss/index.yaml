@@ -1,0 +1,6 @@
+FeedRss: true
+FeedTitle: => @$"{Constants.BlogTitle}"
+FeedLink: => @$"{Constants.SiteUri}/"
+FeedSources: => @$"posts/*"
+FeedOrderKey: Published
+FeedOrderDescending: true
