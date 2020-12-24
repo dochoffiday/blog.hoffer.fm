@@ -68,3 +68,7 @@ blockquote p { margin: 0; white-space: pre-wrap; }
 hr { margin: 5rem 0; border: solid 1px #7f8c8d; }
 
 footer { font-size: 1.4rem; margin-bottom: 3rem; }
+
+.utterances-wrapper { border: solid 1px #bdc3c7; padding: .5rem 1.5rem; background: #fff; }
+
+.utterances { width: 100% !important; }
