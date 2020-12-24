@@ -5,15 +5,15 @@
 		<link>https://blog.hoffer.fm/</link>
 		<description />
 		<copyright>2020</copyright>
-		<pubDate>Thu, 24 Dec 2020 19:37:40 GMT</pubDate>
-		<lastBuildDate>Thu, 24 Dec 2020 19:37:40 GMT</lastBuildDate>
+		<pubDate>Thu, 24 Dec 2020 19:59:52 GMT</pubDate>
+		<lastBuildDate>Thu, 24 Dec 2020 19:59:52 GMT</lastBuildDate>
 		<item>
 			<title>How To Unit Test With DateTime in C#</title>
 			<link>https://blog.hoffer.fm/professional/how-to-unit-test-with-datetime-in-c</link>
-			<description>&lt;p&gt;Your code has compiled. Your unit tests are running. And then you see it. A unit test has failed. After some investigation, you realize the problem: somewhere you in the code you have a dependency on something you don't control. The cuplrit? &lt;code&gt;DateTime&lt;/code&gt;.&lt;/p&gt;</description>
+			<description>&lt;p&gt;Your code has compiled. Your unit tests are running. And then you see it. A unit test has failed. After some investigation, you realize the problem: somewhere in the code you have a dependency on something you don't control. The cuplrit? &lt;code&gt;DateTime&lt;/code&gt;.&lt;/p&gt;</description>
 			<guid>https://blog.hoffer.fm/professional/how-to-unit-test-with-datetime-in-c</guid>
 			<pubDate>Thu, 24 Dec 2020 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;Your code has compiled. Your unit tests are running. And then you see it. A unit test has failed. After some investigation, you realize the problem: somewhere you in the code you have a dependency on something you don't control. The cuplrit? &lt;code&gt;DateTime&lt;/code&gt;.&lt;/p&gt;
+			<content:encoded>&lt;p&gt;Your code has compiled. Your unit tests are running. And then you see it. A unit test has failed. After some investigation, you realize the problem: somewhere in the code you have a dependency on something you don't control. The cuplrit? &lt;code&gt;DateTime&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Occasionally in programs (mostly in unit tests), you'll want some control over the &lt;code&gt;DateTime&lt;/code&gt; returned by the system. There are lots of ways to do this, but I'll go over a couple of ways I &lt;em&gt;don't&lt;/em&gt; like before getting to a way I &lt;em&gt;do&lt;/em&gt; like.&lt;/p&gt;
 &lt;h3 id="option-1-using-inversion-of-controldependency-injection"&gt;Option 1: Using Inversion of Control/Dependency Injection&lt;/h3&gt;
 &lt;p&gt;The first option is to use &lt;a href="https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-5.0#overview-of-dependency-injection"&gt;IoC/DI&lt;/a&gt;, where instead of relying on &lt;code&gt;DateTime.UtcNow&lt;/code&gt;, you would pass in an interface, like &lt;code&gt;IDateTimer&lt;/code&gt;.&lt;/p&gt;

@@ -45,7 +45,7 @@
 </header>
             <section class="post">
         <h1>How To Unit Test With DateTime in C#</h1>
-        <p>Your code has compiled. Your unit tests are running. And then you see it. A unit test has failed. After some investigation, you realize the problem: somewhere you in the code you have a dependency on something you don't control. The cuplrit? <code>DateTime</code>.</p>
+        <p>Your code has compiled. Your unit tests are running. And then you see it. A unit test has failed. After some investigation, you realize the problem: somewhere in the code you have a dependency on something you don't control. The cuplrit? <code>DateTime</code>.</p>
 <p>Occasionally in programs (mostly in unit tests), you'll want some control over the <code>DateTime</code> returned by the system. There are lots of ways to do this, but I'll go over a couple of ways I <em>don't</em> like before getting to a way I <em>do</em> like.</p>
 <h3 id="option-1-using-inversion-of-controldependency-injection">Option 1: Using Inversion of Control/Dependency Injection</h3>
 <p>The first option is to use <a href="https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-5.0#overview-of-dependency-injection">IoC/DI</a>, where instead of relying on <code>DateTime.UtcNow</code>, you would pass in an interface, like <code>IDateTimer</code>.</p>
