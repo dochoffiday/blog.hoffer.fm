@@ -5,8 +5,151 @@
 		<link>https://blog.hoffer.fm/</link>
 		<description />
 		<copyright>2020</copyright>
-		<pubDate>Wed, 23 Dec 2020 21:41:23 GMT</pubDate>
-		<lastBuildDate>Wed, 23 Dec 2020 21:41:23 GMT</lastBuildDate>
+		<pubDate>Thu, 24 Dec 2020 19:37:40 GMT</pubDate>
+		<lastBuildDate>Thu, 24 Dec 2020 19:37:40 GMT</lastBuildDate>
+		<item>
+			<title>How To Unit Test With DateTime in C#</title>
+			<link>https://blog.hoffer.fm/professional/how-to-unit-test-with-datetime-in-c</link>
+			<description>&lt;p&gt;Your code has compiled. Your unit tests are running. And then you see it. A unit test has failed. After some investigation, you realize the problem: somewhere you in the code you have a dependency on something you don't control. The cuplrit? &lt;code&gt;DateTime&lt;/code&gt;.&lt;/p&gt;</description>
+			<guid>https://blog.hoffer.fm/professional/how-to-unit-test-with-datetime-in-c</guid>
+			<pubDate>Thu, 24 Dec 2020 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Your code has compiled. Your unit tests are running. And then you see it. A unit test has failed. After some investigation, you realize the problem: somewhere you in the code you have a dependency on something you don't control. The cuplrit? &lt;code&gt;DateTime&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Occasionally in programs (mostly in unit tests), you'll want some control over the &lt;code&gt;DateTime&lt;/code&gt; returned by the system. There are lots of ways to do this, but I'll go over a couple of ways I &lt;em&gt;don't&lt;/em&gt; like before getting to a way I &lt;em&gt;do&lt;/em&gt; like.&lt;/p&gt;
+&lt;h3 id="option-1-using-inversion-of-controldependency-injection"&gt;Option 1: Using Inversion of Control/Dependency Injection&lt;/h3&gt;
+&lt;p&gt;The first option is to use &lt;a href="https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-5.0#overview-of-dependency-injection"&gt;IoC/DI&lt;/a&gt;, where instead of relying on &lt;code&gt;DateTime.UtcNow&lt;/code&gt;, you would pass in an interface, like &lt;code&gt;IDateTimer&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public interface IDateTimer
+{
+    DateTime GetUtcNow();
+}
+
+---
+
+public class DateTimer : IDateTimer
+{
+    public DateTime GetUtcNow()
+    {
+        return DateTime.UtcNow;
+    }
+}
+
+---
+
+public void LogDate(IDateTimer dateTime)
+{
+    Console.Log(dateTime.GetUtcNow().ToString());
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In the above instance of &lt;code&gt;IDateTimer&lt;/code&gt;, I'm just using a wrapper around the regular &lt;code&gt;DateTime&lt;/code&gt; (this could be even easier in C# 8.0 with &lt;a href="https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/default-interface-methods-versions"&gt;default interface methods&lt;/a&gt;). In unit tests, you could mock it out to return a specific &lt;code&gt;DateTime&lt;/code&gt; of your choosing.&lt;/p&gt;
+&lt;p&gt;This works well, but it potentially requires a &lt;em&gt;lot&lt;/em&gt; of injection for something that seems like it should be simpler.&lt;/p&gt;
+&lt;h3 id="option-2-using-a-static-datetime"&gt;Option 2: Using a static DateTime&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Warning:&lt;/strong&gt; The following code is &lt;em&gt;unsafe&lt;/em&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public class DateTimer
+{
+    public static DateTime? _dateTimeUtc;
+
+    public static DateTime UtcNow { get { return _dateTimeUtc ?? DateTime.UtcNow; } }
+
+    public static void Set(DateTime dateTimeUtc) {
+        _dateTimeUtc = dateTimeUtc;
+    }
+
+    public static void Reset() {
+        _dateTimeUtc = null;
+    }
+}
+
+---
+
+public void LogDate()
+{
+    Console.Log(DateTimer.UtcNow.ToString());
+}
+
+public void LogChristmas()
+{
+    DateTimer.Set(new DateTime(2020, 12, 25));
+
+    Console.Log(DateTimer.UtcNow.ToString());
+
+    DateTimer.Reset();
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This makes changing the &lt;code&gt;DateTime&lt;/code&gt; simple, but it comes with its own baggage.&lt;/p&gt;
+&lt;p&gt;Mainly:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;You have to &lt;em&gt;manually&lt;/em&gt; remember to reset the DateTime.&lt;/li&gt;
+&lt;li&gt;It's not thread-safe. If you change the underlying DateTime, it will do this for &lt;em&gt;all&lt;/em&gt; threads, which may lead to unintended and unexpected issues elsewhere.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="option-3-my-preferred-way"&gt;Option 3: My Preferred Way!&lt;/h3&gt;
+&lt;p&gt;What I like to do has the &lt;em&gt;simplicity&lt;/em&gt; of using a static DateTime, but with some safety measures in place to mitigate unforeseen errors and provide thread-safety.&lt;/p&gt;
+&lt;p&gt;Here's the code:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;using System;
+
+namespace SharpTime
+{
+    public static class SharpTime
+    {
+        [ThreadStatic]
+        private static DateTime? _dateTimeUtc;
+
+        public static DateTime UtcNow
+        {
+            get
+            {
+                if (_dateTimeUtc.HasValue)
+                {
+                    return _dateTimeUtc.Value;
+                }
+
+                return DateTime.UtcNow;
+            }
+        }
+
+        public static IDisposable UseSpecificDateTimeUtc(DateTime dateTimeUtc)
+        {
+            if (_dateTimeUtc.HasValue) throw new InvalidOperationException(&amp;quot;SharpTime is already locked&amp;quot;);
+
+            _dateTimeUtc = dateTimeUtc;
+
+            return new LockedDateTimeUtc();
+        }
+
+        private class LockedDateTimeUtc : IDisposable
+        {
+            public void Dispose()
+            {
+                _dateTimeUtc = null;
+
+                GC.SuppressFinalize(this);
+            }
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As you can see, I implemented two main checks:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;I made &lt;code&gt;_dateTimeUtc&lt;/code&gt; &lt;code&gt;[ThreadStatic]&lt;/code&gt;. This prevents changes in &lt;code&gt;SharpTime&lt;/code&gt; from affecting other threads.&lt;/li&gt;
+&lt;li&gt;The only way to &lt;em&gt;override&lt;/em&gt; the DateTime is by calling a method that returns an &lt;code&gt;IDisposable&lt;/code&gt;. This means that changes to the underlying &lt;code&gt;DateTime&lt;/code&gt; will be limited in scope, even if you forget to reset it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Here's what it looks like in action:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public void LogDate()
+{
+    Console.Log(SharpTime.UtcNow.ToString());
+}
+
+public void LogChristmas()
+{
+    using (SharpTime.UseSpecificDateTimeUtc(new DateTime(2020, 12, 25)))
+    {
+        Console.Log(SharpTime.UtcNow.ToString());
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That's it! I'm sure there are lots of ways this could be improved, so I encourage you to check out (and fork!) the code on GitHub!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://github.com/dochoffiday/SharpTime"&gt;https://github.com/dochoffiday/SharpTime&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>Spruce Up Your List-Item Bullets with Emojis!</title>
 			<link>https://blog.hoffer.fm/professional/spruce-up-your-list-item-bullets-with-emojis</link>

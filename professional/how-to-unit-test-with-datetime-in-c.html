@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    
+<base href="/" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="AJ Hoffer is a software engineer living in Lancaster, PA who helps people solve problems" />
+<meta name="author" content="AJ Hoffer" />
+<title>How To Unit Test With DateTime in C# - AJ Hoffer</title>
+
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+<link rel="manifest" href="/assets/favicons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<link href="/assets/css/style.min.css" rel="stylesheet" />
+<link type="application/rss+xml" rel="alternate" title="AJ Hoffer&#x27;s Blog" href=/rss/ />
+
+    
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="How To Unit Test With DateTime in C#">
+
+</head>
+<body>
+    <div id="main">
+        <header>
+    <a href="/">
+        👨‍🚀💬
+    </a>
+</header>
+            <section class="post">
+        <h1>How To Unit Test With DateTime in C#</h1>
+        <p>Your code has compiled. Your unit tests are running. And then you see it. A unit test has failed. After some investigation, you realize the problem: somewhere you in the code you have a dependency on something you don't control. The cuplrit? <code>DateTime</code>.</p>
+<p>Occasionally in programs (mostly in unit tests), you'll want some control over the <code>DateTime</code> returned by the system. There are lots of ways to do this, but I'll go over a couple of ways I <em>don't</em> like before getting to a way I <em>do</em> like.</p>
+<h3 id="option-1-using-inversion-of-controldependency-injection">Option 1: Using Inversion of Control/Dependency Injection</h3>
+<p>The first option is to use <a href="https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-5.0#overview-of-dependency-injection">IoC/DI</a>, where instead of relying on <code>DateTime.UtcNow</code>, you would pass in an interface, like <code>IDateTimer</code>.</p>
+<pre><code>public interface IDateTimer
+{
+    DateTime GetUtcNow();
+}
+
+---
+
+public class DateTimer : IDateTimer
+{
+    public DateTime GetUtcNow()
+    {
+        return DateTime.UtcNow;
+    }
+}
+
+---
+
+public void LogDate(IDateTimer dateTime)
+{
+    Console.Log(dateTime.GetUtcNow().ToString());
+}
+</code></pre>
+<p>In the above instance of <code>IDateTimer</code>, I'm just using a wrapper around the regular <code>DateTime</code> (this could be even easier in C# 8.0 with <a href="https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/default-interface-methods-versions">default interface methods</a>). In unit tests, you could mock it out to return a specific <code>DateTime</code> of your choosing.</p>
+<p>This works well, but it potentially requires a <em>lot</em> of injection for something that seems like it should be simpler.</p>
+<h3 id="option-2-using-a-static-datetime">Option 2: Using a static DateTime</h3>
+<p><strong>Warning:</strong> The following code is <em>unsafe</em>.</p>
+<pre><code>public class DateTimer
+{
+    public static DateTime? _dateTimeUtc;
+
+    public static DateTime UtcNow { get { return _dateTimeUtc ?? DateTime.UtcNow; } }
+
+    public static void Set(DateTime dateTimeUtc) {
+        _dateTimeUtc = dateTimeUtc;
+    }
+
+    public static void Reset() {
+        _dateTimeUtc = null;
+    }
+}
+
+---
+
+public void LogDate()
+{
+    Console.Log(DateTimer.UtcNow.ToString());
+}
+
+public void LogChristmas()
+{
+    DateTimer.Set(new DateTime(2020, 12, 25));
+
+    Console.Log(DateTimer.UtcNow.ToString());
+
+    DateTimer.Reset();
+}
+</code></pre>
+<p>This makes changing the <code>DateTime</code> simple, but it comes with its own baggage.</p>
+<p>Mainly:</p>
+<ol>
+<li>You have to <em>manually</em> remember to reset the DateTime.</li>
+<li>It's not thread-safe. If you change the underlying DateTime, it will do this for <em>all</em> threads, which may lead to unintended and unexpected issues elsewhere.</li>
+</ol>
+<h3 id="option-3-my-preferred-way">Option 3: My Preferred Way!</h3>
+<p>What I like to do has the <em>simplicity</em> of using a static DateTime, but with some safety measures in place to mitigate unforeseen errors and provide thread-safety.</p>
+<p>Here's the code:</p>
+<pre><code>using System;
+
+namespace SharpTime
+{
+    public static class SharpTime
+    {
+        [ThreadStatic]
+        private static DateTime? _dateTimeUtc;
+
+        public static DateTime UtcNow
+        {
+            get
+            {
+                if (_dateTimeUtc.HasValue)
+                {
+                    return _dateTimeUtc.Value;
+                }
+
+                return DateTime.UtcNow;
+            }
+        }
+
+        public static IDisposable UseSpecificDateTimeUtc(DateTime dateTimeUtc)
+        {
+            if (_dateTimeUtc.HasValue) throw new InvalidOperationException(&quot;SharpTime is already locked&quot;);
+
+            _dateTimeUtc = dateTimeUtc;
+
+            return new LockedDateTimeUtc();
+        }
+
+        private class LockedDateTimeUtc : IDisposable
+        {
+            public void Dispose()
+            {
+                _dateTimeUtc = null;
+
+                GC.SuppressFinalize(this);
+            }
+        }
+    }
+}
+</code></pre>
+<p>As you can see, I implemented two main checks:</p>
+<ol>
+<li>I made <code>_dateTimeUtc</code> <code>[ThreadStatic]</code>. This prevents changes in <code>SharpTime</code> from affecting other threads.</li>
+<li>The only way to <em>override</em> the DateTime is by calling a method that returns an <code>IDisposable</code>. This means that changes to the underlying <code>DateTime</code> will be limited in scope, even if you forget to reset it.</li>
+</ol>
+<p>Here's what it looks like in action:</p>
+<pre><code>public void LogDate()
+{
+    Console.Log(SharpTime.UtcNow.ToString());
+}
+
+public void LogChristmas()
+{
+    using (SharpTime.UseSpecificDateTimeUtc(new DateTime(2020, 12, 25)))
+    {
+        Console.Log(SharpTime.UtcNow.ToString());
+    }
+}
+</code></pre>
+<p>That's it! I'm sure there are lots of ways this could be improved, so I encourage you to check out (and fork!) the code on GitHub!</p>
+<p><strong><a href="https://github.com/dochoffiday/SharpTime">https://github.com/dochoffiday/SharpTime</a></strong></p>
+
+        <p class="meta">
+            ~ posted in <a href="/categories/professional">professional</a> on 12.24.2020
+        </p>
+    </section>
+
+
+        <hr />
+        <footer>
+    &copy;
+    <script>document.write(new Date().getFullYear())</script>
+    🤓
+    <a href="https://hoffer.fm">AJ Hoffer</a>
+    |
+    <a href="https://github.com/dochoffiday">GitHub</a>
+    |
+    <a href="https://stackoverflow.com/users/234132/dochoffiday">StackOverflow</a>
+</footer>
+    </div>
+</body>
+</html>
