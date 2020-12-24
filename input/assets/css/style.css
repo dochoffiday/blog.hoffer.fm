@@ -166,3 +166,11 @@ hr {
 footer {
   font-size: 1.4rem;
   margin-bottom: 3rem; }
+
+.utterances-wrapper {
+  border: solid 1px #bdc3c7;
+  padding: .5rem 1rem;
+  background: #fff; }
+
+.utterances {
+  width: 100% !important; }
