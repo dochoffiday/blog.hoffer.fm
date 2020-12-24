@@ -2,7 +2,7 @@
 Published: 2020-12-24
 Category: professional
 ---
-Your code has compiled. Your unit tests are running. And then you see it. A unit test has failed. After some investigation, you realize the problem: somewhere you in the code you have a dependency on something you don't control. The cuplrit? `DateTime`.
+Your code has compiled. Your unit tests are running. And then you see it. A unit test has failed. After some investigation, you realize the problem: somewhere in the code you have a dependency on something you don't control. The cuplrit? `DateTime`.
 
 Occasionally in programs (mostly in unit tests), you'll want some control over the `DateTime` returned by the system. There are lots of ways to do this, but I'll go over a couple of ways I _don't_ like before getting to a way I _do_ like.
 
